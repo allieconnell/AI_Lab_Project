@@ -1,0 +1,1184 @@
+id,neighbourhood,room_type,bedrooms,accommodates,price_clean,occupancy_est,occ_at_ceiling,reviews_ltm,revenue_comp,revenue_is_lower_bound,pro_host,minimum_nights,sample_weight,stratum_size
+27059660,"Brightwood Park, Crestwood, Petworth",Entire home/apt,0,4,167.67,18,False,3,3018.06,False,False,3.0,3.326923076923077,173
+1860120,"Brightwood Park, Crestwood, Petworth",Entire home/apt,0,2,156.0,60,False,10,9360.0,False,False,2.0,3.326923076923077,173
+16487475,"Brightwood Park, Crestwood, Petworth",Entire home/apt,0,2,99.3,234,False,39,23236.2,False,False,2.0,3.326923076923077,173
+1329739409256411946,"Brightwood Park, Crestwood, Petworth",Entire home/apt,0,2,146.5,255,True,50,37357.5,True,False,2.0,3.326923076923077,173
+1411554820561137678,"Brightwood Park, Crestwood, Petworth",Entire home/apt,0,2,202.5,255,True,46,51637.5,True,False,1.0,3.326923076923077,173
+49854878,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,94.4,30,False,3,2832.0,False,False,5.0,3.326923076923077,173
+42316829,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,154.67,24,False,4,3712.08,False,False,3.0,3.326923076923077,173
+1362434023789217922,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,5,174.0,24,False,4,4176.0,False,False,2.0,3.326923076923077,173
+933939518194099629,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,172.0,30,False,5,5160.0,False,False,3.0,3.326923076923077,173
+54353240,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,149.0,48,False,8,7152.0,False,False,3.0,3.326923076923077,173
+1655877655146140081,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,184.5,48,False,8,8856.0,False,False,2.0,3.326923076923077,173
+1061091693631150462,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,139.67,72,False,12,10056.24,False,False,3.0,3.326923076923077,173
+12173928,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,3,125.67,84,False,14,10556.28,False,False,3.0,3.326923076923077,173
+32766486,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,5,137.5,96,False,16,13200.0,False,False,2.0,3.326923076923077,173
+1154649367751072591,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,111.2,132,False,22,14678.4,False,False,1.0,3.326923076923077,173
+1319263373263621960,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,6,65.38,248,False,4,16214.239999999998,False,False,31.0,3.326923076923077,173
+1267056159512973656,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,3,88.95,192,False,32,17078.4,False,False,1.0,3.326923076923077,173
+682042241650530176,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,230.0,78,False,13,17940.0,False,False,2.0,3.326923076923077,173
+1220303847910106893,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,3,177.5,114,False,19,20235.0,False,False,1.0,3.326923076923077,173
+1710804567210105231,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,140.0,150,False,25,21000.0,False,False,1.0,3.326923076923077,173
+53455610,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,3,136.33,168,False,28,22903.44,False,False,2.0,3.326923076923077,173
+589313185676696923,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,206.5,132,False,22,27258.0,False,False,2.0,3.326923076923077,173
+1352262678780603377,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,147.26,190,False,19,27979.4,False,False,5.0,3.326923076923077,173
+21887183,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,214.51,144,False,24,30889.44,False,False,1.0,3.326923076923077,173
+4420920,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,158.0,210,False,35,33180.0,False,False,1.0,3.326923076923077,173
+48918367,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,161.0,210,False,35,33810.0,False,False,2.0,3.326923076923077,173
+1321778743878653349,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,2,159.5,222,False,37,35409.0,False,False,2.0,3.326923076923077,173
+1056816637587629390,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,239.5,168,False,28,40236.0,False,False,2.0,3.326923076923077,173
+1118785617381855517,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,7,255.0,18,False,3,4590.0,False,False,2.0,3.326923076923077,173
+1461814289402608077,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,4,188.0,48,False,8,9024.0,False,False,3.0,3.326923076923077,173
+1301603841602883794,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,4,218.5,60,False,10,13110.0,False,False,2.0,3.326923076923077,173
+1436921075346701924,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,4,250.0,84,False,14,21000.0,False,False,2.0,3.326923076923077,173
+1071414203597535409,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,6,168.0,132,False,22,22176.0,False,False,2.0,3.326923076923077,173
+1536554208270418954,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,5,193.5,150,False,25,29025.0,False,False,2.0,3.326923076923077,173
+1018413233520776074,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,3,342.63,96,False,16,32892.48,False,False,2.0,3.326923076923077,173
+948780991084383330,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,5,188.31,210,False,35,39545.1,False,False,2.0,3.326923076923077,173
+1172724881005272901,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,7,332.5,132,False,22,43890.0,False,False,2.0,3.326923076923077,173
+659433561381337372,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,5,206.0,255,True,63,52530.0,True,False,1.0,3.326923076923077,173
+24206768,"Brightwood Park, Crestwood, Petworth",Entire home/apt,2,6,379.16,228,False,38,86448.48000000001,False,False,1.0,3.326923076923077,173
+32515738,"Brightwood Park, Crestwood, Petworth",Entire home/apt,3,7,220.0,72,False,12,15840.0,False,False,1.0,3.326923076923077,173
+1087731692806205734,"Brightwood Park, Crestwood, Petworth",Entire home/apt,3,8,296.0,96,False,16,28416.0,False,False,2.0,3.326923076923077,173
+15092261,"Brightwood Park, Crestwood, Petworth",Entire home/apt,3,8,394.0,108,False,18,42552.0,False,False,2.0,3.326923076923077,173
+34137898,"Brightwood Park, Crestwood, Petworth",Entire home/apt,3,6,414.87,198,False,33,82144.26,False,False,2.0,3.326923076923077,173
+24593697,"Brightwood Park, Crestwood, Petworth",Entire home/apt,4,7,454.0,42,False,7,19068.0,False,False,2.0,3.326923076923077,173
+813967113144445019,"Brightwood Park, Crestwood, Petworth",Entire home/apt,4,10,320.5,132,False,22,42306.0,False,False,2.0,3.326923076923077,173
+1653498825113859326,"Brightwood Park, Crestwood, Petworth",Entire home/apt,5,12,472.5,120,False,20,56700.0,False,False,1.0,3.326923076923077,173
+844426324015435333,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,188.0,36,False,6,6768.0,False,True,1.0,3.326923076923077,173
+839868263034540103,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,3,141.5,96,False,16,13584.0,False,True,2.0,3.326923076923077,173
+1594248525521896078,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,149.65,114,False,19,17060.100000000002,False,True,2.0,3.326923076923077,173
+594197665107057582,"Brightwood Park, Crestwood, Petworth",Entire home/apt,1,4,177.0,156,False,26,27612.0,False,True,2.0,3.326923076923077,173
+939123040916149371,"Brightwood Park, Crestwood, Petworth",Entire home/apt,3,6,225.5,108,False,18,24354.0,False,True,2.0,3.326923076923077,173
+619413014976118099,"Brightwood Park, Crestwood, Petworth",Entire home/apt,4,10,459.0,186,False,31,85374.0,False,True,2.0,3.326923076923077,173
+815287069962726500,"Brightwood Park, Crestwood, Petworth",Private room,1,1,80.5,24,False,4,1932.0,False,False,1.0,2.25,18
+815285575684021886,"Brightwood Park, Crestwood, Petworth",Private room,1,2,86.5,30,False,5,2595.0,False,False,3.0,2.25,18
+2198232,"Brightwood Park, Crestwood, Petworth",Private room,1,2,97.5,60,False,10,5850.0,False,False,2.0,2.25,18
+4482945,"Brightwood Park, Crestwood, Petworth",Private room,1,1,80.0,126,False,21,10080.0,False,False,1.0,2.25,18
+24034008,"Brightwood Park, Crestwood, Petworth",Private room,1,2,88.0,255,True,43,22440.0,True,False,1.0,2.25,18
+42330033,"Brightwood Park, Crestwood, Petworth",Private room,2,2,75.86,255,True,7,19344.3,True,False,21.0,2.25,18
+48580092,"Brightwood Park, Crestwood, Petworth",Private room,1,1,31.94,186,False,3,5940.84,False,True,31.0,2.25,18
+34175841,"Brightwood Park, Crestwood, Petworth",Private room,1,1,32.06,248,False,4,7950.880000000001,False,True,31.0,2.25,18
+37721712,"Brookland, Brentwood, Langdon",Entire home/apt,0,2,170.83,18,False,3,3074.94,False,False,3.0,3.3529411764705883,57
+33718594,"Brookland, Brentwood, Langdon",Entire home/apt,1,4,175.0,24,False,4,4200.0,False,False,1.0,3.3529411764705883,57
+1228352768979705763,"Brookland, Brentwood, Langdon",Entire home/apt,1,2,153.33,54,False,9,8279.820000000002,False,False,3.0,3.3529411764705883,57
+1617499914990041251,"Brookland, Brentwood, Langdon",Entire home/apt,1,3,325.0,42,False,7,13650.0,False,False,1.0,3.3529411764705883,57
+1187635282689767219,"Brookland, Brentwood, Langdon",Entire home/apt,1,2,157.0,138,False,23,21666.0,False,False,2.0,3.3529411764705883,57
+683315835035916402,"Brookland, Brentwood, Langdon",Entire home/apt,1,2,175.0,204,False,34,35700.0,False,False,1.0,3.3529411764705883,57
+1195923534184117190,"Brookland, Brentwood, Langdon",Entire home/apt,1,3,222.62,255,True,55,56768.1,True,False,1.0,3.3529411764705883,57
+29673231,"Brookland, Brentwood, Langdon",Entire home/apt,2,3,202.67,18,False,3,3648.06,False,False,3.0,3.3529411764705883,57
+694192892346316699,"Brookland, Brentwood, Langdon",Entire home/apt,2,5,244.5,42,False,7,10269.0,False,False,2.0,3.3529411764705883,57
+1263618525550610109,"Brookland, Brentwood, Langdon",Entire home/apt,2,7,103.24,255,True,29,26326.2,True,False,5.0,3.3529411764705883,57
+1709011106422613193,"Brookland, Brentwood, Langdon",Entire home/apt,2,6,296.1,144,False,24,42638.4,False,False,1.0,3.3529411764705883,57
+1706581639189368743,"Brookland, Brentwood, Langdon",Entire home/apt,3,5,375.0,30,False,5,11250.0,False,False,1.0,3.3529411764705883,57
+46048000,"Brookland, Brentwood, Langdon",Entire home/apt,3,6,244.33,204,False,34,49843.32,False,False,1.0,3.3529411764705883,57
+1177671312853273459,"Brookland, Brentwood, Langdon",Entire home/apt,4,10,395.0,174,False,29,68730.0,False,False,1.0,3.3529411764705883,57
+1080448128786659532,"Brookland, Brentwood, Langdon",Entire home/apt,1,3,182.0,114,False,19,20748.0,False,True,1.0,3.3529411764705883,57
+586151008716334638,"Brookland, Brentwood, Langdon",Entire home/apt,2,6,219.0,138,False,23,30222.0,False,True,2.0,3.3529411764705883,57
+888678289925013898,"Brookland, Brentwood, Langdon",Entire home/apt,3,10,219.5,216,False,36,47412.0,False,True,2.0,3.3529411764705883,57
+1646422416143251620,"Brookland, Brentwood, Langdon",Private room,1,2,97.33,18,False,3,1751.94,False,False,3.0,1.0,6
+675492138538192745,"Brookland, Brentwood, Langdon",Private room,1,1,161.0,18,False,3,2898.0,False,False,1.0,1.0,6
+1665890026191743904,"Brookland, Brentwood, Langdon",Private room,1,2,103.67,60,False,10,6220.2,False,False,3.0,1.0,6
+639178677114181091,"Brookland, Brentwood, Langdon",Private room,1,1,87.5,72,False,12,6300.0,False,False,2.0,1.0,6
+1169084462746770854,"Brookland, Brentwood, Langdon",Private room,1,2,44.9,240,False,4,10776.0,False,False,30.0,1.0,6
+41151596,"Brookland, Brentwood, Langdon",Private room,1,3,118.0,186,False,31,21948.0,False,False,1.0,1.0,6
+16678182,"Capitol Hill, Lincoln Park",Entire home/apt,0,4,343.21,18,False,3,6177.78,False,False,2.0,3.3402061855670104,324
+22325323,"Capitol Hill, Lincoln Park",Entire home/apt,0,2,117.3,114,False,19,13372.2,False,False,2.0,3.3402061855670104,324
+40608158,"Capitol Hill, Lincoln Park",Entire home/apt,0,1,119.56,140,False,10,16738.4,False,False,7.0,3.3402061855670104,324
+38321510,"Capitol Hill, Lincoln Park",Entire home/apt,0,2,264.37,102,False,17,26965.74,False,False,2.0,3.3402061855670104,324
+1103750694187775278,"Capitol Hill, Lincoln Park",Entire home/apt,0,4,189.0,156,False,26,29484.0,False,False,2.0,3.3402061855670104,324
+10405545,"Capitol Hill, Lincoln Park",Entire home/apt,0,2,140.86,255,True,47,35919.3,True,False,31.0,3.3402061855670104,324
+46049581,"Capitol Hill, Lincoln Park",Entire home/apt,0,3,185.52,210,False,35,38959.2,False,False,1.0,3.3402061855670104,324
+38478357,"Capitol Hill, Lincoln Park",Entire home/apt,0,2,209.0,255,True,110,53295.0,True,False,1.0,3.3402061855670104,324
+662243699702594697,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,267.0,18,False,3,4806.0,False,False,1.0,3.3402061855670104,324
+1721355301922668934,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,189.5,30,False,5,5685.0,False,False,2.0,3.3402061855670104,324
+1407315641269453565,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,209.67,36,False,6,7548.12,False,False,2.0,3.3402061855670104,324
+1350670984822860743,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,215.5,48,False,8,10344.0,False,False,2.0,3.3402061855670104,324
+29151289,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,214.0,54,False,9,11556.0,False,False,3.0,3.3402061855670104,324
+1733707413305742126,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,200.0,72,False,12,14400.0,False,False,1.0,3.3402061855670104,324
+1131366349283440720,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,325.5,48,False,8,15624.0,False,False,2.0,3.3402061855670104,324
+37821696,"Capitol Hill, Lincoln Park",Entire home/apt,1,5,193.1,90,False,15,17379.0,False,False,2.0,3.3402061855670104,324
+1604048448318722341,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,215.0,90,False,15,19350.0,False,False,2.0,3.3402061855670104,324
+28895568,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,185.5,108,False,18,20034.0,False,False,2.0,3.3402061855670104,324
+1408255483800709182,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,313.5,72,False,12,22572.0,False,False,2.0,3.3402061855670104,324
+21753674,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,93.28,255,True,5,23786.4,True,False,31.0,3.3402061855670104,324
+14944917,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,133.33,186,False,31,24799.38,False,False,3.0,3.3402061855670104,324
+22812156,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,337.5,78,False,13,26325.0,False,False,2.0,3.3402061855670104,324
+16284856,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,107.8,248,False,4,26734.4,False,False,31.0,3.3402061855670104,324
+36341382,"Capitol Hill, Lincoln Park",Entire home/apt,1,5,175.0,156,False,26,27300.0,False,False,1.0,3.3402061855670104,324
+46835835,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,229.5,126,False,21,28917.0,False,False,1.0,3.3402061855670104,324
+634657989591658776,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,155.0,192,False,32,29760.0,False,False,2.0,3.3402061855670104,324
+1406582542931286457,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,145.0,210,False,35,30450.0,False,False,2.0,3.3402061855670104,324
+1248586048226963911,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,252.5,126,False,21,31815.0,False,False,2.0,3.3402061855670104,324
+13622959,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,132.0,255,True,44,33660.0,True,False,1.0,3.3402061855670104,324
+1679869445804714579,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,136.33,255,True,6,34764.15,True,False,31.0,3.3402061855670104,324
+9094563,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,212.19,174,False,29,36921.06,False,False,1.0,3.3402061855670104,324
+1051424808755950519,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,212.5,180,False,30,38250.0,False,False,2.0,3.3402061855670104,324
+43884836,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,265.0,156,False,26,41340.0,False,False,1.0,3.3402061855670104,324
+1225571991334286367,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,165.0,255,True,87,42075.0,True,False,1.0,3.3402061855670104,324
+12253009,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,170.0,255,True,59,43350.0,True,False,2.0,3.3402061855670104,324
+32168514,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,175.0,255,True,64,44625.0,True,False,1.0,3.3402061855670104,324
+1460902461099703091,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,361.77,126,False,21,45583.02,False,False,2.0,3.3402061855670104,324
+1320610630989283239,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,241.0,192,False,32,46272.0,False,False,1.0,3.3402061855670104,324
+30115570,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,190.83,255,True,68,48661.65,True,False,1.0,3.3402061855670104,324
+954396628662151483,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,299.0,168,False,28,50232.0,False,False,2.0,3.3402061855670104,324
+1493026950716886954,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,204.5,255,True,43,52147.5,True,False,1.0,3.3402061855670104,324
+1037988399229862925,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,219.0,240,False,40,52560.0,False,False,2.0,3.3402061855670104,324
+1621006375743354880,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,213.5,255,True,43,54442.5,True,False,1.0,3.3402061855670104,324
+10543985,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,222.2,255,True,5,56661.0,True,False,31.0,3.3402061855670104,324
+46453457,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,228.0,255,True,87,58140.0,True,False,1.0,3.3402061855670104,324
+651476010587085810,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,244.5,255,True,43,62347.5,True,False,2.0,3.3402061855670104,324
+49929890,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,277.0,255,True,59,70635.0,True,False,1.0,3.3402061855670104,324
+20138796,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,293.0,255,True,61,74715.0,True,False,2.0,3.3402061855670104,324
+48679512,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,376.0,222,False,37,83472.0,False,False,1.0,3.3402061855670104,324
+1497130049006900930,"Capitol Hill, Lincoln Park",Entire home/apt,1,5,376.4,255,True,55,95982.0,True,False,2.0,3.3402061855670104,324
+1409074885888640131,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,187.5,36,False,6,6750.0,False,False,2.0,3.3402061855670104,324
+1223349119517739061,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,178.0,90,False,15,16020.0,False,False,2.0,3.3402061855670104,324
+1433235584752382882,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,599.5,30,False,5,17985.0,False,False,2.0,3.3402061855670104,324
+572439112564712147,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,273.5,90,False,15,24615.0,False,False,2.0,3.3402061855670104,324
+1280449413415893004,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,285.03,114,False,19,32493.42,False,False,2.0,3.3402061855670104,324
+773774425670767331,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,329.5,108,False,18,35586.0,False,False,2.0,3.3402061855670104,324
+52163897,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,237.67,186,False,31,44206.62,False,False,3.0,3.3402061855670104,324
+1280487084178825700,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,257.5,204,False,34,52530.0,False,False,2.0,3.3402061855670104,324
+5026926,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,221.36,255,True,9,56446.8,True,False,31.0,3.3402061855670104,324
+1592683817000793706,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,333.0,180,False,30,59940.0,False,False,1.0,3.3402061855670104,324
+52407058,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,574.0,114,False,19,65436.0,False,False,1.0,3.3402061855670104,324
+968922110987886979,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,269.01,252,False,42,67790.52,False,False,2.0,3.3402061855670104,324
+1422606086524257362,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,299.15,255,True,71,76283.25,True,False,1.0,3.3402061855670104,324
+1280405866877051932,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,312.5,255,True,48,79687.5,True,False,2.0,3.3402061855670104,324
+453159,"Capitol Hill, Lincoln Park",Entire home/apt,2,5,356.38,255,True,46,90876.9,True,False,1.0,3.3402061855670104,324
+1147091038774467775,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,402.0,255,True,50,102510.0,True,False,1.0,3.3402061855670104,324
+582706348567138736,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,428.0,255,True,94,109140.0,True,False,1.0,3.3402061855670104,324
+27190553,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,505.0,252,False,42,127260.0,False,False,1.0,3.3402061855670104,324
+1189061373236636533,"Capitol Hill, Lincoln Park",Entire home/apt,3,6,221.0,150,False,25,33150.0,False,False,2.0,3.3402061855670104,324
+1477508247171703363,"Capitol Hill, Lincoln Park",Entire home/apt,3,5,370.56,102,False,17,37797.12,False,False,2.0,3.3402061855670104,324
+21788048,"Capitol Hill, Lincoln Park",Entire home/apt,3,8,316.63,144,False,24,45594.72,False,False,1.0,3.3402061855670104,324
+1149124692000035382,"Capitol Hill, Lincoln Park",Entire home/apt,3,7,246.1,255,True,17,62755.5,True,False,31.0,3.3402061855670104,324
+1207919899592960469,"Capitol Hill, Lincoln Park",Entire home/apt,3,10,475.0,156,False,26,74100.0,False,False,2.0,3.3402061855670104,324
+1471015153229404656,"Capitol Hill, Lincoln Park",Entire home/apt,3,6,437.75,198,False,33,86674.5,False,False,1.0,3.3402061855670104,324
+1446427771625834651,"Capitol Hill, Lincoln Park",Entire home/apt,3,6,410.0,255,True,53,104550.0,True,False,2.0,3.3402061855670104,324
+1314957392004691348,"Capitol Hill, Lincoln Park",Entire home/apt,3,10,484.0,255,True,49,123420.0,True,False,1.0,3.3402061855670104,324
+1574336162808240986,"Capitol Hill, Lincoln Park",Entire home/apt,4,7,374.0,54,False,9,20196.0,False,False,2.0,3.3402061855670104,324
+1269105301150286767,"Capitol Hill, Lincoln Park",Entire home/apt,4,7,399.0,132,False,22,52668.0,False,False,2.0,3.3402061855670104,324
+1116200926601822824,"Capitol Hill, Lincoln Park",Entire home/apt,4,8,566.5,156,False,26,88374.0,False,False,2.0,3.3402061855670104,324
+1241585683219710670,"Capitol Hill, Lincoln Park",Entire home/apt,5,10,594.35,210,False,35,124813.5,False,False,2.0,3.3402061855670104,324
+916825411926344269,"Capitol Hill, Lincoln Park",Entire home/apt,0,2,170.84,255,True,16,43564.2,True,True,31.0,3.3402061855670104,324
+1330728784039959710,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,283.24,42,False,7,11896.08,False,True,1.0,3.3402061855670104,324
+979982467034397753,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,178.28,90,False,15,16045.2,False,True,2.0,3.3402061855670104,324
+33772102,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,272.91,72,False,12,19649.52,False,True,1.0,3.3402061855670104,324
+576645262862237831,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,158.55,168,False,28,26636.4,False,True,2.0,3.3402061855670104,324
+43186713,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,213.58,138,False,23,29474.04,False,True,1.0,3.3402061855670104,324
+50189233,"Capitol Hill, Lincoln Park",Entire home/apt,1,3,118.99,255,True,26,30342.45,True,True,31.0,3.3402061855670104,324
+734235590770298593,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,133.83,255,True,13,34126.65,True,True,31.0,3.3402061855670104,324
+44207610,"Capitol Hill, Lincoln Park",Entire home/apt,1,2,147.61,255,True,12,37640.55,True,True,31.0,3.3402061855670104,324
+868165104177693250,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,265.58,156,False,26,41430.48,False,True,1.0,3.3402061855670104,324
+1157952022481716434,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,280.23,192,False,32,53804.16,False,True,1.0,3.3402061855670104,324
+43186585,"Capitol Hill, Lincoln Park",Entire home/apt,1,4,261.45,255,True,44,66669.75,True,True,1.0,3.3402061855670104,324
+965141900260066436,"Capitol Hill, Lincoln Park",Entire home/apt,2,4,341.0,114,False,19,38874.0,False,True,2.0,3.3402061855670104,324
+1391590719122395664,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,305.74,192,False,32,58702.08,False,True,2.0,3.3402061855670104,324
+36940209,"Capitol Hill, Lincoln Park",Entire home/apt,2,6,438.5,174,False,29,76299.0,False,True,2.0,3.3402061855670104,324
+1546026676024003554,"Capitol Hill, Lincoln Park",Entire home/apt,3,5,414.48,84,False,14,34816.32,False,True,2.0,3.3402061855670104,324
+1447884499099957056,"Capitol Hill, Lincoln Park",Entire home/apt,4,8,850.86,168,False,28,142933.62060000002,False,True,1.0,3.3402061855670104,324
+1514117428310718550,"Capitol Hill, Lincoln Park",Shared room,1,6,37.0,30,False,5,1110.0,False,False,1.0,3.4545454545454546,38
+1594820392751415031,"Capitol Hill, Lincoln Park",Shared room,1,8,37.0,60,False,10,2220.0,False,False,1.0,3.4545454545454546,38
+1520603428890618710,"Capitol Hill, Lincoln Park",Shared room,1,6,55.66,66,False,11,3673.56,False,False,1.0,3.4545454545454546,38
+45495027,"Capitol Hill, Lincoln Park",Shared room,1,1,30.49,186,False,3,5671.139999999999,False,False,31.0,3.4545454545454546,38
+566550361485775329,"Capitol Hill, Lincoln Park",Private room,1,6,153.0,66,False,11,10098.0,False,False,1.0,3.4545454545454546,38
+37289643,"Capitol Hill, Lincoln Park",Private room,1,2,151.0,102,False,17,15402.0,False,False,1.0,3.4545454545454546,38
+11809415,"Capitol Hill, Lincoln Park",Private room,1,2,159.5,144,False,24,22968.0,False,False,2.0,3.4545454545454546,38
+1617476632470287410,"Capitol Hill, Lincoln Park",Private room,1,2,220.15,126,False,21,27738.9,False,False,,3.4545454545454546,38
+1272775724635847400,"Capitol Hill, Lincoln Park",Private room,1,2,140.0,255,True,45,35700.0,True,False,1.0,3.4545454545454546,38
+3103276,"Capitol Hill, Lincoln Park",Private room,1,2,173.0,255,True,59,44115.0,True,False,1.0,3.4545454545454546,38
+1147345858813553582,"Capitol Hill, Lincoln Park",Private room,4,8,1024.481899999999,108,False,18,72993.23999999996,False,False,3.0,3.4545454545454546,38
+1591573048884460316,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,0,3,200.0,18,False,3,3600.0,False,False,1.0,3.3846153846153846,44
+1001416591038245453,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,1,3,168.5,18,False,3,3033.0,False,False,2.0,3.3846153846153846,44
+49837976,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,1,3,173.0,54,False,9,9342.0,False,False,2.0,3.3846153846153846,44
+1070429499219053853,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,1,2,125.33,108,False,18,13535.64,False,False,2.0,3.3846153846153846,44
+1321851074361491241,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,1,2,95.0,234,False,39,22230.0,False,False,2.0,3.3846153846153846,44
+54112711,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,2,4,196.0,66,False,11,12936.0,False,False,2.0,3.3846153846153846,44
+1430499591275718290,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,2,4,214.0,132,False,22,28248.0,False,False,1.0,3.3846153846153846,44
+41132050,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,2,4,177.5,240,False,40,42600.0,False,False,1.0,3.3846153846153846,44
+1645009698457471644,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,3,6,226.0,72,False,12,16272.0,False,False,2.0,3.3846153846153846,44
+49995888,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,3,7,249.0,108,False,18,26892.0,False,False,3.0,3.3846153846153846,44
+16630937,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,4,8,259.5,54,False,9,14013.0,False,False,2.0,3.3846153846153846,44
+998361144430924947,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,4,8,344.0,138,False,23,47472.0,False,False,1.0,3.3846153846153846,44
+1004434300207765296,"Capitol View, Marshall Heights, Benning Heights",Entire home/apt,6,16,843.5,126,False,21,106281.0,False,False,1.0,3.3846153846153846,44
+11689750,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,55.57,84,False,3,4667.88,False,False,14.0,2.125,17
+747652624623077534,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,167.0,30,False,5,5010.0,False,False,1.0,2.125,17
+29216006,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,88.51,90,False,15,7965.900000000001,False,False,1.0,2.125,17
+50333233,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,101.0,84,False,14,8484.0,False,False,1.0,2.125,17
+1150133438227765287,"Capitol View, Marshall Heights, Benning Heights",Private room,1,2,82.5,126,False,21,10395.0,False,False,2.0,2.125,17
+24632346,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,99.2,126,False,21,12499.2,False,False,1.0,2.125,17
+24590286,"Capitol View, Marshall Heights, Benning Heights",Private room,1,1,101.0,180,False,30,18180.0,False,False,1.0,2.125,17
+1581585289205837401,"Capitol View, Marshall Heights, Benning Heights",Private room,2,4,125.0,36,False,6,4500.0,False,False,1.0,2.125,17
+25571727,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,0,2,146.26,102,False,17,14918.52,False,False,2.0,2.5,20
+34127376,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,1,2,223.0,54,False,9,12042.0,False,False,2.0,2.5,20
+28564940,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,1,3,186.67,78,False,13,14560.259999999998,False,False,2.0,2.5,20
+1307948891823016068,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,1,2,138.0,168,False,28,23184.0,False,False,2.0,2.5,20
+42559196,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,1,2,149.0,255,True,56,37995.0,True,False,2.0,2.5,20
+612373603596496980,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,3,4,326.5,78,False,13,25467.0,False,False,2.0,2.5,20
+1489946735253603377,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,3,5,215.66,144,False,24,31055.04,False,False,1.0,2.5,20
+8479494,"Cathedral Heights, McLean Gardens, Glover Park",Entire home/apt,7,15,1081.8500000000004,48,False,8,51928.80000000002,False,False,2.0,2.5,20
+1323342427392242243,"Cathedral Heights, McLean Gardens, Glover Park",Private room,1,2,204.0,18,False,3,3672.0,False,False,1.0,1.0,4
+29964176,"Cathedral Heights, McLean Gardens, Glover Park",Private room,1,2,215.0,18,False,3,3870.0,False,False,1.0,1.0,4
+1584907895464914091,"Cathedral Heights, McLean Gardens, Glover Park",Private room,1,2,192.0,54,False,9,10368.0,False,False,1.0,1.0,4
+808830,"Cathedral Heights, McLean Gardens, Glover Park",Private room,2,6,195.0,120,False,20,23400.0,False,False,1.0,1.0,4
+16716427,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,0,3,214.51,255,True,56,54700.05,True,False,1.0,3.5,28
+1660532537574556738,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,1,4,165.4,84,False,14,13893.6,False,False,1.0,3.5,28
+1226216512816145193,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,1,2,191.0,132,False,22,25212.0,False,False,2.0,3.5,28
+1268060675093002728,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,1,4,206.5,204,False,34,42126.0,False,False,2.0,3.5,28
+1025428055557094491,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,2,6,373.5,42,False,7,15687.0,False,False,2.0,3.5,28
+16204388,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,6,12,1081.8500000000004,36,False,6,38946.60000000001,False,False,3.0,3.5,28
+1614680508408019461,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,2,4,192.7,102,False,17,19655.4,False,True,1.0,3.5,28
+1614681467372830441,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Entire home/apt,2,4,509.0,90,False,15,45810.0,False,True,1.0,3.5,28
+1746709540022136218,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",Private room,1,2,89.0,54,False,9,4806.0,False,False,1.0,1.0,1
+19930688,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,1,3,161.67,18,False,3,2910.06,False,False,3.0,1.25,10
+1648205021302993069,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,1,4,143.67,42,False,7,6034.139999999999,False,False,2.0,1.25,10
+1697979094141829088,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,1,2,110.0,156,False,26,17160.0,False,False,1.0,1.25,10
+1292197928142405988,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,1,4,175.33,210,False,35,36819.3,False,False,3.0,1.25,10
+1187327873809208115,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,2,6,213.33,36,False,6,7679.88,False,False,3.0,1.25,10
+1223977102736509572,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,2,5,165.19,255,True,10,42123.45,True,False,31.0,1.25,10
+1271726495457576312,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,3,8,983.33,66,False,11,64899.780000000006,False,False,3.0,1.25,10
+1627551096364243654,"Colonial Village, Shepherd Park, North Portal Estates",Entire home/apt,5,10,304.17,138,False,23,41975.46,False,False,2.0,1.25,10
+313405,"Colonial Village, Shepherd Park, North Portal Estates",Private room,1,2,111.67,18,False,3,2010.06,False,False,3.0,1.0,3
+8741535,"Colonial Village, Shepherd Park, North Portal Estates",Private room,1,2,110.0,30,False,5,3300.0,False,False,2.0,1.0,3
+1673611958437996074,"Colonial Village, Shepherd Park, North Portal Estates",Private room,2,4,273.0,24,False,4,6552.0,False,False,1.0,1.0,3
+45959718,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,0,2,177.99,60,False,10,10679.4,False,False,2.0,3.3285714285714287,233
+16755291,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,0,2,229.5,54,False,9,12393.0,False,False,2.0,3.3285714285714287,233
+31570396,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,0,2,162.0,150,False,25,24300.0,False,False,2.0,3.3285714285714287,233
+1251000266348420274,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,0,2,199.0,216,False,36,42984.0,False,False,2.0,3.3285714285714287,233
+1597294581325584136,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,5,156.6,24,False,4,3758.4,False,False,1.0,3.3285714285714287,233
+1642249748751055598,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,241.1,18,False,3,4339.8,False,False,1.0,3.3285714285714287,233
+6103261,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,109.75,48,False,6,5268.0,False,False,4.0,3.3285714285714287,233
+1714507450803772684,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,255.09,30,False,5,7652.7,False,False,1.0,3.3285714285714287,233
+1405026661391544640,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,205.0,42,False,7,8610.0,False,False,3.0,3.3285714285714287,233
+4606513,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,3,155.96,72,False,12,11229.12,False,False,2.0,3.3285714285714287,233
+1642265850876936363,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,180.4,72,False,12,12988.8,False,False,1.0,3.3285714285714287,233
+1387227332464524451,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,200.0,78,False,13,15600.0,False,False,3.0,3.3285714285714287,233
+1172080225875676664,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,3,264.8,60,False,10,15888.0,False,False,1.0,3.3285714285714287,233
+1423663891615855368,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,5,156.6,108,False,18,16912.8,False,False,1.0,3.3285714285714287,233
+1237279386552638340,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,5,498.8,36,False,6,17956.8,False,False,1.0,3.3285714285714287,233
+1007398138707579414,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,194.0,96,False,16,18624.0,False,False,2.0,3.3285714285714287,233
+24376933,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,1,77.89,248,False,4,19316.72,False,False,31.0,3.3285714285714287,233
+709463021513262423,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,136.0,150,False,25,20400.0,False,False,2.0,3.3285714285714287,233
+39983855,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,196.0,108,False,18,21168.0,False,False,1.0,3.3285714285714287,233
+17662150,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,164.5,132,False,22,21714.0,False,False,2.0,3.3285714285714287,233
+1281316827876026349,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,198.67,114,False,19,22648.38,False,False,2.0,3.3285714285714287,233
+15523073,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,207.0,120,False,20,24840.0,False,False,2.0,3.3285714285714287,233
+1189032611506117135,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,192.0,138,False,23,26496.0,False,False,2.0,3.3285714285714287,233
+991954946879085440,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,231.75,120,False,20,27810.0,False,False,2.0,3.3285714285714287,233
+1528863942801961274,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,3,122.95,255,True,6,31352.25,True,False,31.0,3.3285714285714287,233
+643482285388971297,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,3,126.5,255,True,54,32257.5,True,False,2.0,3.3285714285714287,233
+22048871,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,189.0,186,False,31,35154.0,False,False,1.0,3.3285714285714287,233
+50574502,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,153.35,255,True,57,39104.25,True,False,2.0,3.3285714285714287,233
+896408575481948263,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,206.0,198,False,33,40788.0,False,False,2.0,3.3285714285714287,233
+1024822230559302750,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,196.0,216,False,36,42336.0,False,False,1.0,3.3285714285714287,233
+1401634102478514238,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,173.0,255,True,73,44115.0,True,False,1.0,3.3285714285714287,233
+1505077795923216776,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,234.8,198,False,33,46490.4,False,False,2.0,3.3285714285714287,233
+54260157,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,4,224.94,255,True,94,57359.7,True,False,1.0,3.3285714285714287,233
+1386481785882847361,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,250.16,255,True,47,63790.8,True,False,1.0,3.3285714285714287,233
+1234656316787706918,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,236.33,24,False,4,5671.92,False,False,2.0,3.3285714285714287,233
+1722034382798806931,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,119.0,78,False,13,9282.0,False,False,1.0,3.3285714285714287,233
+943563722587206359,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,264.75,36,False,6,9531.0,False,False,3.0,3.3285714285714287,233
+8419348,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,171.5,72,False,12,12348.0,False,False,2.0,3.3285714285714287,233
+10788926,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,274.6,54,False,9,14828.4,False,False,1.0,3.3285714285714287,233
+53472771,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,276.0,66,False,11,18216.0,False,False,2.0,3.3285714285714287,233
+1523990803611322310,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,6,280.0,72,False,12,20160.0,False,False,1.0,3.3285714285714287,233
+848799660640283742,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,266.33,114,False,19,30361.62,False,False,1.0,3.3285714285714287,233
+29236747,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,6,304.5,114,False,19,34713.0,False,False,2.0,3.3285714285714287,233
+1699013875814779437,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,151.26,255,True,5,38571.3,True,False,31.0,3.3285714285714287,233
+1150415234569647535,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,311.91,132,False,22,41172.12,False,False,1.0,3.3285714285714287,233
+35649783,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,360.0,120,False,20,43200.0,False,False,1.0,3.3285714285714287,233
+1488282,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,7,174.0,255,True,43,44370.0,True,False,3.0,3.3285714285714287,233
+19011416,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,210.0,234,False,39,49140.0,False,False,2.0,3.3285714285714287,233
+4408378,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,6,254.0,228,False,38,57912.0,False,False,2.0,3.3285714285714287,233
+1580079176620668144,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,5,316.5,216,False,36,68364.0,False,False,2.0,3.3285714285714287,233
+1480141488908865040,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,285.86,255,True,56,72894.3,True,False,1.0,3.3285714285714287,233
+1228887776595299328,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,7,219.45,36,False,6,7900.2,False,False,2.0,3.3285714285714287,233
+35843844,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,6,372.73,60,False,10,22363.800000000003,False,False,2.0,3.3285714285714287,233
+1710078288349055674,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,7,434.82,54,False,9,23480.28,False,False,2.0,3.3285714285714287,233
+937258653921685254,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,6,361.76,108,False,18,39070.08,False,False,1.0,3.3285714285714287,233
+661121154118134381,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,8,541.37,102,False,17,55219.74,False,False,1.0,3.3285714285714287,233
+1593570049401396988,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,9,567.0,120,False,20,68040.0,False,False,1.0,3.3285714285714287,233
+50655982,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,10,393.5,240,False,40,94440.0,False,False,2.0,3.3285714285714287,233
+1125638144718342083,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,4,8,411.0,54,False,9,22194.0,False,False,2.0,3.3285714285714287,233
+1663501332400776641,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,4,8,410.0,102,False,17,41820.0,False,False,1.0,3.3285714285714287,233
+941280109920084032,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,4,10,355.0,180,False,30,63900.0,False,False,2.0,3.3285714285714287,233
+911652101420618755,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,4,10,377.0,216,False,36,81432.0,False,False,3.0,3.3285714285714287,233
+30037994,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,4,8,585.74,228,False,38,133548.72,False,False,2.0,3.3285714285714287,233
+1433326605860088487,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,5,14,511.0,48,False,8,24528.0,False,False,2.0,3.3285714285714287,233
+1513026306636874986,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,6,14,1081.8500000000004,30,False,5,32455.50000000001,False,False,1.0,3.3285714285714287,233
+1593542360681744267,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,7,16,1081.8500000000004,42,False,7,45437.70000000001,False,False,2.0,3.3285714285714287,233
+1545998130632621863,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,3,202.72,78,False,13,15812.16,False,True,2.0,3.3285714285714287,233
+1436254021202026495,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,1,2,225.23,255,True,6,57433.65,True,True,31.0,3.3285714285714287,233
+46835011,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,2,4,319.5,120,False,20,38340.0,False,True,2.0,3.3285714285714287,233
+1454425652187314473,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Entire home/apt,3,8,412.97,168,False,28,69378.96,False,True,2.0,3.3285714285714287,233
+1648991913423086185,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,0,2,87.0,96,False,16,8352.0,False,False,1.0,3.2857142857142856,46
+1717766742050934098,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,89.0,36,False,6,3204.0,False,False,1.0,3.2857142857142856,46
+18033145,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,107.0,36,False,6,3852.0,False,False,1.0,3.2857142857142856,46
+1716366796197392642,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,99.0,42,False,7,4158.0,False,False,1.0,3.2857142857142856,46
+1147183222533137836,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,116.56,54,False,9,6294.24,False,False,1.0,3.2857142857142856,46
+987828399418932529,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,1,37.07,186,False,3,6895.02,False,False,31.0,3.2857142857142856,46
+32846587,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,43.91,186,False,3,8167.259999999999,False,False,31.0,3.2857142857142856,46
+51101021,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,146.0,72,False,12,10512.0,False,False,1.0,3.2857142857142856,46
+1656934114517451198,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,86.0,144,False,24,12384.0,False,False,1.0,3.2857142857142856,46
+1214724889883895418,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,1,148.0,102,False,17,15096.0,False,False,1.0,3.2857142857142856,46
+24623980,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,119.43,168,False,28,20064.24,False,False,1.0,3.2857142857142856,46
+49660212,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,2,92.0,255,True,72,23460.0,True,False,1.0,3.2857142857142856,46
+12926545,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,1,1,191.0,156,False,26,29796.0,False,False,1.0,3.2857142857142856,46
+42633209,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",Private room,2,8,174.0,30,False,5,5220.0,False,False,2.0,3.2857142857142856,46
+37986544,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,0,4,98.75,40,False,5,3950.0,False,False,4.0,3.230769230769231,42
+49634767,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,1,4,113.0,70,False,7,7910.0,False,False,5.0,3.230769230769231,42
+882120576508603337,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,1,3,296.0,72,False,12,21312.0,False,False,1.0,3.230769230769231,42
+669021062996741554,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,1,3,173.0,156,False,26,26988.0,False,False,1.0,3.230769230769231,42
+1667152371607761612,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,2,4,204.0,24,False,4,4896.0,False,False,2.0,3.230769230769231,42
+1721060537359142946,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,2,4,251.0,30,False,5,7530.0,False,False,1.0,3.230769230769231,42
+1711718292714522858,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,2,4,219.15,42,False,7,9204.3,False,False,2.0,3.230769230769231,42
+866911161965668036,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,3,9,222.67,90,False,15,20040.3,False,False,2.0,3.230769230769231,42
+1101846892057607501,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,3,7,532.21,84,False,14,44705.64,False,False,1.0,3.230769230769231,42
+1616877658009385671,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,4,12,504.5,30,False,5,15135.0,False,False,2.0,3.230769230769231,42
+1167377368768018919,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,4,8,387.7,108,False,18,41871.6,False,False,2.0,3.230769230769231,42
+1228478213437831551,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,5,8,517.0,36,False,6,18612.0,False,False,1.0,3.230769230769231,42
+1320333662879718091,"Congress Heights, Bellevue, Washington Highlands",Entire home/apt,3,10,366.2,24,False,4,8788.8,False,True,2.0,3.230769230769231,42
+1217460476180300224,"Congress Heights, Bellevue, Washington Highlands",Private room,1,1,45.0,156,False,26,7020.0,False,False,3.0,1.0,5
+1269186235746355123,"Congress Heights, Bellevue, Washington Highlands",Private room,1,1,52.33,192,False,32,10047.36,False,False,3.0,1.0,5
+1269128463450818396,"Congress Heights, Bellevue, Washington Highlands",Private room,1,2,55.0,228,False,38,12540.0,False,False,3.0,1.0,5
+1324842636444373981,"Congress Heights, Bellevue, Washington Highlands",Private room,1,1,105.05,255,True,82,26787.75,True,False,1.0,1.0,5
+1453561020222729857,"Congress Heights, Bellevue, Washington Highlands",Private room,2,4,214.0,36,False,6,7704.0,False,False,1.0,1.0,5
+1244857010767403779,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,0,2,84.97,84,False,3,7137.48,False,False,14.0,2.75,22
+51300187,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,1,3,172.7,42,False,7,7253.4,False,False,2.0,2.75,22
+1664101672733663354,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,1,3,164.5,174,False,29,28623.0,False,False,1.0,2.75,22
+25885325,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,2,5,168.0,102,False,17,17136.0,False,False,2.0,2.75,22
+51804946,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,2,6,479.63,90,False,15,43166.7,False,False,2.0,2.75,22
+51208926,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,3,6,214.74,168,False,28,36076.32,False,False,1.0,2.75,22
+1507518467136773458,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,6,10,169.94,248,False,4,42145.12,False,False,31.0,2.75,22
+1510988410155537810,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Entire home/apt,3,6,450.0,204,False,34,91800.0,False,True,1.0,2.75,22
+597873702380846467,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,65.0,18,False,3,1170.0,False,False,2.0,1.0,6
+1705904506530754512,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,67.0,18,False,3,1206.0,False,False,2.0,1.0,6
+539890178935900300,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,83.5,24,False,4,2004.0,False,False,2.0,1.0,6
+54071424,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,76.5,42,False,7,3213.0,False,False,2.0,1.0,6
+1465411669450701911,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,115.0,48,False,8,5520.0,False,False,1.0,1.0,6
+1465287269061258728,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",Private room,1,2,112.0,84,False,14,9408.0,False,False,1.0,1.0,6
+1114073063624178550,"Douglas, Shipley Terrace",Entire home/apt,2,6,249.67,42,False,7,10486.14,False,False,3.0,1.25,10
+1636776516751729077,"Douglas, Shipley Terrace",Entire home/apt,2,5,253.68,120,False,20,30441.6,False,False,3.0,1.25,10
+1571269781697011506,"Douglas, Shipley Terrace",Entire home/apt,3,6,530.0,36,False,6,19080.0,False,False,2.0,1.25,10
+1622204243924737118,"Douglas, Shipley Terrace",Entire home/apt,3,8,378.0,78,False,13,29484.0,False,False,1.0,1.25,10
+846424798410268005,"Douglas, Shipley Terrace",Entire home/apt,3,8,332.5,120,False,20,39900.0,False,False,2.0,1.25,10
+1284947042726780238,"Douglas, Shipley Terrace",Entire home/apt,5,10,520.0,30,False,5,15600.0,False,False,1.0,1.25,10
+1109466694940549396,"Douglas, Shipley Terrace",Entire home/apt,5,12,575.0,120,False,20,69000.0,False,False,2.0,1.25,10
+747980875628466701,"Douglas, Shipley Terrace",Entire home/apt,5,12,835.0,30,False,5,25050.0,False,True,2.0,1.25,10
+47443903,"Douglas, Shipley Terrace",Private room,1,1,63.21,224,False,8,14159.04,False,False,14.0,1.0,1
+1373992745428163294,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,0,2,325.0,126,False,21,40950.0,False,False,1.0,3.3529411764705883,57
+1015947346945362644,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,2,325.33,42,False,7,13663.86,False,False,3.0,3.3529411764705883,57
+50356121,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,4,208.13,78,False,13,16234.14,False,False,2.0,3.3529411764705883,57
+1106447474930119563,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,4,286.33,96,False,16,27487.68,False,False,2.0,3.3529411764705883,57
+1312668315829292065,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,4,161.0,234,False,39,37674.0,False,False,1.0,3.3529411764705883,57
+1377579666748333969,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,4,174.35,255,True,28,44459.25,True,False,31.0,3.3529411764705883,57
+811644757312429919,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,5,202.2,255,True,54,51561.0,True,False,1.0,3.3529411764705883,57
+1052194199203689991,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,1,3,245.0,255,True,47,62475.0,True,False,1.0,3.3529411764705883,57
+1172102275507561667,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,4,379.0,78,False,13,29562.0,False,False,2.0,3.3529411764705883,57
+5145487,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,3,9,438.0,18,False,3,7884.0,False,False,1.0,3.3529411764705883,57
+1382707805216209846,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,4,10,830.0,66,False,11,54780.0,False,False,3.0,3.3529411764705883,57
+1546364376109476372,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,4,12,1081.8500000000004,248,False,4,142933.62060000002,False,False,31.0,3.3529411764705883,57
+6969950,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,5,299.0,42,False,7,12558.0,False,True,1.0,3.3529411764705883,57
+4452984,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,5,299.0,66,False,11,19734.0,False,True,1.0,3.3529411764705883,57
+10021464,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,5,871.0,30,False,5,26130.0,False,True,1.0,3.3529411764705883,57
+1633116897553170606,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,5,470.29,66,False,11,31039.140000000003,False,True,2.0,3.3529411764705883,57
+1141238419358069922,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Entire home/apt,2,4,254.59,255,True,12,64920.45,True,True,31.0,3.3529411764705883,57
+1470254402915057582,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Shared room,0,6,83.0,18,False,3,1494.0,False,False,1.0,3.2222222222222223,29
+40950769,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Shared room,1,1,55.0,36,False,6,1980.0,False,False,1.0,3.2222222222222223,29
+40950757,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Shared room,1,1,52.0,78,False,13,4056.0,False,False,1.0,3.2222222222222223,29
+1389105343885027717,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Private room,1,4,326.0,24,False,4,7824.0,False,False,1.0,3.2222222222222223,29
+691335397350159021,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Private room,1,2,171.84,138,False,23,23713.92,False,False,1.0,3.2222222222222223,29
+1081878466322994581,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Private room,1,2,209.0,150,False,25,31350.0,False,False,,3.2222222222222223,29
+1460872750752036530,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Private room,1,2,237.82,162,False,27,38526.84,False,False,1.0,3.2222222222222223,29
+1390677947052808863,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Private room,1,4,166.39,255,True,153,42429.45,True,False,1.0,3.2222222222222223,29
+1218908254544613422,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",Hotel room,2,8,569.0,30,False,5,17070.0,False,False,1.0,3.2222222222222223,29
+4622571,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,151.0,72,False,12,10872.0,False,False,1.0,3.314814814814815,179
+47962755,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,109.64,186,False,3,20393.04,False,False,31.0,3.314814814814815,179
+47907049,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,100.71,255,True,44,25681.05,True,False,31.0,3.314814814814815,179
+49638218,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,213.5,156,False,26,33306.0,False,False,2.0,3.314814814814815,179
+43676822,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,166.0,252,False,42,41832.0,False,False,2.0,3.314814814814815,179
+912431635387644631,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,271.5,18,False,3,4887.0,False,False,2.0,3.314814814814815,179
+18826674,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,3,205.31,54,False,9,11086.74,False,False,1.0,3.314814814814815,179
+1270626609616547421,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,190.02,114,False,19,21662.28,False,False,2.0,3.314814814814815,179
+1389923452099981127,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,191.5,120,False,20,22980.0,False,False,2.0,3.314814814814815,179
+36257592,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,186.0,138,False,23,25668.0,False,False,2.0,3.314814814814815,179
+1416714456948783911,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,252.32,108,False,18,27250.56,False,False,1.0,3.314814814814815,179
+1624983025710250112,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,254.57,120,False,20,30548.4,False,False,3.0,3.314814814814815,179
+48628626,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,3,203.48,156,False,26,31742.88,False,False,1.0,3.314814814814815,179
+932948351971531886,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,3,245.82,132,False,22,32448.24,False,False,2.0,3.314814814814815,179
+42016076,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,253.25,144,False,24,36468.0,False,False,3.0,3.314814814814815,179
+26579917,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,243.68,162,False,27,39476.16,False,False,1.0,3.314814814814815,179
+1553115473736175713,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,265.0,162,False,27,42930.0,False,False,3.0,3.314814814814815,179
+1426964976620716389,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,435.0,108,False,18,46980.0,False,False,1.0,3.314814814814815,179
+1026773709605951155,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,3,283.0,180,False,30,50940.0,False,False,1.0,3.314814814814815,179
+549310208550854873,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,347.33,168,False,28,58351.44,False,False,1.0,3.314814814814815,179
+30101500,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,284.8,222,False,37,63225.600000000006,False,False,1.0,3.314814814814815,179
+1144328836631877202,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,347.08,204,False,34,70804.31999999999,False,False,3.0,3.314814814814815,179
+20192249,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,5,293.5,36,False,6,10566.0,False,False,2.0,3.314814814814815,179
+849310766288741827,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,6,420.67,54,False,9,22716.18,False,False,3.0,3.314814814814815,179
+1548010456545651991,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,507.0,66,False,11,33462.0,False,False,2.0,3.314814814814815,179
+42829620,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,6,328.3,114,False,19,37426.2,False,False,1.0,3.314814814814815,179
+1299417529920029854,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,204.5,234,False,39,47853.0,False,False,2.0,3.314814814814815,179
+1160942466427187277,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,6,229.0,246,False,41,56334.0,False,False,1.0,3.314814814814815,179
+53741239,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,5,250.0,255,True,43,63750.0,True,False,1.0,3.314814814814815,179
+1542135845040867958,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,6,290.0,255,True,50,73950.0,True,False,1.0,3.314814814814815,179
+923867883772050257,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,5,532.5,255,True,47,135787.5,True,False,2.0,3.314814814814815,179
+28646312,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,4,8,849.5,96,False,16,81552.0,False,False,2.0,3.314814814814815,179
+1307561482822172105,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,5,16,851.8,48,False,8,40886.4,False,False,1.0,3.314814814814815,179
+1060900826882034724,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,154.34,120,False,20,18520.8,False,True,1.0,3.314814814814815,179
+1221188539761961714,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,147.4,150,False,25,22110.0,False,True,1.0,3.314814814814815,179
+52939714,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,193.0,180,False,30,34740.0,False,True,2.0,3.314814814814815,179
+48973758,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,214.32,210,False,35,45007.2,False,True,1.0,3.314814814814815,179
+53958894,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,0,2,260.0,228,False,38,59280.0,False,True,2.0,3.314814814814815,179
+46451073,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,324.98,30,False,5,9749.4,False,True,1.0,3.314814814814815,179
+1221170093231671095,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,267.78,66,False,11,17673.48,False,True,1.0,3.314814814814815,179
+633975010352037762,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,268.5,72,False,12,19332.0,False,True,2.0,3.314814814814815,179
+1213887428271951714,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,311.07,78,False,13,24263.46,False,True,1.0,3.314814814814815,179
+23464005,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,227.19,114,False,19,25899.66,False,True,1.0,3.314814814814815,179
+1266561574228256384,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,113.7,248,False,4,28197.6,False,True,31.0,3.314814814814815,179
+1417442929010334380,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,310.34,138,False,23,42826.92,False,True,1.0,3.314814814814815,179
+1313194440169054391,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,249.24,186,False,31,46358.64,False,True,1.0,3.314814814814815,179
+1221143464298011347,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,2,337.38,144,False,24,48582.72,False,True,1.0,3.314814814814815,179
+633989435084869754,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,1,4,242.96,255,True,22,61954.8,True,True,31.0,3.314814814814815,179
+598017411704000488,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,238.3,126,False,21,30025.800000000003,False,True,2.0,3.314814814814815,179
+1221188715058707174,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,198.66,216,False,36,42910.56,False,True,1.0,3.314814814814815,179
+50329912,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,291.7,198,False,33,57756.6,False,True,2.0,3.314814814814815,179
+38104114,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,309.55,210,False,35,65005.5,False,True,2.0,3.314814814814815,179
+33277348,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,2,4,484.85,186,False,31,90182.1,False,True,1.0,3.314814814814815,179
+51987731,"Dupont Circle, Connecticut Avenue/K Street",Entire home/apt,3,6,477.67,246,False,41,117506.82,False,True,1.0,3.314814814814815,179
+1152419648960344663,"Dupont Circle, Connecticut Avenue/K Street",Private room,0,2,119.4,40,False,4,4776.0,False,False,5.0,3.25,65
+20253006,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,2,185.92,30,False,5,5577.599999999999,False,False,3.0,3.25,65
+1290655144975332342,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,2,136.4,66,False,11,9002.4,False,False,1.0,3.25,65
+1750114465967133587,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,3,211.0,54,False,9,11394.0,False,False,1.0,3.25,65
+35068620,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,2,276.0,54,False,9,14904.0,False,False,1.0,3.25,65
+1495792510098312759,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,2,226.0,126,False,21,28476.0,False,False,1.0,3.25,65
+1224663854751510265,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,1,2,191.0,192,False,32,36672.0,False,False,1.0,3.25,65
+1225687706682698568,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,1,2,190.0,204,False,34,38760.0,False,False,1.0,3.25,65
+1224611355523916283,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,1,2,175.0,255,True,58,44625.0,True,False,1.0,3.25,65
+1531564129031502272,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,4,215.0,216,False,36,46440.0,False,False,1.0,3.25,65
+1225686237617380710,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,1,2,192.0,255,True,52,48960.0,True,False,1.0,3.25,65
+1632895853542161379,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,3,203.15,255,True,50,51803.25,True,False,,3.25,65
+1632895854119667912,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,4,203.15,255,True,50,51803.25,True,False,,3.25,65
+1225686090353625591,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,1,4,227.0,240,False,40,54480.0,False,False,1.0,3.25,65
+1632895853407032230,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,3,228.65,255,True,50,58305.75,True,False,,3.25,65
+1588002615151451674,"Dupont Circle, Connecticut Avenue/K Street",Private room,6,12,1024.481899999999,48,False,8,49175.13119999997,False,False,1.0,3.25,65
+18598439,"Dupont Circle, Connecticut Avenue/K Street",Private room,0,2,224.09,255,True,52,57142.95,True,True,1.0,3.25,65
+1472642389626734162,"Dupont Circle, Connecticut Avenue/K Street",Private room,1,2,448.0,18,False,3,8064.0,False,True,3.0,3.25,65
+26805068,"Dupont Circle, Connecticut Avenue/K Street",Hotel room,2,4,523.71,42,False,3,21995.82,False,True,7.0,3.25,65
+1472643685799681573,"Dupont Circle, Connecticut Avenue/K Street",Private room,2,4,415.45,255,True,83,72993.23999999996,True,True,3.0,3.25,65
+15128321,"Eastland Gardens, Kenilworth",Entire home/apt,1,3,148.33,114,False,19,16909.620000000003,False,False,3.0,1.0,4
+1589421806663890429,"Eastland Gardens, Kenilworth",Entire home/apt,3,7,277.53,120,False,20,33303.6,False,False,3.0,1.0,4
+33768875,"Eastland Gardens, Kenilworth",Entire home/apt,4,10,262.5,144,False,24,37800.0,False,False,2.0,1.0,4
+1572548932592569761,"Eastland Gardens, Kenilworth",Entire home/apt,5,10,488.0,192,False,32,93696.0,False,False,1.0,1.0,4
+52753789,"Eastland Gardens, Kenilworth",Private room,1,1,38.05,186,False,3,7077.299999999999,False,False,31.0,1.0,1
+24493324,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,0,2,177.5,36,False,6,6390.0,False,False,2.0,3.341463414634146,274
+569773191639130627,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,0,3,149.0,162,False,27,24138.0,False,False,2.0,3.341463414634146,274
+39096388,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,120.0,18,False,3,2160.0,False,False,2.0,3.341463414634146,274
+1293818054442632352,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,248.5,18,False,3,4473.0,False,False,1.0,3.341463414634146,274
+1035002510988648718,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,178.0,30,False,5,5340.0,False,False,2.0,3.341463414634146,274
+36971943,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,265.0,24,False,4,6360.0,False,False,3.0,3.341463414634146,274
+43609547,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,200.5,36,False,6,7218.0,False,False,2.0,3.341463414634146,274
+1300868949193556085,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,211.0,42,False,7,8862.0,False,False,2.0,3.341463414634146,274
+699307112492653083,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,170.0,54,False,9,9180.0,False,False,2.0,3.341463414634146,274
+25126483,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,125.5,84,False,14,10542.0,False,False,2.0,3.341463414634146,274
+1150328054792172488,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,190.0,66,False,11,12540.0,False,False,2.0,3.341463414634146,274
+4730309,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,277.0,48,False,8,13296.0,False,False,1.0,3.341463414634146,274
+22375645,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,200.0,72,False,12,14400.0,False,False,3.0,3.341463414634146,274
+39362231,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,129.0,120,False,20,15480.0,False,False,1.0,3.341463414634146,274
+48681132,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,178.33,96,False,16,17119.68,False,False,3.0,3.341463414634146,274
+1529781164653059809,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,182.59,102,False,17,18624.18,False,False,2.0,3.341463414634146,274
+25378845,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,109.77,186,False,3,20417.22,False,False,31.0,3.341463414634146,274
+11553692,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,191.32,114,False,19,21810.48,False,False,2.0,3.341463414634146,274
+903620194560057993,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,220.5,102,False,17,22491.0,False,False,2.0,3.341463414634146,274
+1027009279326583946,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,260.0,90,False,15,23400.0,False,False,1.0,3.341463414634146,274
+53784315,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,166.0,150,False,25,24900.0,False,False,1.0,3.341463414634146,274
+599389080261179418,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,128.0,204,False,34,26112.0,False,False,1.0,3.341463414634146,274
+20535352,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,151.43,180,False,9,27257.4,False,False,10.0,3.341463414634146,274
+1273176462917913962,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,183.5,168,False,28,30828.0,False,False,2.0,3.341463414634146,274
+29856280,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,183.5,180,False,30,33030.0,False,False,2.0,3.341463414634146,274
+1206580460105880037,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,143.17,255,True,6,36508.35,True,False,30.0,3.341463414634146,274
+1240700110024615838,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,201.0,198,False,33,39798.0,False,False,2.0,3.341463414634146,274
+52093234,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,171.5,255,True,43,43732.5,True,False,2.0,3.341463414634146,274
+1324661321484369442,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,195.0,234,False,39,45630.0,False,False,1.0,3.341463414634146,274
+52683903,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,195.0,246,False,41,47970.0,False,False,1.0,3.341463414634146,274
+26156490,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,195.0,255,True,69,49725.0,True,False,1.0,3.341463414634146,274
+935668382499184883,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,206.6,255,True,56,52683.0,True,False,2.0,3.341463414634146,274
+1069628946740685962,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,2,240.0,255,True,51,61200.0,True,False,1.0,3.341463414634146,274
+1318283531668085007,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,3,281.0,255,True,50,71655.0,True,False,1.0,3.341463414634146,274
+21177503,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,5,174.5,48,False,8,8376.0,False,False,2.0,3.341463414634146,274
+1055413838685738171,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,445.2,24,False,4,10684.8,False,False,1.0,3.341463414634146,274
+580267401769312007,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,235.75,48,False,6,11316.0,False,False,4.0,3.341463414634146,274
+733836944622675918,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,416.0,42,False,7,17472.0,False,False,1.0,3.341463414634146,274
+53377085,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,153.0,120,False,20,18360.0,False,False,2.0,3.341463414634146,274
+1368098253634526869,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,3,171.67,120,False,20,20600.4,False,False,3.0,3.341463414634146,274
+942139518839033372,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,5,238.0,96,False,16,22848.0,False,False,2.0,3.341463414634146,274
+1392104950951053115,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,6,240.67,102,False,17,24548.34,False,False,3.0,3.341463414634146,274
+8499403,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,213.9,126,False,21,26951.4,False,False,1.0,3.341463414634146,274
+677505276715372899,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,218.0,126,False,21,27468.0,False,False,2.0,3.341463414634146,274
+552211592329822241,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,154.0,186,False,31,28644.0,False,False,1.0,3.341463414634146,274
+51440218,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,167.5,198,False,33,33165.0,False,False,2.0,3.341463414634146,274
+1419846292067701201,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,161.0,255,True,74,41055.0,True,False,2.0,3.341463414634146,274
+952944326577724046,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,8,266.32,168,False,28,44741.76,False,False,1.0,3.341463414634146,274
+1242191509836246707,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,235.5,210,False,35,49455.0,False,False,2.0,3.341463414634146,274
+1080685876913164683,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,6,268.0,198,False,33,53064.0,False,False,2.0,3.341463414634146,274
+12851881,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,413.0,138,False,23,56994.0,False,False,1.0,3.341463414634146,274
+917424428873467071,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,238.5,252,False,42,60102.0,False,False,2.0,3.341463414634146,274
+1269648796115209269,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,301.0,255,True,45,76755.0,True,False,1.0,3.341463414634146,274
+1283561601009024124,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,272.67,42,False,7,11452.14,False,False,3.0,3.341463414634146,274
+1457371437982136839,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,515.0,30,False,5,15450.0,False,False,1.0,3.341463414634146,274
+1253821913720815676,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,349.95,60,False,10,20997.0,False,False,1.0,3.341463414634146,274
+1223956919324691548,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,870.5,30,False,5,26115.0,False,False,2.0,3.341463414634146,274
+32071127,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,450.5,66,False,11,29733.0,False,False,1.0,3.341463414634146,274
+1502150175590883000,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,485.0,84,False,14,40740.0,False,False,1.0,3.341463414634146,274
+1608163422484995538,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,405.0,138,False,23,55890.0,False,False,2.0,3.341463414634146,274
+1387942002656882224,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,298.2,222,False,37,66200.4,False,False,2.0,3.341463414634146,274
+29487264,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,315.0,255,True,48,80325.0,True,False,1.0,3.341463414634146,274
+784951683606392861,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,7,368.0,255,True,47,93840.0,True,False,1.0,3.341463414634146,274
+1117320584363210658,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,435.0,255,True,43,110925.0,True,False,1.0,3.341463414634146,274
+1497490729064428354,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,8,536.85,228,False,38,122401.8,False,False,2.0,3.341463414634146,274
+1302226768436488887,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,673.8,204,False,34,137455.19999999998,False,False,1.0,3.341463414634146,274
+51484185,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,14,812.67,18,False,3,14628.06,False,False,3.0,3.341463414634146,274
+658024862673549775,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,8,372.5,66,False,11,24585.0,False,False,2.0,3.341463414634146,274
+15843220,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,9,767.82,48,False,8,36855.36,False,False,1.0,3.341463414634146,274
+1547952054137647354,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,11,382.0,162,False,27,61884.0,False,False,2.0,3.341463414634146,274
+1480615054315439662,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,8,441.0,192,False,32,84672.0,False,False,1.0,3.341463414634146,274
+1341490295187988617,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,4,8,1081.8500000000004,144,False,24,142933.62060000002,False,False,2.0,3.341463414634146,274
+46604590,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,5,10,629.78,54,False,9,34008.119999999995,False,False,1.0,3.341463414634146,274
+1570746595795865613,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,5,14,558.7,210,False,35,117327.0,False,False,2.0,3.341463414634146,274
+1420643669824727479,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,7,16,736.0,72,False,12,52992.0,False,False,1.0,3.341463414634146,274
+31189367,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,5,257.5,30,False,5,7725.0,False,True,2.0,3.341463414634146,274
+38671339,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,1,4,269.87,114,False,19,30765.18,False,True,2.0,3.341463414634146,274
+49588882,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,236.0,90,False,15,21240.0,False,True,2.0,3.341463414634146,274
+1016709145647422128,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,2,4,203.0,204,False,34,41412.0,False,True,1.0,3.341463414634146,274
+1332080456297697018,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,234.0,210,False,35,49140.0,False,True,1.0,3.341463414634146,274
+1333663888263924236,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,3,6,290.0,255,True,50,73950.0,True,True,1.0,3.341463414634146,274
+54369778,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Entire home/apt,5,10,577.0,18,False,3,10386.0,False,True,1.0,3.341463414634146,274
+53463244,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,0,2,93.92,144,False,24,13524.48,False,False,1.0,3.230769230769231,42
+3821808,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,200.0,18,False,3,3600.0,False,False,1.0,3.230769230769231,42
+1457365004400525898,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,177.41,30,False,5,5322.3,False,False,2.0,3.230769230769231,42
+1109314378726278025,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,1,98.0,90,False,15,8820.0,False,False,1.0,3.230769230769231,42
+762548307248475756,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,98.5,126,False,21,12411.0,False,False,2.0,3.230769230769231,42
+19207688,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,165.0,78,False,13,12870.0,False,False,1.0,3.230769230769231,42
+648625114894421669,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,1,73.0,180,False,30,13140.0,False,False,1.0,3.230769230769231,42
+852467007908174033,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,55.45,255,True,5,14139.75,True,False,31.0,3.230769230769231,42
+1457369385475774573,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,3,200.0,90,False,15,18000.0,False,False,2.0,3.230769230769231,42
+648627201583506205,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,80.0,255,True,43,20400.0,True,False,1.0,3.230769230769231,42
+13038149,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,108.5,255,True,53,27667.5,True,False,1.0,3.230769230769231,42
+524576065105705871,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,3,167.75,255,True,50,42776.25,True,False,1.0,3.230769230769231,42
+13244329,"Edgewood, Bloomingdale, Truxton Circle, Eckington",Private room,1,2,180.0,252,False,42,45360.0,False,False,1.0,3.230769230769231,42
+1634094013711829437,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,1,2,120.0,24,False,4,2880.0,False,False,2.0,1.625,13
+1362241602751552917,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,1,2,112.17,36,False,6,4038.12,False,False,3.0,1.625,13
+833334824948777840,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,1,2,136.0,60,False,10,8160.0,False,False,2.0,1.625,13
+1477837979296788097,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,1,2,194.8,162,False,27,31557.6,False,False,1.0,1.625,13
+35251578,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,2,6,192.5,54,False,9,10395.0,False,False,2.0,1.625,13
+1383886154184980580,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,3,6,192.5,198,False,33,38115.0,False,False,2.0,1.625,13
+36426562,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,4,12,293.0,24,False,4,7032.0,False,False,2.0,1.625,13
+1150930130173309170,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Entire home/apt,6,14,800.0,72,False,12,57600.0,False,False,1.0,1.625,13
+1476997054719947556,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Private room,1,2,173.0,102,False,17,17646.0,False,False,1.0,1.0,2
+1107461660018312394,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",Private room,1,2,105.51,174,False,29,18358.74,False,False,1.0,1.0,2
+740517356651847571,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,0,2,85.55,255,True,5,21815.25,True,False,31.0,2.875,23
+691407010648484935,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,2,72.67,54,False,9,3924.18,False,False,3.0,2.875,23
+650781332878551278,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,3,246.67,48,False,8,11840.16,False,False,3.0,2.875,23
+795215883064586701,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,2,218.0,78,False,13,17004.0,False,False,2.0,2.875,23
+1180068635623402520,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,2,129.37,255,True,7,32989.35,True,False,25.0,2.875,23
+51507369,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,3,162.9,255,True,47,41539.5,True,False,2.0,2.875,23
+20617856,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,1,3,191.0,234,False,39,44694.0,False,False,2.0,2.875,23
+941398814495828540,"Friendship Heights, American University Park, Tenleytown",Entire home/apt,3,6,778.0,72,False,12,56016.0,False,False,1.0,2.875,23
+634061018005891897,"Friendship Heights, American University Park, Tenleytown",Private room,1,2,140.67,84,False,14,11816.28,False,False,3.0,1.125,9
+15962871,"Friendship Heights, American University Park, Tenleytown",Private room,1,2,103.0,156,False,26,16068.0,False,False,1.0,1.125,9
+15790449,"Friendship Heights, American University Park, Tenleytown",Private room,1,2,129.0,144,False,24,18576.0,False,False,2.0,1.125,9
+15820983,"Friendship Heights, American University Park, Tenleytown",Private room,1,1,129.87,180,False,30,23376.6,False,False,2.0,1.125,9
+16753438,"Friendship Heights, American University Park, Tenleytown",Private room,1,2,126.0,252,False,42,31752.0,False,False,1.0,1.125,9
+1705892473356964172,"Friendship Heights, American University Park, Tenleytown",Private room,1,4,164.0,255,True,49,41820.0,True,False,1.0,1.125,9
+828497,"Friendship Heights, American University Park, Tenleytown",Private room,3,6,195.0,30,False,5,5850.0,False,False,3.0,1.125,9
+1135187848649741349,"Friendship Heights, American University Park, Tenleytown",Hotel room,1,5,204.0,18,False,3,3672.0,False,True,1.0,1.125,9
+1725469820704930404,"Georgetown, Burleith/Hillandale",Entire home/apt,0,3,239.0,18,False,3,4302.0,False,False,1.0,3.3,99
+925414286215370500,"Georgetown, Burleith/Hillandale",Entire home/apt,0,2,151.0,255,True,89,38505.0,True,False,1.0,3.3,99
+703403859685391523,"Georgetown, Burleith/Hillandale",Entire home/apt,0,3,285.24,216,False,36,61611.84,False,False,2.0,3.3,99
+17303429,"Georgetown, Burleith/Hillandale",Entire home/apt,1,1,163.33,48,False,8,7839.84,False,False,3.0,3.3,99
+1529874944721991986,"Georgetown, Burleith/Hillandale",Entire home/apt,1,2,621.5,42,False,7,26103.0,False,False,2.0,3.3,99
+4325533,"Georgetown, Burleith/Hillandale",Entire home/apt,1,3,198.67,162,False,27,32184.54,False,False,1.0,3.3,99
+5318112,"Georgetown, Burleith/Hillandale",Entire home/apt,1,4,145.0,255,True,57,36975.0,True,False,1.0,3.3,99
+51667347,"Georgetown, Burleith/Hillandale",Entire home/apt,1,2,213.5,204,False,34,43554.0,False,False,2.0,3.3,99
+9973170,"Georgetown, Burleith/Hillandale",Entire home/apt,1,4,179.0,255,True,51,45645.0,True,False,1.0,3.3,99
+925939921121357388,"Georgetown, Burleith/Hillandale",Entire home/apt,1,2,273.0,204,False,34,55692.0,False,False,1.0,3.3,99
+33830823,"Georgetown, Burleith/Hillandale",Entire home/apt,1,3,261.0,255,True,56,66555.0,True,False,1.0,3.3,99
+785365689895227071,"Georgetown, Burleith/Hillandale",Entire home/apt,1,3,365.0,255,True,44,93075.0,True,False,1.0,3.3,99
+2685655,"Georgetown, Burleith/Hillandale",Entire home/apt,2,6,338.75,32,False,4,10840.0,False,False,4.0,3.3,99
+1708750661374518339,"Georgetown, Burleith/Hillandale",Entire home/apt,2,6,443.0,48,False,8,21264.0,False,False,2.0,3.3,99
+30325364,"Georgetown, Burleith/Hillandale",Entire home/apt,2,4,242.0,132,False,22,31944.0,False,False,2.0,3.3,99
+18811872,"Georgetown, Burleith/Hillandale",Entire home/apt,2,3,426.7,136,False,17,58031.2,False,False,4.0,3.3,99
+1142086417963376189,"Georgetown, Burleith/Hillandale",Entire home/apt,2,5,312.0,216,False,36,67392.0,False,False,2.0,3.3,99
+1023810222168236606,"Georgetown, Burleith/Hillandale",Entire home/apt,2,5,301.0,255,True,67,76755.0,True,False,1.0,3.3,99
+1334261269343441566,"Georgetown, Burleith/Hillandale",Entire home/apt,2,4,437.5,222,False,37,97125.0,False,False,2.0,3.3,99
+1690925135651909760,"Georgetown, Burleith/Hillandale",Entire home/apt,3,5,375.25,30,False,5,11257.5,False,False,1.0,3.3,99
+1571775877560068457,"Georgetown, Burleith/Hillandale",Entire home/apt,3,7,211.33,255,True,7,53889.15,True,False,30.0,3.3,99
+1375093616903905712,"Georgetown, Burleith/Hillandale",Entire home/apt,3,6,361.0,255,True,52,92055.0,True,False,1.0,3.3,99
+54353625,"Georgetown, Burleith/Hillandale",Entire home/apt,3,8,505.0,255,True,58,128775.0,True,False,1.0,3.3,99
+962927491488199589,"Georgetown, Burleith/Hillandale",Entire home/apt,4,7,1081.8500000000004,78,False,13,84384.30000000003,False,False,1.0,3.3,99
+1725437110682877741,"Georgetown, Burleith/Hillandale",Entire home/apt,0,3,244.65,18,False,3,4403.7,False,True,1.0,3.3,99
+37838983,"Georgetown, Burleith/Hillandale",Entire home/apt,1,3,107.04,255,True,15,27295.2,True,True,31.0,3.3,99
+578222370187502707,"Georgetown, Burleith/Hillandale",Entire home/apt,2,6,321.0,66,False,11,21186.0,False,True,2.0,3.3,99
+52382433,"Georgetown, Burleith/Hillandale",Entire home/apt,2,5,286.0,216,False,36,61776.0,False,True,1.0,3.3,99
+45076792,"Georgetown, Burleith/Hillandale",Entire home/apt,3,8,517.0,30,False,5,15510.0,False,True,1.0,3.3,99
+53556450,"Georgetown, Burleith/Hillandale",Entire home/apt,6,12,642.0,216,False,36,138672.0,False,True,1.0,3.3,99
+16285598,"Georgetown, Burleith/Hillandale",Private room,1,2,230.0,18,False,3,4140.0,False,False,1.0,1.875,15
+16218083,"Georgetown, Burleith/Hillandale",Private room,1,2,252.0,24,False,4,6048.0,False,False,1.0,1.875,15
+16286156,"Georgetown, Burleith/Hillandale",Private room,1,2,356.0,24,False,4,8544.0,False,False,1.0,1.875,15
+16285366,"Georgetown, Burleith/Hillandale",Private room,1,2,209.0,54,False,9,11286.0,False,False,1.0,1.875,15
+1634931411369577037,"Georgetown, Burleith/Hillandale",Private room,1,2,347.6,36,False,6,12513.6,False,False,,1.875,15
+50499105,"Georgetown, Burleith/Hillandale",Private room,1,2,108.42,198,False,33,21467.16,False,False,1.0,1.875,15
+50545033,"Georgetown, Burleith/Hillandale",Private room,1,1,88.0,255,True,58,22440.0,True,False,1.0,1.875,15
+17784595,"Georgetown, Burleith/Hillandale",Private room,1,2,155.8,255,True,27,39729.0,True,False,5.0,1.875,15
+51408229,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,0,4,145.5,210,False,35,30555.0,False,False,1.0,1.375,11
+48933860,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,0,4,192.48,168,False,28,32336.64,False,False,2.0,1.375,11
+1617726795368888724,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,1,4,233.06,84,False,14,19577.04,False,False,1.0,1.375,11
+1545253590127937668,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,1,4,280.0,90,False,15,25200.0,False,False,2.0,1.375,11
+37889765,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,1,2,169.5,216,False,36,36612.0,False,False,2.0,1.375,11
+816137803342655346,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,2,4,223.5,120,False,20,26820.0,False,False,2.0,1.375,11
+7319641,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,4,8,430.0,96,False,16,41280.0,False,False,2.0,1.375,11
+8967165,"Hawthorne, Barnaby Woods, Chevy Chase",Entire home/apt,2,6,219.0,132,False,22,28908.0,False,True,2.0,1.375,11
+46938999,Historic Anacostia,Entire home/apt,1,2,112.0,56,False,7,6272.0,False,False,4.0,2.25,18
+1434839150987641181,Historic Anacostia,Entire home/apt,1,2,134.0,216,False,36,28944.0,False,False,2.0,2.25,18
+44389677,Historic Anacostia,Entire home/apt,1,2,180.0,210,False,35,37800.0,False,False,2.0,2.25,18
+1574328762253077552,Historic Anacostia,Entire home/apt,2,4,157.0,30,False,5,4710.0,False,False,2.0,2.25,18
+1136920270329232304,Historic Anacostia,Entire home/apt,2,5,147.0,72,False,12,10584.0,False,False,2.0,2.25,18
+1470596978790717695,Historic Anacostia,Entire home/apt,3,6,119.33,108,False,18,12887.64,False,False,2.0,2.25,18
+1242641230788051232,Historic Anacostia,Entire home/apt,3,8,272.0,216,False,36,58752.0,False,False,1.0,2.25,18
+47124147,Historic Anacostia,Entire home/apt,4,8,567.0,96,False,16,54432.0,False,False,2.0,2.25,18
+174808,Historic Anacostia,Private room,1,2,110.16,24,False,4,2643.84,False,False,2.0,1.125,9
+37060825,Historic Anacostia,Private room,1,2,45.3,138,False,23,6251.4,False,False,3.0,1.125,9
+37062219,Historic Anacostia,Private room,1,2,59.67,156,False,26,9308.52,False,False,2.0,1.125,9
+50772751,Historic Anacostia,Private room,1,2,260.0,36,False,6,9360.0,False,False,1.0,1.125,9
+40466314,Historic Anacostia,Private room,1,2,110.0,102,False,17,11220.0,False,False,1.0,1.125,9
+1514047117718770862,Historic Anacostia,Private room,1,3,114.4,102,False,17,11668.8,False,False,1.0,1.125,9
+1245627470118186178,Historic Anacostia,Private room,1,1,55.1,255,True,5,14050.5,True,False,30.0,1.125,9
+720449168088985754,Historic Anacostia,Private room,1,2,121.0,228,False,38,27588.0,False,False,1.0,1.125,9
+800076,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,0,2,337.0,24,False,4,8088.0,False,False,1.0,3.3714285714285714,118
+1480499399626587560,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,0,4,237.0,255,True,81,60435.0,True,False,1.0,3.3714285714285714,118
+1656179072798882949,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,4,161.67,54,False,9,8730.179999999998,False,False,3.0,3.3714285714285714,118
+54118428,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,243.5,54,False,9,13149.0,False,False,2.0,3.3714285714285714,118
+26337047,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,3,95.27,186,False,3,17720.219999999998,False,False,31.0,3.3714285714285714,118
+51650632,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,4,281.0,72,False,12,20232.0,False,False,2.0,3.3714285714285714,118
+954740917423495097,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,268.5,102,False,17,27387.0,False,False,2.0,3.3714285714285714,118
+1506503895211167980,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,165.4,180,False,30,29772.0,False,False,2.0,3.3714285714285714,118
+549194272727807460,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,4,185.0,222,False,37,41070.0,False,False,1.0,3.3714285714285714,118
+16528623,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,3,167.89,255,True,7,42811.95,True,False,31.0,3.3714285714285714,118
+11362332,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,194.14,255,True,70,49505.7,True,False,2.0,3.3714285714285714,118
+826886741911360830,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,3,228.0,255,True,44,58140.0,True,False,1.0,3.3714285714285714,118
+1579883214841594409,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,5,170.0,42,False,7,7140.0,False,False,2.0,3.3714285714285714,118
+1338528169911545894,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,241.33,54,False,9,13031.820000000002,False,False,3.0,3.3714285714285714,118
+1104477249126590337,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,745.0,24,False,4,17880.0,False,False,1.0,3.3714285714285714,118
+1420640319419968182,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,8,251.0,90,False,15,22590.0,False,False,1.0,3.3714285714285714,118
+38409028,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,211.0,174,False,29,36714.0,False,False,2.0,3.3714285714285714,118
+1494463823908703323,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,178.0,255,True,54,45390.0,True,False,1.0,3.3714285714285714,118
+22554380,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,6,250.0,255,True,47,63750.0,True,False,2.0,3.3714285714285714,118
+1364540629230341296,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,6,275.0,246,False,41,67650.0,False,False,2.0,3.3714285714285714,118
+36037856,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,523.0,255,True,52,133365.0,True,False,1.0,3.3714285714285714,118
+6331663,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,3,7,401.33,60,False,10,24079.8,False,False,2.0,3.3714285714285714,118
+980419685409570050,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,3,6,555.5,114,False,19,63327.0,False,False,1.0,3.3714285714285714,118
+15373088,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,3,6,441.38,216,False,36,95338.08,False,False,1.0,3.3714285714285714,118
+1241414219442775328,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,6,16,964.75,255,True,13,142933.62060000002,True,False,31.0,3.3714285714285714,118
+23304101,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,204.5,84,False,14,17178.0,False,True,2.0,3.3714285714285714,118
+876123918424765976,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,277.33,138,False,23,38271.54,False,True,1.0,3.3714285714285714,118
+44485729,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,1,2,358.84,252,False,42,90427.68,False,True,2.0,3.3714285714285714,118
+48934429,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,414.66,42,False,7,17415.72,False,True,1.0,3.3714285714285714,118
+1588675185187105179,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,281.0,150,False,25,42150.0,False,True,1.0,3.3714285714285714,118
+876082674680134596,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,304.67,162,False,27,49356.54,False,True,1.0,3.3714285714285714,118
+648028696759302142,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,5,426.06,126,False,21,53683.56,False,True,1.0,3.3714285714285714,118
+876059853602705687,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,2,4,279.0,222,False,37,61938.0,False,True,1.0,3.3714285714285714,118
+50282392,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,3,4,304.33,42,False,7,12781.86,False,True,3.0,3.3714285714285714,118
+1165383515357004120,"Howard University, Le Droit Park, Cardozo/Shaw",Entire home/apt,5,10,510.36,114,False,19,58181.04,False,True,2.0,3.3714285714285714,118
+840951323844971001,"Howard University, Le Droit Park, Cardozo/Shaw",Shared room,1,1,62.0,18,False,3,1116.0,False,False,1.0,1.75,14
+26467861,"Howard University, Le Droit Park, Cardozo/Shaw",Private room,1,1,208.0,18,False,3,3744.0,False,False,3.0,1.75,14
+840946869841249561,"Howard University, Le Droit Park, Cardozo/Shaw",Shared room,1,1,83.0,60,False,10,4980.0,False,False,1.0,1.75,14
+42765421,"Howard University, Le Droit Park, Cardozo/Shaw",Private room,1,1,166.4,40,False,4,6656.0,False,False,5.0,1.75,14
+840943195846923973,"Howard University, Le Droit Park, Cardozo/Shaw",Private room,1,2,124.0,72,False,12,8928.0,False,False,1.0,1.75,14
+840948102362944175,"Howard University, Le Droit Park, Cardozo/Shaw",Shared room,1,1,89.0,216,False,36,19224.0,False,False,1.0,1.75,14
+6389428,"Howard University, Le Droit Park, Cardozo/Shaw",Private room,1,1,178.0,186,False,31,33108.0,False,False,1.0,1.75,14
+17956698,"Howard University, Le Droit Park, Cardozo/Shaw",Private room,1,2,164.0,255,True,104,41820.0,True,False,1.0,1.75,14
+50677369,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,0,2,128.0,72,False,12,9216.0,False,False,3.0,3.34,167
+1192457480218134398,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,0,2,212.5,150,False,25,31875.0,False,False,2.0,3.34,167
+1663394245129273902,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,145.0,30,False,5,4350.0,False,False,2.0,3.34,167
+1397228726259162015,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,181.0,30,False,5,5430.0,False,False,2.0,3.34,167
+1513121958574239229,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,144.1,66,False,11,9510.6,False,False,2.0,3.34,167
+1453976038539152958,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,3,220.0,54,False,9,11880.0,False,False,1.0,3.34,167
+1037013364959105443,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,79.94,186,False,3,14868.84,False,False,31.0,3.34,167
+1227784604343041235,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,3,148.11,114,False,19,16884.54,False,False,2.0,3.34,167
+1381318752246652670,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,161.0,126,False,21,20286.0,False,False,2.0,3.34,167
+1479304639490887216,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,126.58,186,False,3,23543.88,False,False,31.0,3.34,167
+45676408,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,3,205.0,138,False,23,28290.0,False,False,1.0,3.34,167
+1684194885002565993,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,264.37,114,False,19,30138.18,False,False,1.0,3.34,167
+1428493421348465493,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,134.78,255,True,24,34368.9,True,False,31.0,3.34,167
+1597517054238103697,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,4,226.0,162,False,27,36612.0,False,False,1.0,3.34,167
+1410320937473046402,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,2,171.53,255,True,14,43740.15,True,False,15.0,3.34,167
+1432690973820076631,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,213.5,24,False,4,5124.0,False,False,2.0,3.34,167
+1700771532153657017,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,5,210.0,30,False,5,6300.0,False,False,1.0,3.34,167
+1411056173782655136,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,3,224.33,36,False,6,8075.88,False,False,3.0,3.34,167
+1003856857504667354,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,181.5,78,False,13,14157.0,False,False,2.0,3.34,167
+728346485754606443,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,218.5,72,False,12,15732.0,False,False,1.0,3.34,167
+1690903330651721908,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,260.0,66,False,11,17160.0,False,False,1.0,3.34,167
+1690906010605479169,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,6,260.0,72,False,12,18720.0,False,False,1.0,3.34,167
+1542153662700747941,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,112.09,255,True,7,28582.95,True,False,31.0,3.34,167
+1489828592678286393,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,167.44,186,False,3,31143.84,False,False,31.0,3.34,167
+1324176175835023372,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,3,236.0,138,False,23,32568.0,False,False,1.0,3.34,167
+1032155421231288034,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,301.0,126,False,21,37926.0,False,False,1.0,3.34,167
+45885266,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,8,195.0,204,False,34,39780.0,False,False,2.0,3.34,167
+1268363281386176449,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,5,160.95,255,True,12,41042.25,True,False,31.0,3.34,167
+996511192082907073,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,5,184.5,234,False,39,43173.0,False,False,1.0,3.34,167
+705262593266969561,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,243.0,198,False,33,48114.0,False,False,1.0,3.34,167
+1480356254530904377,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,285.0,234,False,39,66690.0,False,False,1.0,3.34,167
+1164816366469960642,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,419.74,198,False,33,83108.52,False,False,1.0,3.34,167
+4565447,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,8,353.0,36,False,6,12708.0,False,False,3.0,3.34,167
+661099558681860968,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,5,413.0,72,False,12,29736.0,False,False,2.0,3.34,167
+1639493497584389561,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,6,631.93,66,False,11,41707.38,False,False,1.0,3.34,167
+1485797696190978788,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,7,299.0,210,False,35,62790.0,False,False,2.0,3.34,167
+952644326300872862,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,10,382.0,198,False,33,75636.0,False,False,1.0,3.34,167
+950695414096097296,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,10,406.0,246,False,41,99876.0,False,False,1.0,3.34,167
+1736415569939152832,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,4,12,260.15,24,False,4,6243.599999999999,False,False,1.0,3.34,167
+1695321592068883910,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,4,12,315.0,60,False,10,18900.0,False,False,2.0,3.34,167
+1070519660267549473,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,4,9,452.5,216,False,36,97740.0,False,False,1.0,3.34,167
+1155117753527890187,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,5,11,442.5,174,False,29,76995.0,False,False,2.0,3.34,167
+841478602649989643,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,1,3,140.5,60,False,10,8430.0,False,True,2.0,3.34,167
+1705876486862519014,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,208.0,108,False,18,22464.0,False,True,1.0,3.34,167
+1024180867055967598,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,185.0,180,False,30,33300.0,False,True,1.0,3.34,167
+1039799609497259530,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,242.0,174,False,29,42108.0,False,True,1.0,3.34,167
+1328566864673351080,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,2,4,243.0,234,False,39,56862.0,False,True,1.0,3.34,167
+1281242783346906438,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,3,8,328.0,60,False,10,19680.0,False,True,2.0,3.34,167
+965106152332867284,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,4,10,386.0,42,False,7,16212.0,False,True,1.0,3.34,167
+1642753318956113288,"Ivy City, Arboretum, Trinidad, Carver Langston",Entire home/apt,4,8,354.0,180,False,30,63720.0,False,True,1.0,3.34,167
+1747790188470639586,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,2,108.95,18,False,3,1961.1,False,False,1.0,1.75,14
+1755226987418345385,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,2,88.2,30,False,5,2646.0,False,False,1.0,1.75,14
+867666915383121802,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,1,150.0,32,False,4,4800.0,False,False,4.0,1.75,14
+1685070437674797511,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,2,127.0,54,False,9,6858.0,False,False,1.0,1.75,14
+829685023665161801,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,2,127.0,60,False,10,7620.0,False,False,2.0,1.75,14
+1705243474680349285,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,4,143.65,84,False,14,12066.6,False,False,,1.75,14
+1718198473518347270,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,1,2,73.0,180,False,30,13140.0,False,False,1.0,1.75,14
+1480795572818554488,"Ivy City, Arboretum, Trinidad, Carver Langston",Private room,2,1,50.89,255,True,21,12976.95,True,False,31.0,1.75,14
+8206306,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,0,3,114.5,40,False,5,4580.0,False,False,4.0,3.3043478260869565,76
+17141233,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,0,2,106.0,255,True,45,27030.0,True,False,1.0,3.3043478260869565,76
+32941255,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,0,2,170.0,255,True,51,43350.0,True,False,1.0,3.3043478260869565,76
+1448475991006151558,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,4,322.0,36,False,6,11592.0,False,False,2.0,3.3043478260869565,76
+10311634,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,2,329.0,48,False,8,15792.0,False,False,1.0,3.3043478260869565,76
+33070034,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,4,123.0,162,False,27,19926.0,False,False,1.0,3.3043478260869565,76
+51000373,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,2,197.5,126,False,21,24885.0,False,False,2.0,3.3043478260869565,76
+25742193,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,2,129.0,210,False,35,27090.0,False,False,1.0,3.3043478260869565,76
+1586240815276060259,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,2,148.0,192,False,32,28416.0,False,False,2.0,3.3043478260869565,76
+28253557,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,2,126.0,255,True,78,32130.0,True,False,1.0,3.3043478260869565,76
+50285306,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,4,129.0,255,True,47,32895.0,True,False,1.0,3.3043478260869565,76
+17733797,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,4,154.5,255,True,45,39397.5,True,False,2.0,3.3043478260869565,76
+1585677229646767829,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,3,187.26,255,True,47,47751.3,True,False,2.0,3.3043478260869565,76
+1570360169514018014,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,1,4,194.0,255,True,53,49470.0,True,False,1.0,3.3043478260869565,76
+1542362174725949668,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,2,5,364.83,36,False,6,13133.88,False,False,1.0,3.3043478260869565,76
+1688105426795961225,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,2,6,306.13,84,False,14,25714.92,False,False,2.0,3.3043478260869565,76
+1682000249407554518,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,2,4,445.9,84,False,14,37455.6,False,False,1.0,3.3043478260869565,76
+1292371854449202666,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,2,4,198.14,255,True,41,50525.7,True,False,31.0,3.3043478260869565,76
+31809354,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,2,6,241.5,255,True,56,61582.5,True,False,2.0,3.3043478260869565,76
+1694493260629500453,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,3,8,336.0,48,False,8,16128.0,False,False,1.0,3.3043478260869565,76
+1634270787720072327,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,3,8,295.0,138,False,23,40710.0,False,False,1.0,3.3043478260869565,76
+1689877152950301346,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,0,4,210.0,18,False,3,3780.0,False,True,1.0,3.3043478260869565,76
+51923187,"Kalorama Heights, Adams Morgan, Lanier Heights",Entire home/apt,3,5,496.0,156,False,26,77376.0,False,True,2.0,3.3043478260869565,76
+43676824,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,0,2,186.5,96,False,16,17904.0,False,False,2.0,2.25,18
+960699118296797208,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,2,160.01,30,False,5,4800.299999999999,False,False,1.0,2.25,18
+1641184,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,1,68.68,186,False,3,12774.48,False,False,31.0,2.25,18
+1340690575065243639,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,2,173.4,174,False,29,30171.6,False,False,,2.25,18
+1650918348269678191,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,2,135.15,255,True,50,34463.25,True,False,,2.25,18
+1689092832092240335,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,2,135.15,255,True,100,34463.25,True,False,,2.25,18
+1004366431278881648,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,1,2,282.0,24,False,4,6768.0,False,True,1.0,2.25,18
+1004409126285976588,"Kalorama Heights, Adams Morgan, Lanier Heights",Private room,2,8,527.0,42,False,7,22134.0,False,True,1.0,2.25,18
+809375587908301106,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,0,2,307.0,42,False,7,12894.0,False,False,1.0,3.3,33
+47011083,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,1,2,126.4,42,False,7,5308.8,False,False,1.0,3.3,33
+1142661282668297561,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,1,2,92.5,108,False,18,9990.0,False,False,2.0,3.3,33
+23625381,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,1,2,129.0,168,False,28,21672.0,False,False,3.0,3.3,33
+29701036,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,1,4,199.81,255,True,49,50951.55,True,False,2.0,3.3,33
+1237855241272259791,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,2,4,143.0,204,False,34,29172.0,False,False,2.0,3.3,33
+5824228,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,2,5,246.0,255,True,44,62730.0,True,False,,3.3,33
+1431197751672790673,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,3,4,235.15,84,False,14,19752.6,False,False,2.0,3.3,33
+1463768869998326666,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,3,6,142.66,255,True,23,36378.3,True,False,31.0,3.3,33
+1447312345588822989,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Entire home/apt,4,8,354.0,222,False,37,78588.0,False,False,2.0,3.3,33
+1096543159320738373,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Private room,1,1,132.5,18,False,3,2385.0,False,False,2.0,1.0,4
+908691669415022744,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Private room,1,2,96.67,36,False,6,3480.12,False,False,3.0,1.0,4
+1295574236601007417,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Private room,1,1,65.5,78,False,13,5109.0,False,False,2.0,1.0,4
+1295312791496235447,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",Private room,1,1,104.0,66,False,11,6864.0,False,False,2.0,1.0,4
+643334037815320809,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,0,2,178.0,78,False,13,13884.0,False,False,1.0,1.875,15
+22907339,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,1,2,129.0,144,False,24,18576.0,False,False,2.0,1.875,15
+835387696346765859,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,2,4,289.0,255,True,66,73695.0,True,False,1.0,1.875,15
+1421160547752196954,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,3,5,84.22,255,True,51,21476.1,True,False,3.0,1.875,15
+16973661,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,3,7,410.0,138,False,23,56580.0,False,False,1.0,1.875,15
+1150915302047327199,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,4,8,629.5,18,False,3,11331.0,False,False,2.0,1.875,15
+1399191788395940222,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,4,8,508.0,138,False,23,70104.0,False,False,1.0,1.875,15
+930146014832752331,"Mayfair, Hillbrook, Mahaning Heights",Entire home/apt,3,10,370.5,18,False,3,6669.0,False,True,2.0,1.875,15
+1423508510101461468,"Near Southeast, Navy Yard",Entire home/apt,1,4,300.0,18,False,3,5400.0,False,False,1.0,3.25,26
+654883122930235250,"Near Southeast, Navy Yard",Entire home/apt,1,2,247.0,162,False,27,40014.0,False,False,1.0,3.25,26
+821648683482386521,"Near Southeast, Navy Yard",Entire home/apt,2,4,370.0,48,False,8,17760.0,False,False,1.0,3.25,26
+1456153081161646093,"Near Southeast, Navy Yard",Entire home/apt,2,6,208.89,120,False,20,25066.8,False,False,2.0,3.25,26
+1455252611015553004,"Near Southeast, Navy Yard",Entire home/apt,2,6,197.74,162,False,27,32033.88,False,False,2.0,3.25,26
+1464084835605482928,"Near Southeast, Navy Yard",Entire home/apt,2,6,186.89,240,False,40,44853.6,False,False,2.0,3.25,26
+1456892702402722117,"Near Southeast, Navy Yard",Entire home/apt,2,6,284.56,174,False,29,49513.44,False,False,2.0,3.25,26
+6491631,"Near Southeast, Navy Yard",Entire home/apt,3,8,672.0,255,True,53,142933.62060000002,True,False,1.0,3.25,26
+1641405056329958387,"Near Southeast, Navy Yard",Shared room,1,8,32.95,54,False,9,1779.3000000000002,False,False,1.0,2.125,17
+1495211346019306347,"Near Southeast, Navy Yard",Shared room,1,6,39.0,120,False,20,4680.0,False,False,1.0,2.125,17
+13809783,"Near Southeast, Navy Yard",Private room,1,1,152.6,130,False,13,19838.0,False,False,5.0,2.125,17
+1292413985793895819,"Near Southeast, Navy Yard",Private room,1,2,165.0,255,True,68,42075.0,True,False,1.0,2.125,17
+1060017507460512223,"Near Southeast, Navy Yard",Private room,1,4,227.0,255,True,60,57885.0,True,False,1.0,2.125,17
+925608891252175947,"Near Southeast, Navy Yard",Private room,1,4,245.0,255,True,83,62475.0,True,False,1.0,2.125,17
+1340594687424961544,"Near Southeast, Navy Yard",Private room,3,8,630.77,36,False,6,22707.72,False,False,1.0,2.125,17
+1498013930590889527,"Near Southeast, Navy Yard",Hotel room,2,2,372.0,30,False,5,11160.0,False,True,1.0,2.125,17
+1218884769508838968,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,0,2,165.6,240,False,40,39744.0,False,False,1.0,1.5,12
+19205234,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,1,4,232.0,78,False,13,18096.0,False,False,1.0,1.5,12
+22743952,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,1,2,109.07,168,False,6,18323.76,False,False,14.0,1.5,12
+19767116,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,1,2,148.0,228,False,38,33744.0,False,False,3.0,1.5,12
+584879166427780593,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,1,3,148.0,255,True,69,37740.0,True,False,1.0,1.5,12
+1023128310407195584,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,1,5,275.0,186,False,31,51150.0,False,False,1.0,1.5,12
+1572614013025196270,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,2,6,272.5,42,False,7,11445.0,False,False,2.0,1.5,12
+25162568,"North Cleveland Park, Forest Hills, Van Ness",Entire home/apt,3,6,251.72,132,False,22,33227.04,False,False,2.0,1.5,12
+1529026109428525103,"North Cleveland Park, Forest Hills, Van Ness",Hotel room,1,2,120.0,30,False,5,3600.0,False,False,1.0,1.0,2
+1529026109326269231,"North Cleveland Park, Forest Hills, Van Ness",Hotel room,1,4,114.0,114,False,19,12996.0,False,False,1.0,1.0,2
+41524252,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,0,2,103.0,30,False,5,3090.0,False,False,2.0,3.4444444444444446,31
+1463829413617990505,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,1,2,135.0,66,False,11,8910.0,False,False,2.0,3.4444444444444446,31
+1445970773059186267,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,1,2,258.0,90,False,15,23220.0,False,False,1.0,3.4444444444444446,31
+1008797160841015538,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,1,4,129.69,255,True,23,33070.95,True,False,31.0,3.4444444444444446,31
+1714827622498090265,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,3,8,212.0,36,False,6,7632.0,False,False,2.0,3.4444444444444446,31
+1667671817489327790,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,4,10,342.25,78,False,13,26695.5,False,False,2.0,3.4444444444444446,31
+1142061082138273797,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,5,10,726.5,78,False,13,56667.0,False,False,1.0,3.4444444444444446,31
+853065866211753887,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,1,2,141.5,216,False,36,30564.0,False,True,2.0,3.4444444444444446,31
+888706511406037576,"North Michigan Park, Michigan Park, University Heights",Entire home/apt,4,12,233.5,216,False,36,50436.0,False,True,2.0,3.4444444444444446,31
+744358272673474628,"North Michigan Park, Michigan Park, University Heights",Private room,1,2,91.0,36,False,6,3276.0,False,False,2.0,1.25,10
+716213843783423190,"North Michigan Park, Michigan Park, University Heights",Private room,1,2,86.0,42,False,7,3612.0,False,False,2.0,1.25,10
+1749354594217442596,"North Michigan Park, Michigan Park, University Heights",Private room,1,2,75.65,60,False,10,4539.0,False,False,1.0,1.25,10
+33432778,"North Michigan Park, Michigan Park, University Heights",Private room,1,1,75.71,84,False,6,6359.639999999999,False,False,7.0,1.25,10
+744378233416814620,"North Michigan Park, Michigan Park, University Heights",Private room,1,2,91.0,78,False,13,7098.0,False,False,2.0,1.25,10
+41152512,"North Michigan Park, Michigan Park, University Heights",Private room,1,4,118.0,162,False,27,19116.0,False,False,1.0,1.25,10
+1424725647551232512,"North Michigan Park, Michigan Park, University Heights",Private room,1,2,90.0,255,True,125,22950.0,True,False,1.0,1.25,10
+812550616652201710,"North Michigan Park, Michigan Park, University Heights",Private room,3,6,364.5,30,False,5,10935.0,False,False,1.0,1.25,10
+47310404,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,0,3,91.8,30,False,3,2754.0,False,False,5.0,2.625,21
+1708090138539241151,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,1,2,147.72,90,False,15,13294.8,False,False,1.0,2.625,21
+1097993513404830534,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,2,4,150.67,126,False,21,18984.42,False,False,3.0,2.625,21
+1720333176271380221,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,2,6,244.0,90,False,15,21960.0,False,False,1.0,2.625,21
+1061476975093452674,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,2,4,148.0,174,False,29,25752.0,False,False,3.0,2.625,21
+50049004,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,2,4,135.0,255,True,45,34425.0,True,False,1.0,2.625,21
+48037732,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,4,6,145.33,24,False,4,3487.92,False,False,3.0,2.625,21
+1333489828522684176,"River Terrace, Benning, Greenway, Dupont Park",Entire home/apt,2,5,208.0,90,False,15,18720.0,False,True,3.0,2.625,21
+6355197,"River Terrace, Benning, Greenway, Dupont Park",Private room,0,1,42.92,255,True,4,10944.6,True,False,45.0,1.0,5
+44443615,"River Terrace, Benning, Greenway, Dupont Park",Private room,0,2,138.0,84,False,14,11592.0,False,False,2.0,1.0,5
+890384516184093231,"River Terrace, Benning, Greenway, Dupont Park",Private room,0,2,100.5,222,False,37,22311.0,False,False,2.0,1.0,5
+1352178746315560419,"River Terrace, Benning, Greenway, Dupont Park",Private room,1,2,86.0,18,False,3,1548.0,False,False,1.0,1.0,5
+17803183,"River Terrace, Benning, Greenway, Dupont Park",Private room,1,2,80.67,54,False,9,4356.18,False,False,3.0,1.0,5
+52246295,"Shaw, Logan Circle",Entire home/apt,0,2,195.0,84,False,14,16380.0,False,False,2.0,3.3076923076923075,172
+1119671663333789820,"Shaw, Logan Circle",Entire home/apt,0,2,101.0,255,True,53,25755.0,True,False,2.0,3.3076923076923075,172
+1026034,"Shaw, Logan Circle",Entire home/apt,0,2,191.0,255,True,46,48705.0,True,False,2.0,3.3076923076923075,172
+1719770671470147668,"Shaw, Logan Circle",Entire home/apt,1,3,299.0,24,False,4,7176.0,False,False,1.0,3.3076923076923075,172
+1570260688061776712,"Shaw, Logan Circle",Entire home/apt,1,4,220.5,60,False,10,13230.0,False,False,1.0,3.3076923076923075,172
+15552175,"Shaw, Logan Circle",Entire home/apt,1,3,325.0,54,False,9,17550.0,False,False,2.0,3.3076923076923075,172
+47310081,"Shaw, Logan Circle",Entire home/apt,1,2,111.45,186,False,3,20729.7,False,False,31.0,3.3076923076923075,172
+3601131,"Shaw, Logan Circle",Entire home/apt,1,2,170.0,150,False,25,25500.0,False,False,3.0,3.3076923076923075,172
+1512277530649886550,"Shaw, Logan Circle",Entire home/apt,1,4,319.0,96,False,16,30624.0,False,False,3.0,3.3076923076923075,172
+1404734598605741910,"Shaw, Logan Circle",Entire home/apt,1,4,294.0,114,False,19,33516.0,False,False,1.0,3.3076923076923075,172
+1636356204631436442,"Shaw, Logan Circle",Entire home/apt,1,4,235.0,150,False,25,35250.0,False,False,2.0,3.3076923076923075,172
+561613368973782756,"Shaw, Logan Circle",Entire home/apt,1,3,151.0,255,True,44,38505.0,True,False,1.0,3.3076923076923075,172
+1476488517896175900,"Shaw, Logan Circle",Entire home/apt,1,4,158.1,255,True,14,40315.5,True,False,31.0,3.3076923076923075,172
+51650242,"Shaw, Logan Circle",Entire home/apt,1,2,307.04,138,False,23,42371.52,False,False,1.0,3.3076923076923075,172
+5755232,"Shaw, Logan Circle",Entire home/apt,1,4,213.35,210,False,35,44803.5,False,False,2.0,3.3076923076923075,172
+18689667,"Shaw, Logan Circle",Entire home/apt,1,5,194.0,255,True,46,49470.0,True,False,1.0,3.3076923076923075,172
+959968665418003449,"Shaw, Logan Circle",Entire home/apt,1,2,276.5,198,False,33,54747.0,False,False,2.0,3.3076923076923075,172
+595563418671222545,"Shaw, Logan Circle",Entire home/apt,1,4,236.75,246,False,41,58240.5,False,False,2.0,3.3076923076923075,172
+1326147595975946236,"Shaw, Logan Circle",Entire home/apt,1,2,314.58,192,False,32,60399.36,False,False,1.0,3.3076923076923075,172
+1476511684273921892,"Shaw, Logan Circle",Entire home/apt,1,5,247.52,255,True,30,63117.600000000006,True,False,31.0,3.3076923076923075,172
+22704423,"Shaw, Logan Circle",Entire home/apt,1,4,257.0,255,True,62,65535.0,True,False,1.0,3.3076923076923075,172
+882622753886183992,"Shaw, Logan Circle",Entire home/apt,1,2,285.0,255,True,63,72675.0,True,False,1.0,3.3076923076923075,172
+804571023199407921,"Shaw, Logan Circle",Entire home/apt,2,6,320.0,24,False,4,7680.0,False,False,1.0,3.3076923076923075,172
+1684612618661627736,"Shaw, Logan Circle",Entire home/apt,2,6,392.4,30,False,5,11772.0,False,False,1.0,3.3076923076923075,172
+53869589,"Shaw, Logan Circle",Entire home/apt,2,6,347.43,42,False,7,14592.06,False,False,1.0,3.3076923076923075,172
+1180557146118541485,"Shaw, Logan Circle",Entire home/apt,2,4,293.0,96,False,16,28128.0,False,False,1.0,3.3076923076923075,172
+804615687377958782,"Shaw, Logan Circle",Entire home/apt,2,6,320.0,96,False,16,30720.0,False,False,1.0,3.3076923076923075,172
+10097934,"Shaw, Logan Circle",Entire home/apt,2,6,148.47,255,True,29,37859.85,True,False,31.0,3.3076923076923075,172
+1404749705623506815,"Shaw, Logan Circle",Entire home/apt,2,8,435.0,102,False,17,44370.0,False,False,2.0,3.3076923076923075,172
+1512321631260771262,"Shaw, Logan Circle",Entire home/apt,2,6,300.0,168,False,28,50400.0,False,False,3.0,3.3076923076923075,172
+52583446,"Shaw, Logan Circle",Entire home/apt,2,4,248.96,255,True,53,63484.8,True,False,1.0,3.3076923076923075,172
+1552549797549819823,"Shaw, Logan Circle",Entire home/apt,2,6,331.8,210,False,35,69678.0,False,False,1.0,3.3076923076923075,172
+1596022144731055365,"Shaw, Logan Circle",Entire home/apt,2,6,311.42,234,False,39,72872.28,False,False,1.0,3.3076923076923075,172
+1507974798023856884,"Shaw, Logan Circle",Entire home/apt,2,6,389.67,222,False,37,86506.74,False,False,3.0,3.3076923076923075,172
+1497189862909724746,"Shaw, Logan Circle",Entire home/apt,2,4,380.0,255,True,69,96900.0,True,False,1.0,3.3076923076923075,172
+878816792298975697,"Shaw, Logan Circle",Entire home/apt,2,4,457.5,255,True,47,116662.5,True,False,2.0,3.3076923076923075,172
+682633232358768514,"Shaw, Logan Circle",Entire home/apt,3,10,621.4,60,False,10,37284.0,False,False,1.0,3.3076923076923075,172
+1568192431734927284,"Shaw, Logan Circle",Entire home/apt,3,8,570.0,114,False,19,64980.0,False,False,1.0,3.3076923076923075,172
+40160080,"Shaw, Logan Circle",Entire home/apt,3,6,643.33,144,False,24,92639.52,False,False,3.0,3.3076923076923075,172
+14555537,"Shaw, Logan Circle",Entire home/apt,3,8,515.0,198,False,33,101970.0,False,False,1.0,3.3076923076923075,172
+1484954658523410207,"Shaw, Logan Circle",Entire home/apt,3,10,579.5,255,True,51,142933.62060000002,True,False,2.0,3.3076923076923075,172
+1670377938279246308,"Shaw, Logan Circle",Entire home/apt,4,8,483.0,126,False,21,60858.0,False,False,1.0,3.3076923076923075,172
+1517747380292470642,"Shaw, Logan Circle",Entire home/apt,4,14,508.4,240,False,4,122016.0,False,False,30.0,3.3076923076923075,172
+1485185712246363824,"Shaw, Logan Circle",Entire home/apt,4,10,735.0,255,True,53,142933.62060000002,True,False,2.0,3.3076923076923075,172
+861857172153830345,"Shaw, Logan Circle",Entire home/apt,7,12,868.0,255,True,45,142933.62060000002,True,False,1.0,3.3076923076923075,172
+16514018,"Shaw, Logan Circle",Entire home/apt,1,4,291.0,60,False,10,17460.0,False,True,2.0,3.3076923076923075,172
+614438166714548629,"Shaw, Logan Circle",Entire home/apt,1,2,249.0,126,False,21,31374.0,False,True,2.0,3.3076923076923075,172
+868102882427362411,"Shaw, Logan Circle",Entire home/apt,1,4,334.0,162,False,27,54108.0,False,True,2.0,3.3076923076923075,172
+760139811040969744,"Shaw, Logan Circle",Entire home/apt,2,6,305.5,114,False,19,34827.0,False,True,2.0,3.3076923076923075,172
+1009759966406308590,"Shaw, Logan Circle",Entire home/apt,2,4,234.48,255,True,44,59792.4,True,True,31.0,3.3076923076923075,172
+674531915619660561,"Shaw, Logan Circle",Entire home/apt,2,4,339.0,255,True,48,86445.0,True,True,1.0,3.3076923076923075,172
+1449970675100853396,"Shaw, Logan Circle",Entire home/apt,4,8,543.06,168,False,28,91234.08,False,True,2.0,3.3076923076923075,172
+40950787,"Shaw, Logan Circle",Shared room,1,1,62.0,24,False,4,1488.0,False,False,1.0,3.4545454545454546,38
+926050425599703843,"Shaw, Logan Circle",Private room,1,3,99.8,42,False,7,4191.599999999999,False,False,1.0,3.4545454545454546,38
+1260131020075179692,"Shaw, Logan Circle",Private room,1,2,122.0,60,False,10,7320.0,False,False,1.0,3.4545454545454546,38
+50246179,"Shaw, Logan Circle",Private room,1,2,117.0,90,False,15,10530.0,False,False,1.0,3.4545454545454546,38
+40950741,"Shaw, Logan Circle",Shared room,1,1,49.0,255,True,141,12495.0,True,False,1.0,3.4545454545454546,38
+19552660,"Shaw, Logan Circle",Private room,1,2,93.5,150,False,5,14025.0,False,False,15.0,3.4545454545454546,38
+1049236007638467900,"Shaw, Logan Circle",Private room,1,2,189.2,102,False,17,19298.4,False,False,1.0,3.4545454545454546,38
+795659565038971270,"Shaw, Logan Circle",Private room,1,3,135.0,240,False,40,32400.0,False,False,1.0,3.4545454545454546,38
+1501526568400437392,"Shaw, Logan Circle",Private room,1,4,170.0,228,False,38,38760.0,False,False,1.0,3.4545454545454546,38
+1461584655289081291,"Shaw, Logan Circle",Private room,1,4,270.0,204,False,34,55080.0,False,False,1.0,3.4545454545454546,38
+1497149872256236853,"Shaw, Logan Circle",Private room,3,8,537.0,138,False,23,72993.23999999996,False,False,1.0,3.4545454545454546,38
+844006949273737622,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,0,4,303.0,156,False,26,47268.0,False,False,1.0,1.625,13
+42915638,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,1,2,133.33,24,False,4,3199.92,False,False,3.0,1.625,13
+1623970417212664883,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,1,3,224.44,18,False,3,4039.92,False,False,1.0,1.625,13
+1581991809593828553,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,1,2,117.92,246,False,41,29008.32,False,False,1.0,1.625,13
+1604573398276151668,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,2,4,334.0,24,False,4,8016.0,False,False,1.0,1.625,13
+1211741527916908018,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,2,6,432.5,36,False,6,15570.0,False,False,2.0,1.625,13
+1248770368846060500,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,3,6,295.0,24,False,4,7080.0,False,False,3.0,1.625,13
+1139800462206840192,"Sheridan, Barry Farm, Buena Vista",Entire home/apt,5,10,386.0,72,False,12,27792.0,False,False,2.0,1.625,13
+41344281,"Sheridan, Barry Farm, Buena Vista",Private room,1,2,93.0,48,False,8,4464.0,False,False,2.0,1.0,5
+1246425213629244874,"Sheridan, Barry Farm, Buena Vista",Private room,1,1,27.13,255,True,6,6918.15,True,False,30.0,1.0,5
+624543537455753233,"Sheridan, Barry Farm, Buena Vista",Private room,1,1,83.5,114,False,19,9519.0,False,False,2.0,1.0,5
+1377633911657024841,"Sheridan, Barry Farm, Buena Vista",Private room,1,2,46.67,248,False,4,11574.16,False,False,31.0,1.0,5
+43475702,"Sheridan, Barry Farm, Buena Vista",Private room,1,2,81.5,150,False,25,12225.0,False,False,2.0,1.0,5
+1464745335427968576,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,0,2,188.0,255,True,91,47940.0,True,False,1.0,3.3,33
+1600419764767945485,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,4,246.0,18,False,3,4428.0,False,False,2.0,3.3,33
+16602138,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,3,128.27,72,False,3,9235.44,False,False,12.0,3.3,33
+1571504018631716998,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,5,191.13,156,False,26,29816.28,False,False,2.0,3.3,33
+1472806360412228381,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,3,153.0,255,True,180,39015.0,True,False,1.0,3.3,33
+718751535515325844,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,2,260.0,192,False,32,49920.0,False,False,1.0,3.3,33
+1459652761522081671,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,1,3,300.31,255,True,51,76579.05,True,False,1.0,3.3,33
+1571454764989750119,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,2,6,232.0,198,False,33,45936.0,False,False,2.0,3.3,33
+43534310,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,3,6,597.0,120,False,20,71640.0,False,False,2.0,3.3,33
+587194880443009911,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Entire home/apt,4,10,694.54,255,True,46,142933.62060000002,True,False,1.0,3.3,33
+1405518085245114591,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,1,104.0,72,False,12,7488.0,False,False,1.0,2.0,16
+1405529676272442227,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,2,163.0,60,False,10,9780.0,False,False,1.0,2.0,16
+6404202,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,1,50.63,255,True,5,12910.65,True,False,31.0,2.0,16
+1405524433691607232,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,2,140.0,96,False,16,13440.0,False,False,1.0,2.0,16
+6334405,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,1,67.79,255,True,5,17286.45,True,False,31.0,2.0,16
+1498749436261402292,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,2,242.34,84,False,14,20356.56,False,False,1.0,2.0,16
+616502395739876687,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Hotel room,1,2,343.0,120,False,20,41160.0,False,False,1.0,2.0,16
+13865075,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",Private room,1,2,260.0,255,True,82,66300.0,True,False,1.0,2.0,16
+1051386770079675163,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,1,149.0,36,False,6,5364.0,False,False,2.0,1.5,12
+32787044,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,2,232.0,96,False,12,22272.0,False,False,4.0,1.5,12
+589017455134637067,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,4,196.0,120,False,20,23520.0,False,False,2.0,1.5,12
+1000321738146855108,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,4,194.0,162,False,27,31428.0,False,False,2.0,1.5,12
+45789238,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,2,218.0,168,False,28,36624.0,False,False,2.0,1.5,12
+1125577076477334440,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,2,281.5,168,False,28,47292.0,False,False,2.0,1.5,12
+877568090244811480,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,1,2,306.13,180,False,30,55103.4,False,False,1.0,1.5,12
+752392363395508383,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Entire home/apt,3,5,713.73,90,False,15,64235.7,False,False,3.0,1.5,12
+23663749,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,109.0,18,False,3,1962.0,False,False,1.0,1.125,9
+23645709,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,3,143.0,30,False,5,4290.0,False,False,1.0,1.125,9
+39358144,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,189.0,24,False,4,4536.0,False,False,1.0,1.125,9
+26367397,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,92.0,60,False,10,5520.0,False,False,1.0,1.125,9
+2285431,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,172.5,72,False,12,12420.0,False,False,2.0,1.125,9
+13247788,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,133.0,120,False,20,15960.0,False,False,1.0,1.125,9
+52579200,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,140.0,144,False,24,20160.0,False,False,2.0,1.125,9
+35230824,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",Private room,1,2,155.0,255,True,49,39525.0,True,False,1.0,1.125,9
+567527367993443930,"Takoma, Brightwood, Manor Park",Entire home/apt,0,2,109.0,72,False,12,7848.0,False,False,2.0,3.4285714285714284,48
+51887022,"Takoma, Brightwood, Manor Park",Entire home/apt,1,2,118.0,24,False,4,2832.0,False,False,3.0,3.4285714285714284,48
+21717185,"Takoma, Brightwood, Manor Park",Entire home/apt,1,2,142.0,42,False,7,5964.0,False,False,2.0,3.4285714285714284,48
+11357292,"Takoma, Brightwood, Manor Park",Entire home/apt,1,4,152.5,66,False,11,10065.0,False,False,2.0,3.4285714285714284,48
+1185724036446733018,"Takoma, Brightwood, Manor Park",Entire home/apt,1,4,114.5,96,False,16,10992.0,False,False,2.0,3.4285714285714284,48
+15755522,"Takoma, Brightwood, Manor Park",Entire home/apt,1,4,132.0,180,False,30,23760.0,False,False,2.0,3.4285714285714284,48
+51427694,"Takoma, Brightwood, Manor Park",Entire home/apt,1,4,116.5,255,True,45,29707.5,True,False,2.0,3.4285714285714284,48
+1554716132683340658,"Takoma, Brightwood, Manor Park",Entire home/apt,1,3,263.0,132,False,22,34716.0,False,False,1.0,3.4285714285714284,48
+1740070003066263471,"Takoma, Brightwood, Manor Park",Entire home/apt,2,4,362.0,42,False,7,15204.0,False,False,2.0,3.4285714285714284,48
+1158822066851371975,"Takoma, Brightwood, Manor Park",Entire home/apt,2,6,209.67,132,False,22,27676.44,False,False,3.0,3.4285714285714284,48
+1279076149095311846,"Takoma, Brightwood, Manor Park",Entire home/apt,2,4,240.0,156,False,26,37440.0,False,False,2.0,3.4285714285714284,48
+1289386769401553264,"Takoma, Brightwood, Manor Park",Entire home/apt,3,6,342.05,120,False,20,41046.0,False,False,2.0,3.4285714285714284,48
+789230406048901012,"Takoma, Brightwood, Manor Park",Entire home/apt,3,6,336.0,222,False,37,74592.0,False,False,1.0,3.4285714285714284,48
+1289954530346184411,"Takoma, Brightwood, Manor Park",Entire home/apt,7,10,428.0,42,False,7,17976.0,False,True,2.0,3.4285714285714284,48
+12026532,"Takoma, Brightwood, Manor Park",Private room,1,2,120.5,36,False,6,4338.0,False,False,2.0,1.25,10
+1375697605024065855,"Takoma, Brightwood, Manor Park",Private room,1,2,85.0,60,False,10,5100.0,False,False,2.0,1.25,10
+988383832653048895,"Takoma, Brightwood, Manor Park",Private room,1,3,81.0,102,False,17,8262.0,False,False,1.0,1.25,10
+1255274632030319326,"Takoma, Brightwood, Manor Park",Private room,1,2,109.0,84,False,14,9156.0,False,False,2.0,1.25,10
+45218692,"Takoma, Brightwood, Manor Park",Private room,1,1,63.84,150,False,3,9576.0,False,False,25.0,1.25,10
+917606294262917563,"Takoma, Brightwood, Manor Park",Private room,1,2,59.65,186,False,3,11094.9,False,False,31.0,1.25,10
+6956685,"Takoma, Brightwood, Manor Park",Private room,1,2,108.0,126,False,21,13608.0,False,False,1.0,1.25,10
+1474805445221051977,"Takoma, Brightwood, Manor Park",Private room,1,4,110.15,252,False,42,27757.800000000003,False,False,1.0,1.25,10
+1640812560278958588,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,1,4,128.33,60,False,10,7699.800000000001,False,False,2.0,3.2777777777777777,59
+1595299650207443492,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,1,4,224.0,48,False,8,10752.0,False,False,1.0,3.2777777777777777,59
+1254342327469443979,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,1,2,307.71,54,False,9,16616.34,False,False,1.0,3.2777777777777777,59
+655195169367937273,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,1,4,218.0,132,False,22,28776.0,False,False,1.0,3.2777777777777777,59
+1643547412782887164,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,186.67,36,False,6,6720.12,False,False,3.0,3.2777777777777777,59
+732489843692927210,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,200.0,48,False,8,9600.0,False,False,1.0,3.2777777777777777,59
+1156435669312260837,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,83.93,186,False,3,15610.98,False,False,31.0,3.2777777777777777,59
+1411648007293053840,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,3,192.0,114,False,19,21888.0,False,False,2.0,3.2777777777777777,59
+1294335470402371957,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,206.0,138,False,23,28428.0,False,False,2.0,3.2777777777777777,59
+45531297,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,197.0,162,False,27,31914.0,False,False,1.0,3.2777777777777777,59
+771091139772617626,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,174.0,255,True,56,44370.0,True,False,1.0,3.2777777777777777,59
+51453696,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,2,4,310.17,222,False,37,68857.74,False,False,2.0,3.2777777777777777,59
+847971272936260499,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,3,7,466.5,42,False,7,19593.0,False,False,2.0,3.2777777777777777,59
+1100088321912055812,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,3,6,159.0,168,False,28,26712.0,False,False,2.0,3.2777777777777777,59
+1362117363934689658,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,3,6,378.5,114,False,19,43149.0,False,False,2.0,3.2777777777777777,59
+33275075,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,4,14,326.0,72,False,12,23472.0,False,False,2.0,3.2777777777777777,59
+1278655083074570478,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,4,11,462.0,138,False,23,63756.0,False,False,1.0,3.2777777777777777,59
+50118917,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Entire home/apt,5,16,412.5,102,False,17,42075.0,False,False,2.0,3.2777777777777777,59
+27345174,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,45.33,18,False,3,815.9399999999999,False,False,2.0,1.375,11
+27344873,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,59.33,36,False,6,2135.88,False,False,3.0,1.375,11
+1761047962330359968,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,137.5,24,False,4,3300.0,False,False,2.0,1.375,11
+1679010639905945986,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,124.5,30,False,5,3735.0,False,False,2.0,1.375,11
+1138796114398978234,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,3,120.01,108,False,18,12961.08,False,False,2.0,1.375,11
+1303996978336012953,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,83.0,180,False,30,14940.0,False,False,2.0,1.375,11
+936236542023242573,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,1,2,92.0,255,True,44,23460.0,True,False,2.0,1.375,11
+1405081395358961702,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",Private room,2,8,330.0,102,False,17,33660.0,False,False,1.0,1.375,11
+16613766,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,2,253.0,18,False,3,4554.0,False,False,2.0,3.3445378151260505,398
+24466018,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,3,217.0,30,False,5,6510.0,False,False,1.0,3.3445378151260505,398
+24161482,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,2,193.5,90,False,15,17415.0,False,False,2.0,3.3445378151260505,398
+9854986,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,2,122.0,186,False,31,22692.0,False,False,2.0,3.3445378151260505,398
+23101507,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,4,107.5,240,False,40,25800.0,False,False,2.0,3.3445378151260505,398
+22115415,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,2,156.85,255,True,61,39996.75,True,False,2.0,3.3445378151260505,398
+51944798,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,4,194.0,255,True,91,49470.0,True,False,1.0,3.3445378151260505,398
+28737965,"Union Station, Stanton Park, Kingman Park",Entire home/apt,0,2,287.0,246,False,41,70602.0,False,False,1.0,3.3445378151260505,398
+1502213640417135658,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,152.5,30,False,5,4575.0,False,False,1.0,3.3445378151260505,398
+30253483,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,195.0,30,False,5,5850.0,False,False,1.0,3.3445378151260505,398
+19503995,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,252.77,24,False,4,6066.4800000000005,False,False,1.0,3.3445378151260505,398
+48428931,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,240.67,30,False,5,7220.099999999999,False,False,3.0,3.3445378151260505,398
+1393027322040887893,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,213.0,36,False,6,7668.0,False,False,2.0,3.3445378151260505,398
+979948448413397101,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,210.0,42,False,7,8820.0,False,False,1.0,3.3445378151260505,398
+1065959353613421082,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,229.5,42,False,7,9639.0,False,False,1.0,3.3445378151260505,398
+591294209693762910,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,172.5,66,False,11,11385.0,False,False,2.0,3.3445378151260505,398
+28336119,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,47.67,255,True,6,12155.85,True,False,30.0,3.3445378151260505,398
+46048577,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,167.8,78,False,13,13088.4,False,False,3.0,3.3445378151260505,398
+5030785,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,247.0,60,False,10,14820.0,False,False,2.0,3.3445378151260505,398
+13632182,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,85.11,186,False,3,15830.46,False,False,31.0,3.3445378151260505,398
+1039767930802072043,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,5,302.5,54,False,9,16335.0,False,False,1.0,3.3445378151260505,398
+815436500271094806,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,160.0,108,False,18,17280.0,False,False,2.0,3.3445378151260505,398
+1372788935364274054,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,229.54,78,False,13,17904.12,False,False,2.0,3.3445378151260505,398
+8608311,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,189.58,96,False,16,18199.68,False,False,2.0,3.3445378151260505,398
+29002608,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,123.5,156,False,26,19266.0,False,False,2.0,3.3445378151260505,398
+29082809,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,142.0,138,False,23,19596.0,False,False,1.0,3.3445378151260505,398
+1422601092749351628,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,154.5,132,False,22,20394.0,False,False,2.0,3.3445378151260505,398
+974135618841191550,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,137.1,160,False,20,21936.0,False,False,4.0,3.3445378151260505,398
+1062489286329680890,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,198.5,114,False,19,22629.0,False,False,2.0,3.3445378151260505,398
+1239070094379843777,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,195.0,126,False,21,24570.0,False,False,2.0,3.3445378151260505,398
+15981013,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,171.0,150,False,25,25650.0,False,False,1.0,3.3445378151260505,398
+730381698103576847,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,189.67,144,False,24,27312.48,False,False,3.0,3.3445378151260505,398
+10542403,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,216.0,138,False,23,29808.0,False,False,2.0,3.3445378151260505,398
+1381314343806304469,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,165.0,186,False,31,30690.0,False,False,2.0,3.3445378151260505,398
+1312986042945106486,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,180.0,174,False,29,31320.0,False,False,3.0,3.3445378151260505,398
+45191510,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,260.5,126,False,21,32823.0,False,False,2.0,3.3445378151260505,398
+52669060,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,169.5,198,False,33,33561.0,False,False,2.0,3.3445378151260505,398
+1226761166541724371,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,272.43,126,False,21,34326.18,False,False,1.0,3.3445378151260505,398
+453315,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,139.5,255,True,54,35572.5,True,False,1.0,3.3445378151260505,398
+37800391,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,209.5,180,False,30,37710.0,False,False,2.0,3.3445378151260505,398
+53109555,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,5,149.5,255,True,62,38122.5,True,False,1.0,3.3445378151260505,398
+1510355754428466939,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,210.0,186,False,31,39060.0,False,False,1.0,3.3445378151260505,398
+699167527674574132,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,235.0,168,False,28,39480.0,False,False,1.0,3.3445378151260505,398
+862231094075682048,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,157.5,255,True,62,40162.5,True,False,2.0,3.3445378151260505,398
+16284824,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,195.0,210,False,35,40950.0,False,False,1.0,3.3445378151260505,398
+3199232,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,224.5,186,False,31,41757.0,False,False,2.0,3.3445378151260505,398
+36694782,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,184.0,234,False,39,43056.0,False,False,2.0,3.3445378151260505,398
+40330483,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,194.0,228,False,38,44232.0,False,False,2.0,3.3445378151260505,398
+1131400144975722321,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,184.5,252,False,42,46494.0,False,False,2.0,3.3445378151260505,398
+1186505173061604390,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,188.0,255,True,62,47940.0,True,False,1.0,3.3445378151260505,398
+48216250,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,194.0,255,True,47,49470.0,True,False,2.0,3.3445378151260505,398
+38698346,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,196.0,255,True,98,49980.0,True,False,1.0,3.3445378151260505,398
+31887632,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,263.0,198,False,33,52074.0,False,False,1.0,3.3445378151260505,398
+1221005323235099396,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,216.0,255,True,105,55080.0,True,False,1.0,3.3445378151260505,398
+4552932,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,235.0,240,False,40,56400.0,False,False,2.0,3.3445378151260505,398
+37185264,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,229.0,255,True,52,58395.0,True,False,1.0,3.3445378151260505,398
+4545885,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,241.0,255,True,88,61455.0,True,False,1.0,3.3445378151260505,398
+1272870701297862652,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,278.0,255,True,53,70890.0,True,False,1.0,3.3445378151260505,398
+51963661,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,354.0,18,False,3,6372.0,False,False,3.0,3.3445378151260505,398
+1096015292367057199,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,415.0,18,False,3,7470.0,False,False,1.0,3.3445378151260505,398
+22308082,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,271.91,42,False,7,11420.22,False,False,2.0,3.3445378151260505,398
+1901631,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,208.0,72,False,12,14976.0,False,False,2.0,3.3445378151260505,398
+7020322,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,287.5,60,False,10,17250.0,False,False,2.0,3.3445378151260505,398
+1378517431473495029,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,204.5,108,False,18,22086.0,False,False,2.0,3.3445378151260505,398
+49126659,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,3,222.33,114,False,19,25345.620000000003,False,False,3.0,3.3445378151260505,398
+1688586405254070062,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,414.32,72,False,12,29831.04,False,False,1.0,3.3445378151260505,398
+1187708903281708634,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,8,234.0,144,False,24,33696.0,False,False,1.0,3.3445378151260505,398
+8190920,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,236.4,150,False,25,35460.0,False,False,3.0,3.3445378151260505,398
+1597461984123111532,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,388.28,96,False,16,37274.88,False,False,1.0,3.3445378151260505,398
+27886490,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,298.9,132,False,22,39454.8,False,False,1.0,3.3445378151260505,398
+1631345114483164075,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,208.0,204,False,34,42432.0,False,False,2.0,3.3445378151260505,398
+1234113182648763567,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,494.19,90,False,15,44477.1,False,False,3.0,3.3445378151260505,398
+19070844,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,302.0,168,False,28,50736.0,False,False,1.0,3.3445378151260505,398
+15080581,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,215.0,255,True,82,54825.0,True,False,1.0,3.3445378151260505,398
+46926304,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,247.0,234,False,39,57798.0,False,False,2.0,3.3445378151260505,398
+28786757,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,364.5,168,False,28,61236.0,False,False,2.0,3.3445378151260505,398
+45916182,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,249.33,255,True,49,63579.15,True,False,1.0,3.3445378151260505,398
+940039896507070649,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,268.0,255,True,59,68340.0,True,False,1.0,3.3445378151260505,398
+11865642,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,329.5,216,False,36,71172.0,False,False,2.0,3.3445378151260505,398
+1497447589986416285,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,289.0,255,True,48,73695.0,True,False,1.0,3.3445378151260505,398
+1485168063351109752,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,9,312.0,255,True,45,79560.0,True,False,1.0,3.3445378151260505,398
+1117381252348375233,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,321.88,255,True,47,82079.4,True,False,1.0,3.3445378151260505,398
+45648413,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,372.35,255,True,50,94949.25,True,False,1.0,3.3445378151260505,398
+53205272,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,6,534.0,24,False,4,12816.0,False,False,1.0,3.3445378151260505,398
+886867834171028301,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,5,273.33,66,False,11,18039.78,False,False,3.0,3.3445378151260505,398
+1268759396360276695,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,5,359.0,90,False,15,32310.0,False,False,2.0,3.3445378151260505,398
+1120439233073611605,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,5,412.5,96,False,16,39600.0,False,False,2.0,3.3445378151260505,398
+1358135204395215558,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,6,502.2,84,False,14,42184.8,False,False,1.0,3.3445378151260505,398
+47802409,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,8,380.0,126,False,21,47880.0,False,False,2.0,3.3445378151260505,398
+1623495540638779981,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,6,324.68,168,False,28,54546.24,False,False,2.0,3.3445378151260505,398
+1353788225648126648,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,7,250.0,255,True,49,63750.0,True,False,1.0,3.3445378151260505,398
+625386491813855890,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,10,316.0,255,True,77,80580.0,True,False,1.0,3.3445378151260505,398
+1301057789827596567,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,6,737.0,132,False,22,97284.0,False,False,1.0,3.3445378151260505,398
+1377870088038041170,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,5,559.0,234,False,39,130806.0,False,False,2.0,3.3445378151260505,398
+1687651827459207526,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,8,375.0,24,False,4,9000.0,False,False,1.0,3.3445378151260505,398
+53665527,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,9,505.33,42,False,7,21223.86,False,False,2.0,3.3445378151260505,398
+1617626926494073984,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,7,263.54,126,False,21,33206.04,False,False,2.0,3.3445378151260505,398
+52041391,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,15,777.0,66,False,11,51282.0,False,False,1.0,3.3445378151260505,398
+1020193321033630069,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,8,327.0,198,False,33,64746.0,False,False,2.0,3.3445378151260505,398
+1590673753482494118,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,11,603.75,174,False,29,105052.5,False,False,1.0,3.3445378151260505,398
+1729841964884352190,"Union Station, Stanton Park, Kingman Park",Entire home/apt,5,16,513.1,48,False,8,24628.800000000003,False,False,1.0,3.3445378151260505,398
+1150866879285850301,"Union Station, Stanton Park, Kingman Park",Entire home/apt,5,9,666.71,255,True,48,142933.62060000002,True,False,3.0,3.3445378151260505,398
+1092089727768788761,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,254.0,18,False,3,4572.0,False,True,1.0,3.3445378151260505,398
+1092089817215006495,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,294.51,48,False,8,14136.48,False,True,1.0,3.3445378151260505,398
+1092084262994334717,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,3,254.0,78,False,13,19812.0,False,True,1.0,3.3445378151260505,398
+1289762088320973101,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,121.03,186,False,3,22511.58,False,True,31.0,3.3445378151260505,398
+745698132340648754,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,221.21,162,False,27,35836.020000000004,False,True,2.0,3.3445378151260505,398
+17231793,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,2,221.46,186,False,31,41191.560000000005,False,True,1.0,3.3445378151260505,398
+780354653578693140,"Union Station, Stanton Park, Kingman Park",Entire home/apt,1,4,227.0,246,False,41,55842.0,False,True,2.0,3.3445378151260505,398
+1092091396321008165,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,294.0,42,False,7,12348.0,False,True,1.0,3.3445378151260505,398
+1099575782814286727,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,5,385.0,84,False,14,32340.0,False,True,1.0,3.3445378151260505,398
+8964989,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,383.0,144,False,24,55152.0,False,True,2.0,3.3445378151260505,398
+1367563069656422277,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,4,267.84,255,True,44,68299.2,True,True,1.0,3.3445378151260505,398
+990554931450362939,"Union Station, Stanton Park, Kingman Park",Entire home/apt,2,6,339.54,255,True,46,86582.70000000001,True,True,2.0,3.3445378151260505,398
+1656756434320987115,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,8,386.11,114,False,19,44016.54,False,True,1.0,3.3445378151260505,398
+1267435046828720320,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,7,345.5,150,False,25,51825.0,False,True,1.0,3.3445378151260505,398
+1166130155599297796,"Union Station, Stanton Park, Kingman Park",Entire home/apt,3,6,444.6,156,False,26,69357.6,False,True,2.0,3.3445378151260505,398
+1642807346773730455,"Union Station, Stanton Park, Kingman Park",Entire home/apt,4,8,320.0,144,False,24,46080.0,False,True,1.0,3.3445378151260505,398
+1480440364973040765,"Union Station, Stanton Park, Kingman Park",Entire home/apt,6,14,535.0,138,False,23,73830.0,False,True,1.0,3.3445378151260505,398
+1606933378392318051,"Union Station, Stanton Park, Kingman Park",Private room,1,1,165.0,54,False,9,8910.0,False,False,1.0,3.3333333333333335,30
+5111311,"Union Station, Stanton Park, Kingman Park",Private room,1,1,98.33,144,False,24,14159.52,False,False,1.0,3.3333333333333335,30
+16380562,"Union Station, Stanton Park, Kingman Park",Private room,1,2,80.0,255,True,66,20400.0,True,False,1.0,3.3333333333333335,30
+44120058,"Union Station, Stanton Park, Kingman Park",Private room,1,3,228.0,108,False,18,24624.0,False,False,1.0,3.3333333333333335,30
+3637629,"Union Station, Stanton Park, Kingman Park",Private room,1,2,107.0,255,True,48,27285.0,True,False,2.0,3.3333333333333335,30
+8397296,"Union Station, Stanton Park, Kingman Park",Private room,1,2,114.0,255,True,76,29070.0,True,False,1.0,3.3333333333333335,30
+1416206077026356205,"Union Station, Stanton Park, Kingman Park",Private room,1,4,255.51,132,False,22,33727.32,False,False,1.0,3.3333333333333335,30
+44119683,"Union Station, Stanton Park, Kingman Park",Private room,1,2,160.0,255,True,43,40800.0,True,False,1.0,3.3333333333333335,30
+10384001,"Union Station, Stanton Park, Kingman Park",Private room,2,4,221.22,186,False,31,41146.92,False,False,2.0,3.3333333333333335,30
+1421895920822663820,"West End, Foggy Bottom, GWU",Entire home/apt,0,4,133.88,186,False,3,24901.68,False,False,31.0,2.375,19
+52405664,"West End, Foggy Bottom, GWU",Entire home/apt,1,2,149.85,234,False,39,35064.9,False,False,1.0,2.375,19
+573969187439664809,"West End, Foggy Bottom, GWU",Entire home/apt,1,2,173.75,246,False,41,42742.5,False,False,1.0,2.375,19
+11176974,"West End, Foggy Bottom, GWU",Entire home/apt,1,4,269.0,252,False,42,67788.0,False,False,1.0,2.375,19
+11868093,"West End, Foggy Bottom, GWU",Entire home/apt,1,4,309.5,255,True,49,78922.5,True,False,1.0,2.375,19
+38133336,"West End, Foggy Bottom, GWU",Entire home/apt,2,4,241.49,255,True,46,61579.95,True,False,2.0,2.375,19
+1238998311954327151,"West End, Foggy Bottom, GWU",Entire home/apt,2,6,491.7,240,False,40,118008.0,False,False,1.0,2.375,19
+646941667251867035,"West End, Foggy Bottom, GWU",Entire home/apt,2,5,630.46,255,True,26,142933.62060000002,True,False,31.0,2.375,19
+1397200554466049431,"West End, Foggy Bottom, GWU",Private room,1,4,516.0,18,False,3,9288.0,False,False,2.0,1.0,8
+1518825410823823173,"West End, Foggy Bottom, GWU",Private room,1,4,207.99,108,False,18,22462.92,False,False,1.0,1.0,8
+599853723407744553,"West End, Foggy Bottom, GWU",Private room,1,2,191.5,162,False,27,31023.0,False,False,1.0,1.0,8
+1146435128126598769,"West End, Foggy Bottom, GWU",Hotel room,1,2,176.0,102,False,17,17952.0,False,True,1.0,1.0,8
+1161002171519069583,"West End, Foggy Bottom, GWU",Hotel room,1,2,310.0,60,False,10,18600.0,False,True,1.0,1.0,8
+1146440122126623766,"West End, Foggy Bottom, GWU",Hotel room,1,4,176.0,132,False,22,23232.0,False,True,1.0,1.0,8
+1146435161097788474,"West End, Foggy Bottom, GWU",Hotel room,1,2,176.0,246,False,41,43296.0,False,True,1.0,1.0,8
+1146439645717333085,"West End, Foggy Bottom, GWU",Hotel room,2,8,352.0,42,False,7,14784.0,False,True,1.0,1.0,8
+1651833113407537461,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",Entire home/apt,2,3,176.67,18,False,3,3180.06,False,False,3.0,1.0,4
+1392119850774204501,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",Entire home/apt,2,3,188.5,48,False,8,9048.0,False,False,2.0,1.0,4
+1436980216187149518,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",Entire home/apt,2,3,186.5,84,False,14,15666.0,False,False,2.0,1.0,4
+838463237828208781,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",Entire home/apt,4,12,271.5,90,False,15,24435.0,False,False,2.0,1.0,4
+12973607,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",Private room,1,2,72.33,174,False,29,12585.42,False,False,3.0,1.0,1
+38646781,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,0,3,223.55,255,True,62,57005.25,True,False,1.0,2.625,21
+1380041223654431913,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,1,3,143.27,126,False,21,18052.02,False,False,2.0,2.625,21
+1004532910257389816,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,1,3,178.0,174,False,29,30972.0,False,False,1.0,2.625,21
+1368137816694127295,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,2,5,214.33,60,False,10,12859.8,False,False,3.0,2.625,21
+541316922926610303,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,2,5,206.33,120,False,20,24759.6,False,False,3.0,2.625,21
+824722945761587061,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,2,5,286.0,255,True,48,72930.0,True,False,1.0,2.625,21
+1191537164166461014,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,3,9,351.79,210,False,35,73875.90000000001,False,False,2.0,2.625,21
+1366924159307611099,"Woodridge, Fort Lincoln, Gateway",Entire home/apt,4,10,305.5,36,False,6,10998.0,False,True,2.0,2.625,21
+1568520271889399168,"Woodridge, Fort Lincoln, Gateway",Private room,1,2,83.0,234,False,39,19422.0,False,False,1.0,1.0,1

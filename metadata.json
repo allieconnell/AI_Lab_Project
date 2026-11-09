@@ -1,0 +1,6 @@
+{
+  "name": "DC Rental Intelligence",
+  "description": "Washington D.C. short-term vs long-term rental revenue predictor, linear regression studio, interactive property map, and DC 2026 regulations guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

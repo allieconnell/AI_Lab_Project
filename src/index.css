@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-oat: #F4EFE6;
+    --color-sandstone-card: #FAF7F2;
+    --color-sandstone-border: #E6DFD5;
+    --color-espresso: #2A2320;
+    --color-sand-muted: #746B63;
+    --color-terracotta: #E08E6D;
+    --color-terracotta-dark: #C97251;
+    --color-olive-moss: #4A6B5D;
+    --color-olive-dark: #375347;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--color-oat);
+    color: var(--color-espresso);
+  }
+}
+
+/* Custom earthy scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EFE9DE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B5A0;
+}
+
+/* Leaflet customized for Boho Organic */
+.leaflet-container {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  background-color: #EDE7DC !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FAF7F2 !important;
+  color: #2A2320 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 25px -5px rgba(42, 35, 32, 0.12), 0 8px 10px -6px rgba(42, 35, 32, 0.08) !important;
+  border: 1px solid #E6DFD5 !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #FAF7F2 !important;
+  box-shadow: none !important;
+}
+
+.leaflet-bar {
+  border: 1px solid #E6DFD5 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(42, 35, 32, 0.08) !important;
+}
+
+.leaflet-bar a {
+  background-color: #FAF7F2 !important;
+  color: #2A2320 !important;
+  border-bottom: 1px solid #E6DFD5 !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #F4EFE6 !important;
+  color: #E08E6D !important;
+}
