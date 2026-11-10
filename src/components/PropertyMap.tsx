@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import {
   APIProvider,
   Map as GoogleMap,
@@ -8,11 +8,16 @@ import {
 } from '@vis.gl/react-google-maps';
 import { AirbnbListing, LongTermComparable, RevenueLookupItem } from '../types/rental';
 import {
-  NEIGHBORHOOD_BOUNDARIES,
-  NeighborhoodBoundary,
-  getListingCoordinates,
-  getNeighborhoodBoundary,
-} from '../utils/dcNeighborhoodPolygons';
+  CANONICAL_NEIGHBORHOOD_LIST,
+  calculateCanonicalScenario,
+  getCanonicalNeighborhood,
+  CanonicalNeighborhood,
+} from '../utils/canonicalMarketData';
+import {
+  DC_MY_MAPS_BOUNDARIES,
+  MyMapsNeighborhoodBoundary,
+} from '../utils/myMapsData';
+import { getListingCoordinates } from '../utils/dcNeighborhoodPolygons';
 import {
   Layers,
   MapPin,
@@ -20,12 +25,17 @@ import {
   Sparkles,
   Info,
   Building,
-  Calendar,
   DollarSign,
   TrendingUp,
   AlertCircle,
-  Eye,
   Sliders,
+  ZoomIn,
+  ZoomOut,
+  ArrowRight,
+  ChevronDown,
+  Eye,
+  Check,
+  MoreHorizontal,
 } from 'lucide-react';
 
 interface PropertyMapProps {
@@ -34,46 +44,70 @@ interface PropertyMapProps {
   revenueLookups: RevenueLookupItem[];
   selectedWard: string;
   onSelectWard: (ward: string) => void;
+  userNeighborhood?: string;
+  onSelectNeighborhood?: (name: string) => void;
+  onOpenCalculator?: () => void;
 }
 
+/**
+ * Controller inside GoogleMap to handle pan/zoom and sync zoom state.
+ */
+function MapPanZoomController({
+  targetCoords,
+  targetZoom,
+  onZoomChange,
+}: {
+  targetCoords: [number, number] | null;
+  targetZoom: number | null;
+  onZoomChange: (zoom: number) => void;
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!map) return;
+    const listener = map.addListener('zoom_changed', () => {
+      const z = map.getZoom();
+      if (typeof z === 'number') onZoomChange(z);
+    });
+    return () => google.maps.event.removeListener(listener);
+  }, [map, onZoomChange]);
+
+  useEffect(() => {
+    if (!map || !targetCoords) return;
+    map.panTo({ lat: targetCoords[0], lng: targetCoords[1] });
+    if (targetZoom) {
+      map.setZoom(targetZoom);
+    }
+  }, [map, targetCoords, targetZoom]);
+
+  return null;
+}
+
+/**
+ * Renders authentic DC neighborhood polygon outlines from Google My Maps (126 corridors).
+ * Includes interactive hover highlighting and hover label events.
+ */
 function NeighborhoodPolygonsOverlay({
   boundaries,
-  activeLayer,
   filterWard,
-  onSelectNeighborhood,
-  hoveredNeighborhood,
-  setHoveredNeighborhood,
+  selectedNeighborhoodName,
+  onSelectBoundary,
+  onHoverBoundary,
 }: {
-  boundaries: NeighborhoodBoundary[];
-  activeLayer: string;
+  boundaries: MyMapsNeighborhoodBoundary[];
   filterWard: string;
-  onSelectNeighborhood: (b: NeighborhoodBoundary) => void;
-  hoveredNeighborhood: string | null;
-  setHoveredNeighborhood: (name: string | null) => void;
+  selectedNeighborhoodName?: string;
+  onSelectBoundary: (b: MyMapsNeighborhoodBoundary) => void;
+  onHoverBoundary: (b: MyMapsNeighborhoodBoundary | null, position?: { lat: number; lng: number }) => void;
 }) {
   const map = useMap();
   const polygonsRef = useRef<google.maps.Polygon[]>([]);
-  const tooltipRef = useRef<google.maps.InfoWindow | null>(null);
 
   useEffect(() => {
     if (!map || typeof google === 'undefined' || !google.maps) return;
 
-    // Create shared floating hover tooltip InfoWindow
-    if (!tooltipRef.current) {
-      tooltipRef.current = new google.maps.InfoWindow({
-        disableAutoPan: true,
-        headerDisabled: true,
-      });
-    }
-    const tooltip = tooltipRef.current;
-
-    // Clear old polygons
     polygonsRef.current.forEach((p) => p.setMap(null));
     polygonsRef.current = [];
-
-    if (activeLayer !== 'all' && activeLayer !== 'neighborhoods') {
-      return;
-    }
 
     const filtered = boundaries.filter((b) => {
       if (filterWard !== 'All' && b.ward.toLowerCase() !== filterWard.toLowerCase()) {
@@ -83,62 +117,58 @@ function NeighborhoodPolygonsOverlay({
     });
 
     filtered.forEach((boundary) => {
-      const isHovered = hoveredNeighborhood === boundary.name;
+      const isSelected = selectedNeighborhoodName
+        ? boundary.name.toLowerCase().includes(selectedNeighborhoodName.toLowerCase()) ||
+          selectedNeighborhoodName.toLowerCase().includes(boundary.name.toLowerCase())
+        : false;
 
       const polygon = new google.maps.Polygon({
         paths: boundary.polygon.map(([lat, lng]) => ({ lat, lng })),
-        strokeColor: boundary.color,
-        strokeOpacity: isHovered ? 1.0 : 0.75,
-        strokeWeight: isHovered ? 3.5 : 2,
+        strokeColor: isSelected ? '#2A2320' : boundary.color,
+        strokeOpacity: isSelected ? 0.95 : 0.75,
+        strokeWeight: isSelected ? 3 : 1.5,
         fillColor: boundary.color,
-        fillOpacity: isHovered ? 0.55 : 0.35,
+        fillOpacity: isSelected ? 0.35 : 0.16,
         clickable: true,
         map,
-        zIndex: 1,
+        zIndex: isSelected ? 5 : 1,
       });
 
-      polygon.addListener('click', () => {
-        onSelectNeighborhood(boundary);
-      });
-
-      polygon.addListener('mouseover', (e: google.maps.MapMouseEvent) => {
-        setHoveredNeighborhood(boundary.name);
-        if (e.latLng && tooltip) {
-          tooltip.setContent(`
-            <div style="font-family: 'DM Sans', -apple-system, sans-serif; padding: 4px 8px; text-align: center;">
-              <div style="font-size: 13px; font-weight: 700; color: #2A2320; letter-spacing: -0.01em;">${boundary.name}</div>
-              <div style="font-size: 11px; font-weight: 600; color: #4A6B5D; margin-top: 1px;">${boundary.ward} · Click to analyze</div>
-            </div>
-          `);
-          tooltip.setPosition(e.latLng);
-          tooltip.open({ map });
-        }
-      });
-
-      polygon.addListener('mousemove', (e: google.maps.MapMouseEvent) => {
-        if (e.latLng && tooltip) {
-          tooltip.setPosition(e.latLng);
-        }
+      polygon.addListener('mouseover', (e: google.maps.PolyMouseEvent) => {
+        polygon.setOptions({
+          strokeColor: '#C97251',
+          strokeWeight: 2.5,
+          fillOpacity: 0.32,
+          zIndex: 10,
+        });
+        const latLng = e.latLng
+          ? { lat: e.latLng.lat(), lng: e.latLng.lng() }
+          : { lat: boundary.centroid[0], lng: boundary.centroid[1] };
+        onHoverBoundary(boundary, latLng);
       });
 
       polygon.addListener('mouseout', () => {
-        setHoveredNeighborhood(null);
-        if (tooltip) {
-          tooltip.close();
-        }
+        polygon.setOptions({
+          strokeColor: isSelected ? '#2A2320' : boundary.color,
+          strokeWeight: isSelected ? 3 : 1.5,
+          fillOpacity: isSelected ? 0.35 : 0.16,
+          zIndex: isSelected ? 5 : 1,
+        });
+        onHoverBoundary(null);
+      });
+
+      polygon.addListener('click', () => {
+        onSelectBoundary(boundary);
       });
 
       polygonsRef.current.push(polygon);
     });
 
     return () => {
-      if (tooltipRef.current) {
-        tooltipRef.current.close();
-      }
       polygonsRef.current.forEach((p) => p.setMap(null));
       polygonsRef.current = [];
     };
-  }, [map, boundaries, activeLayer, filterWard, hoveredNeighborhood]);
+  }, [map, boundaries, filterWard, selectedNeighborhoodName, onSelectBoundary, onHoverBoundary]);
 
   return null;
 }
@@ -146,38 +176,60 @@ function NeighborhoodPolygonsOverlay({
 export const PropertyMap: React.FC<PropertyMapProps> = ({
   airbnbListings,
   longTermListings,
-  revenueLookups,
   selectedWard,
   onSelectWard,
+  userNeighborhood,
+  onSelectNeighborhood,
+  onOpenCalculator,
 }) => {
   const mapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '';
 
-  // Mode: Native Interactive GMP Map vs Original Google My Maps Embed
+  // View Mode: Interactive GMP vs Embedded Google My Maps
   const [viewMode, setViewMode] = useState<'interactive' | 'embed_mymaps'>('interactive');
-  const [myMapsBoundaries, setMyMapsBoundaries] = useState<NeighborhoodBoundary[]>([]);
 
-  // Layer State
-  const [activeLayer, setActiveLayer] = useState<'all' | 'neighborhoods' | 'airbnb_listings' | 'long_term'>('all');
-  const [mapTypeId, setMapTypeId] = useState<'roadmap' | 'terrain' | 'hybrid'>('roadmap');
+  // Metric Toggle: 'breakeven' (Breakeven Nights) vs 'delta' (Lease vs Airbnb Net $)
+  const [metricDisplay, setMetricDisplay] = useState<'breakeven' | 'delta'>('breakeven');
+
+  // Layer State: 'overview' | 'all' | 'airbnb_listings' | 'long_term'
+  const [activeLayer, setActiveLayer] = useState<'overview' | 'all' | 'airbnb_listings' | 'long_term'>('overview');
   const [filterWard, setFilterWard] = useState<string>('All');
-  const [hoveredNeighborhood, setHoveredNeighborhood] = useState<string | null>(null);
+  const [mapZoom, setMapZoom] = useState<number>(12);
+  const [targetPanZoom, setTargetPanZoom] = useState<{ coords: [number, number]; zoom: number } | null>(null);
 
-  // Load the 126 authentic DC neighborhood outlines from Google My Maps
-  useEffect(() => {
-    fetch('/assets/dc_my_maps_neighborhoods.json')
-      .then((r) => r.json())
-      .then((data: NeighborhoodBoundary[]) => {
-        if (Array.isArray(data) && data.length > 0) {
-          setMyMapsBoundaries(data);
-        }
-      })
-      .catch((err) => console.warn('Could not load My Maps polygons:', err));
-  }, []);
+  // Price Filters & "More" Menu Popover
+  const [showMoreMenu, setShowMoreMenu] = useState(false);
+  const [showPriceFilters, setShowPriceFilters] = useState(false);
+  const [maxAirbnbPrice, setMaxAirbnbPrice] = useState<number>(600);
+  const [maxLeasePrice, setMaxLeasePrice] = useState<number>(4500);
 
-  // Selected Item Info for Sidebar & InfoWindow
-  const [selectedNeighborhood, setSelectedNeighborhood] = useState<NeighborhoodBoundary | null>(
-    NEIGHBORHOOD_BOUNDARIES['Capitol Hill, Lincoln Park'] || null
+  // Hovered / Tapped Marker state for full info card popover
+  const [hoveredCorridor, setHoveredCorridor] = useState<CanonicalNeighborhood | null>(null);
+
+  // Hovered Polygon State for hover label
+  const [hoveredBoundary, setHoveredBoundary] = useState<MyMapsNeighborhoodBoundary | null>(null);
+  const [hoverPosition, setHoverPosition] = useState<{ lat: number; lng: number } | null>(null);
+
+  const handleHoverBoundary = useCallback(
+    (b: MyMapsNeighborhoodBoundary | null, pos?: { lat: number; lng: number }) => {
+      setHoveredBoundary(b);
+      setHoverPosition(pos || null);
+    },
+    []
   );
+
+  // Selected Neighborhood (Single Source of Truth)
+  const [selectedNeighborhood, setSelectedNeighborhood] = useState<CanonicalNeighborhood>(() => {
+    if (userNeighborhood) return getCanonicalNeighborhood(userNeighborhood);
+    return getCanonicalNeighborhood('Dupont Circle, Connecticut Avenue/K Street');
+  });
+
+  useEffect(() => {
+    if (userNeighborhood) {
+      setSelectedNeighborhood(getCanonicalNeighborhood(userNeighborhood));
+    }
+  }, [userNeighborhood]);
+
+  // Selected Pin markers
   const [selectedAirbnb, setSelectedAirbnb] = useState<{
     listing: AirbnbListing;
     coords: [number, number];
@@ -186,233 +238,289 @@ export const PropertyMap: React.FC<PropertyMapProps> = ({
 
   const dcWards = ['All', 'Ward 1', 'Ward 2', 'Ward 3', 'Ward 4', 'Ward 5', 'Ward 6', 'Ward 7', 'Ward 8'];
 
-  // Calculate ward median monthly rents from DC Rent Registry
-  const wardMedianRents = useMemo(() => {
-    const map: Record<string, number> = {};
-    dcWards.forEach((w) => {
-      if (w === 'All') return;
-      const comps = longTermListings.filter((c) => c.ward.toLowerCase() === w.toLowerCase());
-      const rents = comps.map((c) => c.rent_monthly).sort((a, b) => a - b);
-      if (rents.length > 0) {
-        const mid = Math.floor(rents.length / 2);
-        map[w] = rents[mid];
-      } else {
-        map[w] = 2450;
-      }
+  // Canonical scenario for selected neighborhood
+  const selectedScenario = useMemo(() => {
+    return calculateCanonicalScenario({
+      neighborhoodName: selectedNeighborhood.name,
+      bedrooms: 1,
+      spaceType: 'Entire home/apt',
+      isPrimaryResidence: true,
+      isHoaAllowed: true,
     });
-    return map;
-  }, [longTermListings]);
+  }, [selectedNeighborhood]);
 
-  // Aggregate lookup map for neighborhoods
-  const neighborhoodMetrics = useMemo(() => {
-    const map: Record<string, { medianPrice: number; medianOcc: number; p75Rev: number; count: number }> = {};
-    revenueLookups.forEach((r) => {
-      if (!map[r.neighbourhood]) {
-        map[r.neighbourhood] = {
-          medianPrice: r.median_price,
-          medianOcc: r.median_occ,
-          p75Rev: r.p75_rev,
-          count: r.n,
-        };
-      }
-    });
-    return map;
-  }, [revenueLookups]);
-
-  // Prepared individual Airbnb listings with deterministic coordinates
-  const displayAirbnbListings = useMemo(() => {
-    // If ward filter is active, prioritize listings matching the ward so they are not cut off
-    const candidateList =
-      filterWard === 'All'
-        ? airbnbListings.slice(0, 450)
-        : airbnbListings
-            .filter((l) => {
-              const boundary = getNeighborhoodBoundary(l.neighbourhood);
-              return boundary.ward.toLowerCase() === filterWard.toLowerCase();
-            })
-            .slice(0, 450);
-
-    return candidateList.map((listing) => {
-      const coords = getListingCoordinates(listing.id, listing.neighbourhood);
-      const boundary = getNeighborhoodBoundary(listing.neighbourhood);
-      const areaRent = wardMedianRents[boundary.ward] || 2450;
-      const breakEvenNights = listing.price_clean > 0 ? Math.ceil((areaRent * 12) / listing.price_clean) : 150;
+  // Pre-calculated canonical metrics for all 39 corridors
+  const canonicalCorridors = useMemo(() => {
+    return CANONICAL_NEIGHBORHOOD_LIST.map((neighborhood) => {
+      const scenario = calculateCanonicalScenario({
+        neighborhoodName: neighborhood.name,
+        bedrooms: 1,
+        spaceType: 'Entire home/apt',
+        isPrimaryResidence: true,
+        isHoaAllowed: true,
+      });
 
       return {
-        listing,
-        coords,
-        boundary,
-        areaRent,
-        breakEvenNights,
+        neighborhood,
+        scenario,
+        breakevenNights: scenario.breakevenNights,
+        unhostedNetDelta: scenario.unhostedNetDelta,
+        adjustedNightlyRate: scenario.adjustedNightlyRate,
+        adjustedMonthlyRent: scenario.adjustedMonthlyRent,
       };
     });
-  }, [airbnbListings, wardMedianRents, filterWard]);
+  }, []);
 
-  // Filtered individual Airbnb listings
+  // Filtered corridor list by ward
+  const filteredCorridors = useMemo(() => {
+    if (filterWard === 'All') return canonicalCorridors;
+    return canonicalCorridors.filter(
+      (c) => c.neighborhood.ward.toLowerCase() === filterWard.toLowerCase()
+    );
+  }, [canonicalCorridors, filterWard]);
+
+  // Prepared individual Airbnb listings
   const filteredAirbnbListings = useMemo(() => {
-    if (activeLayer !== 'all' && activeLayer !== 'airbnb_listings') return [];
-    return displayAirbnbListings;
-  }, [displayAirbnbListings, activeLayer]);
+    if (activeLayer === 'overview' || activeLayer === 'long_term') return [];
 
-  // Filtered Long-Term DC Rent Registry Listings
+    return airbnbListings
+      .filter((l) => {
+        if (l.price_clean > maxAirbnbPrice) return false;
+        if (filterWard !== 'All') {
+          const boundary = getCanonicalNeighborhood(l.neighbourhood);
+          if (boundary.ward.toLowerCase() !== filterWard.toLowerCase()) return false;
+        }
+        return true;
+      })
+      .slice(0, 150)
+      .map((listing) => ({
+        listing,
+        coords: getListingCoordinates(listing.id, listing.neighbourhood),
+        boundary: getCanonicalNeighborhood(listing.neighbourhood),
+      }));
+  }, [airbnbListings, activeLayer, filterWard, maxAirbnbPrice]);
+
+  // Filtered long-term listings
   const filteredLongTermListings = useMemo(() => {
-    if (activeLayer !== 'all' && activeLayer !== 'long_term') return [];
-    return longTermListings.slice(0, 150).filter((comp) => {
-      if (filterWard !== 'All' && comp.ward.toLowerCase() !== filterWard.toLowerCase()) {
-        return false;
+    if (activeLayer === 'overview' || activeLayer === 'airbnb_listings') return [];
+
+    return longTermListings
+      .filter((comp) => {
+        if (comp.rent_monthly > maxLeasePrice) return false;
+        if (filterWard !== 'All' && comp.ward.toLowerCase() !== filterWard.toLowerCase()) {
+          return false;
+        }
+        return true;
+      })
+      .slice(0, 150);
+  }, [longTermListings, activeLayer, filterWard, maxLeasePrice]);
+
+  const totalIndividualCount = filteredAirbnbListings.length + filteredLongTermListings.length;
+
+  // Handler for clicking authentic My Maps boundary polygons (126 corridors)
+  const handleSelectMyMapsBoundary = useCallback(
+    (boundary: MyMapsNeighborhoodBoundary) => {
+      const canonical = getCanonicalNeighborhood(boundary.name);
+      setSelectedNeighborhood(canonical);
+      setSelectedAirbnb(null);
+      setSelectedLongTerm(null);
+      setHoveredCorridor(null);
+
+      // Call onSelectNeighborhood to update Home Hub directly with NO tab switch!
+      if (onSelectNeighborhood) {
+        onSelectNeighborhood(canonical.name);
       }
-      return true;
-    });
-  }, [longTermListings, activeLayer, filterWard]);
+      if (onSelectWard && canonical.ward !== selectedWard) {
+        onSelectWard(canonical.ward);
+      }
 
-  // Breakeven metrics for the currently selected neighborhood space
-  const currentNeighborhoodBreakeven = useMemo(() => {
-    if (!selectedNeighborhood) return null;
-    const boundary = selectedNeighborhood;
-    const metrics = neighborhoodMetrics[boundary.name] || {
-      medianPrice: 195,
-      medianOcc: 110,
-      p75Rev: 32000,
-      count: 45,
-    };
-    const monthlyLease = wardMedianRents[boundary.ward] || 2450;
-    const annualLeaseGross = monthlyLease * 12;
-    const breakEvenNights = metrics.medianPrice > 0 ? Math.ceil(annualLeaseGross / metrics.medianPrice) : 150;
-    const exceedsUnhostedCap = breakEvenNights > 90;
+      setTargetPanZoom({
+        coords: boundary.centroid,
+        zoom: 14,
+      });
+    },
+    [onSelectNeighborhood, onSelectWard, selectedWard]
+  );
 
-    return {
-      boundary,
-      metrics,
-      monthlyLease,
-      annualLeaseGross,
-      breakEvenNights,
-      exceedsUnhostedCap,
-    };
-  }, [selectedNeighborhood, neighborhoodMetrics, wardMedianRents]);
+  // Handler: Selecting a neighborhood updates side panel AND Home Hub (Requirement 8)
+  const handleSelectNeighborhood = (neighborhood: CanonicalNeighborhood) => {
+    setSelectedNeighborhood(neighborhood);
+    setSelectedAirbnb(null);
+    setSelectedLongTerm(null);
+    setHoveredCorridor(null);
 
-  const boundariesList = useMemo(() => {
-    if (myMapsBoundaries.length > 0) {
-      return myMapsBoundaries;
+    // Call onSelectNeighborhood to update Home Hub directly with NO tab switch!
+    if (onSelectNeighborhood) {
+      onSelectNeighborhood(neighborhood.name);
     }
-    return Object.values(NEIGHBORHOOD_BOUNDARIES);
-  }, [myMapsBoundaries]);
+    if (onSelectWard && neighborhood.ward !== selectedWard) {
+      onSelectWard(neighborhood.ward);
+    }
+
+    setTargetPanZoom({
+      coords: neighborhood.centroid,
+      zoom: 14,
+    });
+  };
 
   return (
-    <div className="space-y-6">
-      {/* Top Map Toolbar & Layer Controls */}
-      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+    <div className="space-y-5">
+      {/* 1. Map Toolbar & Controls */}
+      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-3xl p-4 sm:p-5 shadow-xs space-y-3.5">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3">
           <div>
-            <div className="flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#E08E6D] mb-1">
-              <span>Google Maps Platform Underlay</span>
-              <span>·</span>
-              <span>126 D.C. Neighborhood Outlines & Analytics</span>
-            </div>
-            <h2 className="text-xl sm:text-2xl font-semibold text-[#2A2320]">
-              Washington D.C. Rental Market & Breakeven Explorer
+            <h2 className="text-xl sm:text-2xl font-bold text-[#2A2320] tracking-tight">
+              Washington D.C. Rental Market Map
             </h2>
-            <p className="text-xs text-[#746B63] mt-0.5">
-              Explore 126 D.C. neighborhood outlines directly from the Google My Maps layer, compare individual Airbnb listings, and review breakeven occupancy thresholds.
+            <p className="text-xs text-[#5A524C] mt-0.5">
+              Click any neighborhood to activate it across the app. Dupont Circle is strictly Ward 2.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            {/* View Mode Toggle: Interactive vs Embedded My Maps */}
-            <div className="flex items-center bg-[#F4EFE6] p-1 rounded-xl border border-[#E6DFD5] text-xs">
+            {/* Metric Toggle: Breakeven Nights vs Net Delta (Requirement 8) */}
+            <div className="flex items-center bg-[#F4EFE6] p-1 rounded-2xl border border-[#E6DFD5] text-xs">
               <button
-                onClick={() => setViewMode('interactive')}
-                className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                  viewMode === 'interactive' ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs font-semibold' : 'text-[#746B63]'
+                type="button"
+                onClick={() => setMetricDisplay('breakeven')}
+                className={`px-3 py-1.5 rounded-xl font-semibold transition-all cursor-pointer ${
+                  metricDisplay === 'breakeven'
+                    ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs'
+                    : 'text-[#5A524C] hover:text-[#2A2320]'
                 }`}
               >
-                Interactive Map ({boundariesList.length} Outlines)
+                Breakeven Nights
               </button>
               <button
-                onClick={() => setViewMode('embed_mymaps')}
-                className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer font-medium flex items-center space-x-1 ${
-                  viewMode === 'embed_mymaps' ? 'bg-[#E08E6D] text-white shadow-xs font-semibold' : 'text-[#746B63]'
+                type="button"
+                onClick={() => setMetricDisplay('delta')}
+                className={`px-3 py-1.5 rounded-xl font-semibold transition-all cursor-pointer ${
+                  metricDisplay === 'delta'
+                    ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs'
+                    : 'text-[#5A524C] hover:text-[#2A2320]'
                 }`}
               >
-                <span>Google My Maps Embed</span>
+                Lease vs Airbnb Net $
               </button>
             </div>
 
-            {viewMode === 'interactive' && (
-              <>
-                {/* Base Underlay Style */}
-                <div className="flex items-center bg-[#F4EFE6] p-1 rounded-xl border border-[#E6DFD5] text-xs">
-                  <button
-                    onClick={() => setMapTypeId('roadmap')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      mapTypeId === 'roadmap' ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs' : 'text-[#746B63]'
-                    }`}
-                  >
-                    Road
-                  </button>
-                  <button
-                    onClick={() => setMapTypeId('terrain')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      mapTypeId === 'terrain' ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs' : 'text-[#746B63]'
-                    }`}
-                  >
-                    Terrain
-                  </button>
-                  <button
-                    onClick={() => setMapTypeId('hybrid')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      mapTypeId === 'hybrid' ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs' : 'text-[#746B63]'
-                    }`}
-                  >
-                    Satellite
-                  </button>
-                </div>
+            {/* Layer View Mode */}
+            <div className="flex items-center bg-[#F4EFE6] p-1 rounded-2xl border border-[#E6DFD5] text-xs">
+              <button
+                type="button"
+                onClick={() => setActiveLayer('overview')}
+                className={`px-3 py-1.5 rounded-xl font-semibold transition-all cursor-pointer ${
+                  activeLayer === 'overview'
+                    ? 'bg-[#E08E6D] text-white shadow-xs'
+                    : 'text-[#5A524C] hover:text-[#2A2320]'
+                }`}
+              >
+                Overview
+              </button>
 
-                {/* Layer Filter */}
-                <div className="flex items-center bg-[#F4EFE6] p-1 rounded-xl border border-[#E6DFD5] text-xs">
+              {/* Hide "All Properties (0)" while empty (Requirement 8) */}
+              {totalIndividualCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setActiveLayer('all')}
+                  className={`px-3 py-1.5 rounded-xl font-semibold transition-all cursor-pointer ${
+                    activeLayer === 'all'
+                      ? 'bg-[#2A2320] text-white shadow-xs'
+                      : 'text-[#5A524C] hover:text-[#2A2320]'
+                  }`}
+                >
+                  All Properties ({totalIndividualCount})
+                </button>
+              )}
+            </div>
+
+            {/* "More" Menu Dropdown (Contains My Maps Embed and Price Filters) (Requirement 8) */}
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setShowMoreMenu((prev) => !prev)}
+                className={`px-3 py-1.5 rounded-2xl border text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer ${
+                  showMoreMenu || showPriceFilters || viewMode === 'embed_mymaps'
+                    ? 'bg-[#FAF0EB] border-[#E08E6D] text-[#C97251]'
+                    : 'bg-[#F4EFE6] border-[#E6DFD5] text-[#5A524C] hover:text-[#2A2320]'
+                }`}
+              >
+                <MoreHorizontal className="w-4 h-4" />
+                <span>More</span>
+              </button>
+
+              {showMoreMenu && (
+                <div className="absolute right-0 top-full mt-2 w-48 bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl shadow-xl z-50 p-2 space-y-1">
                   <button
-                    onClick={() => setActiveLayer('all')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      activeLayer === 'all' ? 'bg-[#FAF7F2] text-[#2A2320] shadow-xs' : 'text-[#746B63]'
-                    }`}
+                    type="button"
+                    onClick={() => {
+                      setViewMode((prev) => (prev === 'interactive' ? 'embed_mymaps' : 'interactive'));
+                      setShowMoreMenu(false);
+                    }}
+                    className="w-full text-left px-3 py-2 text-xs font-medium rounded-xl hover:bg-white text-[#2A2320] flex items-center justify-between cursor-pointer"
                   >
-                    All Layers
+                    <span>{viewMode === 'interactive' ? 'Switch to My Maps' : 'Switch to Interactive'}</span>
                   </button>
+
                   <button
-                    onClick={() => setActiveLayer('neighborhoods')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      activeLayer === 'neighborhoods' ? 'bg-[#D4A373] text-white shadow-xs' : 'text-[#746B63]'
-                    }`}
+                    type="button"
+                    onClick={() => {
+                      setShowPriceFilters((prev) => !prev);
+                      setShowMoreMenu(false);
+                    }}
+                    className="w-full text-left px-3 py-2 text-xs font-medium rounded-xl hover:bg-white text-[#2A2320] flex items-center justify-between cursor-pointer"
                   >
-                    Spaces ({boundariesList.length})
-                  </button>
-                  <button
-                    onClick={() => setActiveLayer('airbnb_listings')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      activeLayer === 'airbnb_listings' ? 'bg-[#E08E6D] text-white shadow-xs' : 'text-[#746B63]'
-                    }`}
-                  >
-                    Airbnb ({filteredAirbnbListings.length})
-                  </button>
-                  <button
-                    onClick={() => setActiveLayer('long_term')}
-                    className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer font-medium ${
-                      activeLayer === 'long_term' ? 'bg-[#4A6B5D] text-white shadow-xs' : 'text-[#746B63]'
-                    }`}
-                  >
-                    Long-Term
+                    <span>Price Filters</span>
+                    {(maxAirbnbPrice < 600 || maxLeasePrice < 4500) && (
+                      <span className="w-2 h-2 rounded-full bg-[#E08E6D]" />
+                    )}
                   </button>
                 </div>
-              </>
-            )}
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Ward Filter Bar */}
-        <div className="mt-4 pt-3 border-t border-[#E6DFD5]/70 flex flex-wrap items-center gap-2">
-          <div className="flex items-center space-x-1.5 text-xs font-semibold text-[#746B63] mr-2">
-            <Filter className="w-3.5 h-3.5" />
-            <span>Filter Ward:</span>
+        {/* Collapsible Price Filter Sliders (when opened via More menu) */}
+        {showPriceFilters && (
+          <div className="bg-[#FAF0EB]/60 border border-[#E08E6D]/40 rounded-2xl p-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs animate-in fade-in">
+            <div className="space-y-1">
+              <div className="flex justify-between font-semibold">
+                <span className="text-[#5A524C]">Max Airbnb Nightly Rate:</span>
+                <span className="font-mono text-[#E08E6D]">${maxAirbnbPrice} / night</span>
+              </div>
+              <input
+                type="range"
+                min="75"
+                max="800"
+                step="25"
+                value={maxAirbnbPrice}
+                onChange={(e) => setMaxAirbnbPrice(Number(e.target.value))}
+                className="w-full accent-[#E08E6D] cursor-pointer"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <div className="flex justify-between font-semibold">
+                <span className="text-[#5A524C]">Max Long-Term Monthly Lease:</span>
+                <span className="font-mono text-[#4A6B5D]">${maxLeasePrice.toLocaleString()} / mo</span>
+              </div>
+              <input
+                type="range"
+                min="1200"
+                max="6000"
+                step="100"
+                value={maxLeasePrice}
+                onChange={(e) => setMaxLeasePrice(Number(e.target.value))}
+                className="w-full accent-[#4A6B5D] cursor-pointer"
+              />
+            </div>
           </div>
+        )}
+
+        {/* Ward Filter Pills */}
+        <div className="pt-2 border-t border-[#E6DFD5]/70 flex flex-wrap items-center gap-1.5">
+          <span className="text-xs font-semibold text-[#5A524C] mr-1">Ward Filter:</span>
           {dcWards.map((w) => (
             <button
               key={w}
@@ -420,10 +528,10 @@ export const PropertyMap: React.FC<PropertyMapProps> = ({
                 setFilterWard(w);
                 if (w !== 'All') onSelectWard(w);
               }}
-              className={`px-2.5 py-1 text-xs rounded-full font-medium transition-colors cursor-pointer ${
+              className={`px-3 py-1 text-xs rounded-full font-semibold transition-colors cursor-pointer ${
                 filterWard === w
                   ? 'bg-[#2A2320] text-white'
-                  : 'bg-[#F4EFE6] text-[#746B63] hover:text-[#2A2320] hover:bg-[#EFE9DE]'
+                  : 'bg-[#FFFFFF] text-[#5A524C] hover:text-[#2A2320] border border-[#E6DFD5]'
               }`}
             >
               {w}
@@ -432,11 +540,11 @@ export const PropertyMap: React.FC<PropertyMapProps> = ({
         </div>
       </div>
 
-      {/* Main Map Canvas & Side Intelligence Panel */}
+      {/* 2. Map Canvas & Right Side Panel */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Left: Google Map Viewport or Embedded My Maps */}
+        {/* Left: Google Map Viewport */}
         <div className="lg:col-span-8">
-          <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl overflow-hidden shadow-xs relative h-[560px]">
+          <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-3xl overflow-hidden shadow-xs relative h-[580px]">
             {viewMode === 'embed_mymaps' ? (
               <div className="w-full h-full relative bg-[#EDE7DC]">
                 <iframe
@@ -452,345 +560,305 @@ export const PropertyMap: React.FC<PropertyMapProps> = ({
             ) : (
               <APIProvider apiKey={mapsApiKey}>
                 <GoogleMap
-                defaultCenter={{ lat: 38.9072, lng: -77.0369 }}
-                defaultZoom={12}
-                minZoom={11}
-                maxZoom={17}
-                mapId="DEMO_MAP_ID"
-                mapTypeId={mapTypeId}
-                internalUsageAttributionIds={['gmp_mcp_codeassist_v1_aistudio']}
-                gestureHandling="greedy"
-                disableDefaultUI={false}
-                style={{ width: '100%', height: '100%' }}
-              >
-                {/* 1. Neighborhood Boundaries & Color Fills Overlay */}
-                <NeighborhoodPolygonsOverlay
-                  boundaries={boundariesList}
-                  activeLayer={activeLayer}
-                  filterWard={filterWard}
-                  onSelectNeighborhood={(b) => {
-                    setSelectedNeighborhood(b);
-                    setSelectedAirbnb(null);
-                    setSelectedLongTerm(null);
-                  }}
-                  hoveredNeighborhood={hoveredNeighborhood}
-                  setHoveredNeighborhood={setHoveredNeighborhood}
-                />
+                  defaultCenter={{ lat: 38.9072, lng: -77.0369 }}
+                  defaultZoom={12}
+                  minZoom={11}
+                  maxZoom={17}
+                  mapId="DEMO_MAP_ID"
+                  internalUsageAttributionIds={['gmp_mcp_codeassist_v1_aistudio']}
+                  gestureHandling="greedy"
+                  disableDefaultUI={false}
+                  style={{ width: '100%', height: '100%' }}
+                >
+                  {/* Pan/Zoom Controller */}
+                  <MapPanZoomController
+                    targetCoords={targetPanZoom ? targetPanZoom.coords : null}
+                    targetZoom={targetPanZoom ? targetPanZoom.zoom : null}
+                    onZoomChange={setMapZoom}
+                  />
 
-                {/* 2. Individual Airbnb Listings Markers */}
-                {filteredAirbnbListings.map((item) => (
-                  <AdvancedMarker
-                    key={item.listing.id}
-                    position={{ lat: item.coords[0], lng: item.coords[1] }}
-                    onClick={() => {
-                      setSelectedAirbnb({ listing: item.listing, coords: item.coords });
-                      setSelectedNeighborhood(item.boundary);
-                      setSelectedLongTerm(null);
-                    }}
-                  >
-                    <div
-                      className="cursor-pointer transition-transform hover:scale-110 flex items-center space-x-1"
-                      style={{
-                        backgroundColor: item.listing.host_name ? '#C97251' : '#E08E6D',
-                        color: 'white',
-                        padding: '2px 6px',
-                        borderRadius: '9999px',
-                        fontSize: '10px',
-                        fontWeight: 700,
-                        fontFamily: "'DM Sans', sans-serif",
-                        border: '1.5px solid #FFFFFF',
-                        boxShadow: '0 2px 6px rgba(42,35,32,0.35)',
-                        whiteSpace: 'nowrap',
-                      }}
-                      title={item.listing.name || `Airbnb Listing #${item.listing.id}`}
+                  {/* Authentic DC Neighborhood Outlines from Google My Maps (126 Corridors) */}
+                  <NeighborhoodPolygonsOverlay
+                    boundaries={DC_MY_MAPS_BOUNDARIES}
+                    filterWard={filterWard}
+                    selectedNeighborhoodName={selectedNeighborhood.name}
+                    onSelectBoundary={handleSelectMyMapsBoundary}
+                    onHoverBoundary={handleHoverBoundary}
+                  />
+
+                  {/* HOVER LABEL FOR NEIGHBORHOOD NAME (User Request 3) */}
+                  {hoveredBoundary && hoverPosition && (
+                    <InfoWindow
+                      position={hoverPosition}
+                      disableAutoPan={true}
+                      headerDisabled={true}
                     >
-                      {item.listing.host_name && (
-                        <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
-                      )}
-                      <span>${Math.round(item.listing.price_clean)}</span>
-                    </div>
-                  </AdvancedMarker>
-                ))}
-
-                {/* 3. DC Long-Term Rent Registry Accommodation Markers */}
-                {filteredLongTermListings.map((comp) => (
-                  <AdvancedMarker
-                    key={comp.id}
-                    position={{ lat: comp.latitude, lng: comp.longitude }}
-                    onClick={() => {
-                      setSelectedLongTerm(comp);
-                      setSelectedAirbnb(null);
-                      const boundary = getNeighborhoodBoundary(comp.ward);
-                      setSelectedNeighborhood(boundary);
-                    }}
-                  >
-                    <div
-                      className="cursor-pointer transition-transform hover:scale-110"
-                      style={{
-                        backgroundColor: '#4A6B5D',
-                        color: 'white',
-                        padding: '2px 6px',
-                        borderRadius: '9999px',
-                        fontSize: '10px',
-                        fontWeight: 700,
-                        fontFamily: "'DM Sans', sans-serif",
-                        border: '1.5px solid #FFFFFF',
-                        boxShadow: '0 2px 6px rgba(42,35,32,0.35)',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      ${Math.round(comp.rent_monthly)}/mo
-                    </div>
-                  </AdvancedMarker>
-                ))}
-
-                {/* InfoWindow for Clicked Airbnb Listing */}
-                {selectedAirbnb && (
-                  <InfoWindow
-                    position={{ lat: selectedAirbnb.coords[0], lng: selectedAirbnb.coords[1] }}
-                    onCloseClick={() => setSelectedAirbnb(null)}
-                  >
-                    <div className="p-2.5 max-w-xs font-sans text-xs space-y-1.5 text-[#2A2320]">
-                      <div className="flex items-center justify-between gap-1.5">
-                        <span className="px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-[#E08E6D]/20 text-[#C97251]">
-                          {selectedAirbnb.listing.host_name ? 'Verified Host Listing' : 'Individual Airbnb Listing'}
+                      <div className="px-2.5 py-1 text-xs font-semibold text-[#2A2320] flex items-center space-x-1.5 whitespace-nowrap shadow-xs">
+                        <span className="font-bold">{hoveredBoundary.name}</span>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#E08E6D]/15 text-[#C97251] font-mono">
+                          {hoveredBoundary.ward}
                         </span>
-                        <span className="text-[#746B63] font-mono text-[10px]">#{selectedAirbnb.listing.id.slice(-6)}</span>
                       </div>
+                    </InfoWindow>
+                  )}
 
-                      {/* Authentic Listing Title from Ward 2 dataset */}
-                      {selectedAirbnb.listing.name && (
-                        <div className="text-xs font-bold text-[#2A2320] leading-snug line-clamp-2">
-                          {selectedAirbnb.listing.name}
+                  {/* COMPACT COLOR-CODED OVERVIEW MARKERS (Requirement 8)
+                      One metric per marker with metric toggle, full card on hover/tap
+                  */}
+                  {activeLayer === 'overview' &&
+                    filteredCorridors.map((item) => {
+                      const isSelected = selectedNeighborhood.id === item.neighborhood.id;
+                      const isHovered = hoveredCorridor?.id === item.neighborhood.id;
+
+                      // Pill label based on metricDisplay
+                      const pillLabel =
+                        metricDisplay === 'breakeven'
+                          ? `${item.breakevenNights}d`
+                          : item.unhostedNetDelta > 0
+                          ? `+$${(item.unhostedNetDelta / 1000).toFixed(1)}k Lease`
+                          : `+$${(Math.abs(item.unhostedNetDelta) / 1000).toFixed(1)}k Airbnb`;
+
+                      // Color coding
+                      const isLeaseAhead = item.unhostedNetDelta > 0;
+                      const badgeBg = isSelected
+                        ? '#2A2320'
+                        : metricDisplay === 'breakeven'
+                        ? item.breakevenNights > 90
+                          ? '#FAF0EB'
+                          : '#F4EFE6'
+                        : isLeaseAhead
+                        ? '#EAF0EC'
+                        : '#FAF0EB';
+
+                      const badgeText = isSelected
+                        ? '#FFFFFF'
+                        : metricDisplay === 'breakeven'
+                        ? item.breakevenNights > 90
+                          ? '#C97251'
+                          : '#4A6B5D'
+                        : isLeaseAhead
+                        ? '#375347'
+                        : '#C97251';
+
+                      const badgeBorder = isSelected
+                        ? '#2A2320'
+                        : metricDisplay === 'breakeven'
+                        ? item.breakevenNights > 90
+                          ? '#E08E6D'
+                          : '#7C9A86'
+                        : isLeaseAhead
+                        ? '#4A6B5D'
+                        : '#E08E6D';
+
+                      return (
+                        <AdvancedMarker
+                          key={item.neighborhood.id}
+                          position={{
+                            lat: item.neighborhood.centroid[0],
+                            lng: item.neighborhood.centroid[1],
+                          }}
+                          onClick={() => handleSelectNeighborhood(item.neighborhood)}
+                        >
+                          <div
+                            onMouseEnter={() => setHoveredCorridor(item.neighborhood)}
+                            onMouseLeave={() => setHoveredCorridor(null)}
+                            className="cursor-pointer transition-all hover:scale-110 active:scale-95 group relative"
+                          >
+                            {/* Compact Single-Metric Pill */}
+                            <div
+                              style={{
+                                backgroundColor: badgeBg,
+                                color: badgeText,
+                                borderColor: badgeBorder,
+                              }}
+                              className="px-2.5 py-1 rounded-xl text-xs font-bold font-mono shadow-md border flex items-center space-x-1 whitespace-nowrap"
+                            >
+                              <span>{pillLabel}</span>
+                            </div>
+
+                            {/* Full Info Card on Hover or Tap (Requirement 8) */}
+                            {(isHovered || isSelected) && (
+                              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl shadow-xl p-3 z-50 text-left pointer-events-none animate-in fade-in">
+                                <div className="font-bold text-xs text-[#2A2320] flex items-center justify-between pb-1 border-b border-[#E6DFD5]">
+                                  <span>{item.neighborhood.shortName}</span>
+                                  <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#E08E6D]/15 text-[#C97251]">
+                                    {item.neighborhood.ward}
+                                  </span>
+                                </div>
+
+                                <div className="grid grid-cols-2 gap-1.5 text-[11px] font-mono mt-1.5">
+                                  <div>
+                                    <span className="text-[9px] text-[#5A524C] block font-sans">Airbnb Avg</span>
+                                    <strong className="text-[#E08E6D]">${item.adjustedNightlyRate}/nt</strong>
+                                  </div>
+                                  <div>
+                                    <span className="text-[9px] text-[#5A524C] block font-sans">Lease Avg</span>
+                                    <strong className="text-[#4A6B5D]">${item.adjustedMonthlyRent.toLocaleString()}/mo</strong>
+                                  </div>
+                                </div>
+
+                                <div className="mt-1.5 pt-1 border-t border-[#E6DFD5] flex items-center justify-between text-[10px]">
+                                  <span className="text-[#5A524C]">
+                                    Breakeven: <strong>{item.breakevenNights}d</strong>
+                                  </span>
+                                  <span className="text-[#E08E6D] font-bold">Click to Select</span>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        </AdvancedMarker>
+                      );
+                    })}
+
+                  {/* DETAIL PINS: When viewing individual properties */}
+                  {activeLayer !== 'overview' &&
+                    filteredAirbnbListings.map((item) => (
+                      <AdvancedMarker
+                        key={item.listing.id}
+                        position={{ lat: item.coords[0], lng: item.coords[1] }}
+                        onClick={() => {
+                          setSelectedAirbnb({ listing: item.listing, coords: item.coords });
+                          handleSelectNeighborhood(item.boundary);
+                        }}
+                      >
+                        <div className="cursor-pointer px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E08E6D] text-white border border-white shadow-md">
+                          ${Math.round(item.listing.price_clean)}
                         </div>
-                      )}
-
-                      {/* Authentic Host Name and Corridor Area */}
-                      {selectedAirbnb.listing.host_name && (
-                        <div className="text-[11px] text-[#4A6B5D] font-medium flex items-center space-x-1">
-                          <span>Host:</span>
-                          <strong className="text-[#2A2320]">{selectedAirbnb.listing.host_name}</strong>
-                          {selectedAirbnb.listing.area && (
-                            <span className="text-[#746B63]">· {selectedAirbnb.listing.area}</span>
-                          )}
-                        </div>
-                      )}
-
-                      <div className="text-sm font-bold text-[#2A2320]">
-                        ${Math.round(selectedAirbnb.listing.price_clean)} / night
-                      </div>
-
-                      <div className="text-[#746B63]">
-                        {selectedAirbnb.listing.room_type} · {selectedAirbnb.listing.bedrooms} BR · {selectedAirbnb.listing.accommodates} Guests
-                      </div>
-
-                      <div className="pt-1.5 border-t border-[#E6DFD5] space-y-1">
-                        <div className="flex justify-between">
-                          <span className="text-[#746B63]">Est. Occupancy:</span>
-                          <span className="font-mono font-medium">{Math.round(selectedAirbnb.listing.occupancy_est)} nights/yr</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-[#746B63]">Gross Revenue:</span>
-                          <span className="font-mono font-semibold text-[#4A6B5D]">
-                            ${Math.round(selectedAirbnb.listing.revenue_comp).toLocaleString()}/yr
-                          </span>
-                        </div>
-                        <div className="flex justify-between font-semibold text-[#2A2320]">
-                          <span>Breakeven vs Lease:</span>
-                          <span className="font-mono text-[#E08E6D]">
-                            {Math.ceil(((wardMedianRents[getNeighborhoodBoundary(selectedAirbnb.listing.neighbourhood).ward] || 2450) * 12) / selectedAirbnb.listing.price_clean)} nights
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </InfoWindow>
-                )}
-
-                {/* InfoWindow for Clicked Long-Term Comparable */}
-                {selectedLongTerm && (
-                  <InfoWindow
-                    position={{ lat: selectedLongTerm.latitude, lng: selectedLongTerm.longitude }}
-                    onCloseClick={() => setSelectedLongTerm(null)}
-                  >
-                    <div className="p-2 max-w-xs font-sans text-xs space-y-1.5 text-[#2A2320]">
-                      <span className="px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-[#4A6B5D]/20 text-[#375347]">
-                        DC Rent Registry Record
-                      </span>
-                      <div className="text-sm font-bold text-[#2A2320]">
-                        ${Math.round(selectedLongTerm.rent_monthly).toLocaleString()} / month
-                      </div>
-                      <div className="text-[#746B63]">
-                        {selectedLongTerm.ward} · {selectedLongTerm.property_type_text || 'Registered Units'} ({selectedLongTerm.registered_units} units)
-                      </div>
-                      <div className="text-[11px] text-[#746B63] pt-1 border-t border-[#E6DFD5]">
-                        Annual Gross Baseline: <strong className="text-[#2A2320]">${Math.round(selectedLongTerm.rent_monthly * 12).toLocaleString()}</strong>
-                      </div>
-                    </div>
-                  </InfoWindow>
-                )}
-              </GoogleMap>
-            </APIProvider>
-          )}
-
-          {/* Top Floating Hover Neighborhood Label Badge */}
-            {hoveredNeighborhood && viewMode === 'interactive' && (
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-[#FAF7F2]/95 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#E6DFD5] shadow-md flex items-center space-x-2 text-xs pointer-events-none transition-all">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E08E6D] animate-pulse" />
-                <span className="font-bold text-[#2A2320]">{hoveredNeighborhood}</span>
-                <span className="text-[#746B63]">· Click to analyze breakeven</span>
-              </div>
+                      </AdvancedMarker>
+                    ))}
+                </GoogleMap>
+              </APIProvider>
             )}
 
-            {/* Map Legend Overlay */}
-            <div className="absolute bottom-4 left-4 z-10 bg-[#FAF7F2]/95 backdrop-blur-sm p-3 rounded-xl border border-[#E6DFD5] text-xs shadow-md space-y-1.5 max-w-xs pointer-events-auto">
-              <span className="font-semibold text-[#2A2320] block mb-1">Map Layer Legend</span>
-              <div className="flex items-center space-x-2 text-[#746B63]">
-                <div className="w-3.5 h-3.5 rounded-sm bg-[#D4A373]/50 border border-[#D4A373]" />
-                <span>Polygons: Neighborhood Spaces with Boho Color Fills</span>
-              </div>
-              <div className="flex items-center space-x-2 text-[#746B63]">
-                <div className="w-3 h-3 rounded-full bg-[#E08E6D]" />
-                <span>Terracotta: Individual Airbnb Listings ($/night)</span>
-              </div>
-              <div className="flex items-center space-x-2 text-[#746B63]">
-                <div className="w-3 h-3 rounded-full bg-[#4A6B5D]" />
-                <span>Olive: Registered DC Monthly Lease Units ($/mo)</span>
-              </div>
+            {/* Neighborhood Hover Status Pill (User Request 3 & 8) */}
+            <div className="absolute top-4 left-4 z-10 bg-[#FAF7F2]/95 backdrop-blur-sm px-3 py-1.5 rounded-xl border border-[#E6DFD5] text-[11px] shadow-sm font-semibold text-[#2A2320] flex items-center space-x-2 pointer-events-none max-w-[280px] truncate">
+              <span className="w-2 h-2 rounded-full bg-[#E08E6D] shrink-0 animate-pulse" />
+              {hoveredBoundary ? (
+                <span className="truncate">
+                  <strong>{hoveredBoundary.name}</strong> <span className="text-[#5A524C]">({hoveredBoundary.ward})</span>
+                </span>
+              ) : (
+                <span className="text-[#5A524C]">
+                  Hover over neighborhood outlines · Click to select
+                </span>
+              )}
+            </div>
+
+            {/* Status Legend Pill */}
+            <div className="absolute top-4 right-4 z-10 bg-[#FAF7F2]/90 backdrop-blur-sm px-3 py-1.5 rounded-xl border border-[#E6DFD5] text-[11px] shadow-sm font-semibold text-[#5A524C]">
+              {metricDisplay === 'breakeven' ? (
+                <span>Showing Breakeven Days (90d unhosted cap)</span>
+              ) : (
+                <span>Showing Annual Net Delta (Lease vs Airbnb)</span>
+              )}
             </div>
           </div>
         </div>
 
-        {/* Right: Breakeven Point Analysis & Neighborhood Dossier */}
-        <div className="lg:col-span-4 space-y-5">
-          {currentNeighborhoodBreakeven ? (
-            <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs space-y-4">
-              <div className="flex items-start justify-between">
+        {/* Right: Unified Side Panel (Requirement 8)
+            - Single primary button: "Use in calculator"
+            - Identical numbers matching Home Hub exactly
+            - Small source/date labels
+        */}
+        <div className="lg:col-span-4 space-y-4">
+          <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-3xl p-5 shadow-xs space-y-4">
+            <div className="flex items-start justify-between border-b border-[#E6DFD5] pb-3">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#C97251]">
+                  {selectedScenario.ward} · Active Selection
+                </span>
+                <h3 className="text-lg font-bold text-[#2A2320]">
+                  {selectedScenario.neighborhood.shortName}
+                </h3>
+                <span className="text-[11px] text-[#5A524C] block truncate">
+                  {selectedScenario.neighborhood.name}
+                </span>
+              </div>
+              <span className="w-3 h-3 rounded-full bg-[#E08E6D] mt-1 shrink-0" />
+            </div>
+
+            {/* Breakeven Gauge Card */}
+            <div className="p-4 rounded-2xl border border-[#E08E6D]/40 bg-[#FAF0EB] space-y-3">
+              <div className="flex justify-between items-baseline">
                 <div>
-                  <div className="flex items-center space-x-2">
-                    <span
-                      className="w-3 h-3 rounded-full shrink-0"
-                      style={{ backgroundColor: currentNeighborhoodBreakeven.boundary.color }}
-                    />
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#746B63]">
-                      {currentNeighborhoodBreakeven.boundary.ward}
-                    </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#C97251] block">
+                    Breakeven Threshold
+                  </span>
+                  <div className="text-2xl font-bold font-mono text-[#2A2320]">
+                    {selectedScenario.breakevenNights} Nights
                   </div>
-                  <h3 className="text-lg font-bold text-[#2A2320] mt-0.5">
-                    {currentNeighborhoodBreakeven.boundary.shortName}
-                  </h3>
                 </div>
-                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[#F4EFE6] border border-[#E6DFD5] text-[#2A2320]">
-                  {currentNeighborhoodBreakeven.metrics.count} sample units
+                <div className="text-right">
+                  <span className="text-[10px] text-[#5A524C] block">Lease Equivalent</span>
+                  <span className="text-xs font-mono font-bold text-[#4A6B5D]">
+                    ${selectedScenario.adjustedMonthlyRent.toLocaleString()}/mo
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-xs text-[#5A524C] leading-snug">
+                {selectedScenario.breakevenNights > 90 ? (
+                  <span className="text-[#C97251]">
+                    <strong>Exceeds 90-day unhosted cap.</strong> 12-month lease yields +${selectedScenario.unhostedNetDelta.toLocaleString()} more per year net.
+                  </span>
+                ) : (
+                  <span className="text-[#375347]">
+                    <strong>Within 90-day unhosted cap.</strong> Airbnb reaches breakeven within legal limit.
+                  </span>
+                )}
+              </p>
+            </div>
+
+            {/* Financial Metrics with Source/Date Labels (Requirement 1 & 8) */}
+            <div className="space-y-2 text-xs">
+              <div className="flex justify-between py-1.5 border-b border-[#E6DFD5]">
+                <div>
+                  <span className="font-semibold text-[#2A2320] block">Benchmark Monthly Lease</span>
+                  <span className="text-[10px] text-[#5A524C]">Source: {selectedScenario.sources.rent}</span>
+                </div>
+                <span className="font-mono font-bold text-[#4A6B5D] text-sm">
+                  ${selectedScenario.adjustedMonthlyRent.toLocaleString()}/mo
                 </span>
               </div>
 
-              {/* Breakeven Point Card */}
-              <div className="p-4 rounded-xl border border-[#E08E6D]/50 bg-[#FAF0EB] space-y-3">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#C97251] block">
-                      Market Breakeven Threshold
-                    </span>
-                    <span className="text-2xl font-extrabold font-mono text-[#2A2320]">
-                      {currentNeighborhoodBreakeven.breakEvenNights} Nights / Year
-                    </span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-[11px] text-[#746B63] block">Lease Equivalent</span>
-                    <span className="text-xs font-mono font-bold text-[#4A6B5D]">
-                      ${currentNeighborhoodBreakeven.monthlyLease.toLocaleString()}/mo
-                    </span>
-                  </div>
-                </div>
-
-                {/* Progress bar compared to 90-day unhosted cap and 365-day ceiling */}
+              <div className="flex justify-between py-1.5 border-b border-[#E6DFD5]">
                 <div>
-                  <div className="flex justify-between text-[11px] text-[#746B63] mb-1">
-                    <span>90-day unhosted cap</span>
-                    <span className="font-semibold text-[#2A2320]">{currentNeighborhoodBreakeven.breakEvenNights} nights</span>
-                    <span>365-day hosted</span>
-                  </div>
-                  <div className="w-full bg-[#EFE9DE] h-2 rounded-full overflow-hidden relative">
-                    {/* 90 day marker line */}
-                    <div
-                      className="absolute top-0 bottom-0 w-0.5 bg-[#C97251] z-10"
-                      style={{ left: `${(90 / 365) * 100}%` }}
-                      title="90-day unhosted cap"
-                    />
-                    <div
-                      className="bg-[#E08E6D] h-full rounded-full transition-all"
-                      style={{
-                        width: `${Math.min(100, (currentNeighborhoodBreakeven.breakEvenNights / 365) * 100)}%`,
-                      }}
-                    />
-                  </div>
+                  <span className="font-semibold text-[#2A2320] block">Estimated Airbnb Rate</span>
+                  <span className="text-[10px] text-[#5A524C]">Source: {selectedScenario.sources.rate}</span>
                 </div>
-
-                <div className="text-xs text-[#746B63] leading-relaxed">
-                  {currentNeighborhoodBreakeven.exceedsUnhostedCap ? (
-                    <div className="flex items-start space-x-1.5 text-[#C97251]">
-                      <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
-                      <span>
-                        <strong>Exceeds 90-day unhosted limit:</strong> Requires a <em>Hosted (owner on-site)</em> license endorsement to exceed the long-term lease baseline.
-                      </span>
-                    </div>
-                  ) : (
-                    <div className="flex items-start space-x-1.5 text-[#4A6B5D]">
-                      <Sparkles className="w-4 h-4 shrink-0 mt-0.5" />
-                      <span>
-                        <strong>Unhosted Compliant:</strong> Breakeven achievable within D.C.&apos;s 90-day unhosted vacation rental allowance.
-                      </span>
-                    </div>
-                  )}
-                </div>
+                <span className="font-mono font-bold text-[#E08E6D] text-sm">
+                  ${selectedScenario.adjustedNightlyRate}/night
+                </span>
               </div>
 
-              {/* Financial Benchmark Numbers */}
-              <div className="space-y-2 text-xs">
-                <div className="flex justify-between py-1.5 border-b border-[#E6DFD5]/60">
-                  <span className="text-[#746B63]">Airbnb Median Nightly Price</span>
-                  <span className="font-mono font-semibold text-[#2A2320]">
-                    ${Math.round(currentNeighborhoodBreakeven.metrics.medianPrice)} / night
-                  </span>
+              <div className="flex justify-between py-1.5">
+                <div>
+                  <span className="font-semibold text-[#2A2320] block">Annual Lease Net</span>
+                  <span className="text-[10px] text-[#5A524C]">After 8% reserve</span>
                 </div>
-                <div className="flex justify-between py-1.5 border-b border-[#E6DFD5]/60">
-                  <span className="text-[#746B63]">Typical Annual Booked Occupancy</span>
-                  <span className="font-mono font-semibold text-[#2A2320]">
-                    {Math.round(currentNeighborhoodBreakeven.metrics.medianOcc)} nights/yr
-                  </span>
-                </div>
-                <div className="flex justify-between py-1.5 border-b border-[#E6DFD5]/60">
-                  <span className="text-[#746B63]">DC Rent Registry Monthly Median</span>
-                  <span className="font-mono font-semibold text-[#4A6B5D]">
-                    ${currentNeighborhoodBreakeven.monthlyLease.toLocaleString()} / month
-                  </span>
-                </div>
-                <div className="flex justify-between py-1.5">
-                  <span className="text-[#746B63]">Annual Long-Term Gross Lease</span>
-                  <span className="font-mono font-bold text-[#4A6B5D]">
-                    ${currentNeighborhoodBreakeven.annualLeaseGross.toLocaleString()} / year
-                  </span>
-                </div>
+                <span className="font-mono font-bold text-[#2A2320] text-sm">
+                  ${selectedScenario.longTerm.netAnnual.toLocaleString()}/yr
+                </span>
               </div>
             </div>
-          ) : (
-            <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-6 text-center text-[#746B63] space-y-2">
-              <MapPin className="w-6 h-6 mx-auto text-[#D9CEBE]" />
-              <p className="text-xs">Click any neighborhood space or listing pin to inspect breakeven intelligence.</p>
-            </div>
-          )}
 
-          {/* Quick Guidance Box */}
-          <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs space-y-2 text-xs text-[#746B63]">
-            <h4 className="font-semibold text-[#2A2320] flex items-center space-x-1.5">
-              <Info className="w-4 h-4 text-[#4A6B5D]" />
-              <span>Breakeven Formula & Methodology</span>
-            </h4>
-            <p className="leading-relaxed">
-              Breakeven occupancy represents the exact number of nights an owner must rent on Airbnb at current market rates to match a standard 12-month lease in the same D.C. corridor:
-            </p>
-            <div className="p-2 rounded-lg bg-[#F4EFE6] font-mono text-[11px] text-[#2A2320]">
-              Breakeven Days = (Monthly Rent × 12) / Nightly Rate
+            {/* EXACTLY ONE PRIMARY BUTTON (Requirement 8) */}
+            <div className="pt-2 border-t border-[#E6DFD5]">
+              <button
+                type="button"
+                onClick={() => {
+                  if (onSelectNeighborhood) {
+                    onSelectNeighborhood(selectedScenario.neighborhood.name);
+                  }
+                  if (onOpenCalculator) {
+                    onOpenCalculator();
+                  }
+                }}
+                className="w-full py-3 px-4 bg-[#E08E6D] hover:bg-[#C97251] text-white font-bold text-xs sm:text-sm rounded-2xl shadow-xs transition-all flex items-center justify-center space-x-2 cursor-pointer active:scale-95"
+              >
+                <span>Use in calculator</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>

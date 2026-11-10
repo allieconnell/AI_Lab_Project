@@ -441,6 +441,84 @@ export const NEIGHBORHOOD_BOUNDARIES: Record<string, NeighborhoodBoundary> = {
       [38.920, -76.976],
     ],
   },
+  'Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill': {
+    name: 'Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill',
+    shortName: 'Fort Totten / Lamont Riggs',
+    ward: 'Ward 4',
+    color: '#C87D55', // Burnt Ochre
+    centroid: [38.9550, -77.0010],
+    polygon: [
+      [38.966, -77.014],
+      [38.964, -76.988],
+      [38.944, -76.990],
+      [38.945, -77.016],
+    ],
+  },
+  'Mayfair, Hillbrook, Mahaning Heights': {
+    name: 'Mayfair, Hillbrook, Mahaning Heights',
+    shortName: 'Mayfair / Hillbrook',
+    ward: 'Ward 7',
+    color: '#BA7967', // Warm Clay
+    centroid: [38.8980, -76.9450],
+    polygon: [
+      [38.908, -76.958],
+      [38.905, -76.932],
+      [38.888, -76.935],
+      [38.890, -76.959],
+    ],
+  },
+  'River Terrace, Benning, Greenway, Dupont Park': {
+    name: 'River Terrace, Benning, Greenway, Dupont Park',
+    shortName: 'River Terrace / Benning / Greenway',
+    ward: 'Ward 7',
+    color: '#E08E6D', // Terracotta
+    centroid: [38.8860, -76.9560],
+    polygon: [
+      [38.896, -76.968],
+      [38.894, -76.942],
+      [38.875, -76.946],
+      [38.878, -76.970],
+    ],
+  },
+  'Sheridan, Barry Farm, Buena Vista': {
+    name: 'Sheridan, Barry Farm, Buena Vista',
+    shortName: 'Barry Farm / Buena Vista / Sheridan',
+    ward: 'Ward 8',
+    color: '#8D6B94', // Dusty Heather
+    centroid: [38.8600, -76.9920],
+    polygon: [
+      [38.870, -77.004],
+      [38.868, -76.980],
+      [38.850, -76.984],
+      [38.852, -77.006],
+    ],
+  },
+  'Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont': {
+    name: 'Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont',
+    shortName: 'Penn Branch / Fort Dupont / Fairlawn',
+    ward: 'Ward 7',
+    color: '#A25F4B', // Sienna Earth
+    centroid: [38.8740, -76.9620],
+    polygon: [
+      [38.886, -76.974],
+      [38.884, -76.948],
+      [38.862, -76.952],
+      [38.865, -76.976],
+    ],
+  },
+  'Woodland/Fort Stanton, Garfield Heights, Knox Hill': {
+    name: 'Woodland/Fort Stanton, Garfield Heights, Knox Hill',
+    shortName: 'Fort Stanton / Garfield Heights',
+    ward: 'Ward 8',
+    color: '#7C9A86', // Soft Sage
+    centroid: [38.8560, -76.9780],
+    polygon: [
+      [38.866, -76.988],
+      [38.864, -76.965],
+      [38.845, -76.968],
+      [38.848, -76.990],
+    ],
+  },
 };
 
 /**

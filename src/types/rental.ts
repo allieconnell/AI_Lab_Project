@@ -88,6 +88,10 @@ export interface UserPropertyInput {
   reviews_ltm: number;
   isHosted: boolean; // Hosted allows 365 days; Unhosted subject to DC 90-day annual cap
   customOccupancyNights: number; // 0 to 365
+  isPrimaryResidence: boolean; // D.C. 2026 STR Act requires homestead deduction / primary residence
+  hasHoaApproval: boolean; // Condo bylaws / HOA allow short-term rental
+  ownershipStatus: 'owner' | 'renter'; // Owner vs tenant (renters require landlord notarized consent)
+  hasDlcpLicense: boolean; // Basic Business License (BBL) registered with DLCP
 }
 
 export interface RevenueComparisonResult {

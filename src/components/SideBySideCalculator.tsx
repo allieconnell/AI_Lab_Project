@@ -12,6 +12,7 @@ interface SideBySideCalculatorProps {
   longTermListings: LongTermComparable[];
   onOpenRegulations: () => void;
   onOpenRegression: () => void;
+  onOpenChatbot?: () => void;
 }
 
 export const SideBySideCalculator: React.FC<SideBySideCalculatorProps> = ({
@@ -21,6 +22,7 @@ export const SideBySideCalculator: React.FC<SideBySideCalculatorProps> = ({
   longTermListings,
   onOpenRegulations,
   onOpenRegression,
+  onOpenChatbot,
 }) => {
   // Compute predicted nightly price using fitted OLS model
   const predictedNightlyRate = predictPropertyMetric(propertyInput, priceModel);
@@ -67,31 +69,25 @@ export const SideBySideCalculator: React.FC<SideBySideCalculatorProps> = ({
   return (
     <div className="space-y-8">
       {/* Top Banner Notice */}
-      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-6 shadow-xs">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#E08E6D] mb-1">
-              <span>Empirical Revenue Comparison</span>
-              <span>·</span>
-              <span>Washington D.C.</span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-[#2A2320] tracking-tight">
-              Short-Term Airbnb vs. Long-Term Lease
-            </h1>
-            <p className="text-sm text-[#746B63] mt-1 max-w-2xl leading-relaxed">
-              Estimate your nightly rate using multiple linear regression trained on 500+ verified DC listings and compare your gross earnings directly with registered DC residential lease data.
-            </p>
-          </div>
+      {/* Streamlined Header & Active Property Lens */}
+      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-xl sm:text-2xl font-bold text-[#2A2320] tracking-tight">
+            Airbnb vs. Long-Term Lease Profit Comparison
+          </h1>
+          <p className="text-xs text-[#746B63] mt-0.5">
+            📍 Filtered for <strong className="text-[#2A2320]">{propertyInput.neighbourhood} ({propertyInput.ward})</strong> · {propertyInput.bedrooms === 0 ? 'Studio' : `${propertyInput.bedrooms} BR`} {propertyInput.room_type} · {propertyInput.isHosted ? 'Hosted (365d)' : 'Unhosted (90d Cap)'}
+          </p>
+        </div>
 
-          <div className="flex items-center space-x-2 self-stretch md:self-auto">
-            <button
-              onClick={onOpenRegression}
-              className="w-full md:w-auto px-4 py-2.5 rounded-xl border border-[#E6DFD5] bg-[#F4EFE6] hover:bg-[#EFE9DE] text-xs font-medium text-[#2A2320] transition-colors cursor-pointer flex items-center justify-center space-x-1.5"
-            >
-              <span>Model Factors: {priceModel.selectedFeatures.length} active</span>
-              <span className="text-[#4A6B5D] font-mono">({Math.round(priceModel.rSquared * 100)}% R²)</span>
-            </button>
-          </div>
+        <div className="flex items-center space-x-2 self-stretch md:self-auto shrink-0">
+          <button
+            onClick={onOpenRegression}
+            className="w-full md:w-auto px-3.5 py-2 rounded-xl border border-[#E6DFD5] bg-[#F4EFE6] hover:bg-[#EFE9DE] text-xs font-medium text-[#2A2320] transition-colors cursor-pointer flex items-center justify-center space-x-1.5"
+          >
+            <span>Model: {priceModel.selectedFeatures.length} factors</span>
+            <span className="text-[#4A6B5D] font-mono">({Math.round(priceModel.rSquared * 100)}% R²)</span>
+          </button>
         </div>
       </div>
 
@@ -466,12 +462,22 @@ export const SideBySideCalculator: React.FC<SideBySideCalculatorProps> = ({
                 </p>
               </div>
             </div>
-            <button
-              onClick={onOpenRegulations}
-              className="px-4 py-2 bg-[#FAF7F2] hover:bg-[#F4EFE6] text-[#2A2320] border border-[#E6DFD5] text-xs font-semibold rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0"
-            >
-              Check Regulations & Requirements →
-            </button>
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={onOpenRegulations}
+                className="px-3.5 py-2 bg-[#FAF7F2] hover:bg-[#F4EFE6] text-[#2A2320] border border-[#E6DFD5] text-xs font-semibold rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0"
+              >
+                Regulations Check →
+              </button>
+              {onOpenChatbot && (
+                <button
+                  onClick={onOpenChatbot}
+                  className="px-3.5 py-2 bg-[#E08E6D] hover:bg-[#C97251] text-white text-xs font-semibold rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 shadow-xs"
+                >
+                  Ask Pro/Con Advisor →
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

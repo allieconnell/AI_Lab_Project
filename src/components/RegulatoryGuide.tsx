@@ -12,22 +12,35 @@ import {
   DollarSign,
   Calendar,
 } from 'lucide-react';
-import { RevenueLookupItem } from '../types/rental';
+import { RevenueLookupItem, UserPropertyInput } from '../types/rental';
 
 interface RegulatoryGuideProps {
   revenueLookups: RevenueLookupItem[];
   onNavigateToCalculator: () => void;
+  propertyInput: UserPropertyInput;
+  onChangeInput: (updated: Partial<UserPropertyInput>) => void;
 }
 
 export const RegulatoryGuide: React.FC<RegulatoryGuideProps> = ({
   revenueLookups,
   onNavigateToCalculator,
+  propertyInput,
+  onChangeInput,
 }) => {
-  // Interactive Eligibility Quiz State
-  const [isPrimaryResidence, setIsPrimaryResidence] = useState<boolean | null>(true);
-  const [hostingStyle, setHostingStyle] = useState<'hosted' | 'unhosted'>('unhosted');
-  const [hasHoaApproval, setHasHoaApproval] = useState<boolean | null>(true);
-  const [hasDlcpLicense, setHasDlcpLicense] = useState<boolean | null>(false);
+  // Sync state with propertyInput
+  const isPrimaryResidence = propertyInput.isPrimaryResidence;
+  const hostingStyle = propertyInput.isHosted ? 'hosted' : 'unhosted';
+  const hasHoaApproval = propertyInput.hasHoaApproval;
+  const hasDlcpLicense = propertyInput.hasDlcpLicense;
+
+  const setIsPrimaryResidence = (val: boolean) => onChangeInput({ isPrimaryResidence: val });
+  const setHostingStyle = (style: 'hosted' | 'unhosted') =>
+    onChangeInput({
+      isHosted: style === 'hosted',
+      customOccupancyNights: style === 'hosted' ? 220 : Math.min(propertyInput.customOccupancyNights, 90),
+    });
+  const setHasHoaApproval = (val: boolean) => onChangeInput({ hasHoaApproval: val });
+  const setHasDlcpLicense = (val: boolean) => onChangeInput({ hasDlcpLicense: val });
 
   // Evaluate eligibility status
   let eligibilityStatus: 'green' | 'amber' | 'red' = 'green';
@@ -70,47 +83,35 @@ export const RegulatoryGuide: React.FC<RegulatoryGuideProps> = ({
 
   return (
     <div className="space-y-8">
-      {/* Header */}
-      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-6 shadow-xs">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#E08E6D] mb-1">
-              <span>District of Columbia Legal Framework</span>
-              <span>·</span>
-              <span>DLCP Regulations</span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-[#2A2320] tracking-tight">
-              D.C. Short-Term Rental Regulations & Host Decision Matrix
-            </h1>
-            <p className="text-sm text-[#746B63] mt-1 max-w-2xl leading-relaxed">
-              Verify compliance under the Short-Term Rental Amendment Act of 2026, evaluate risk vs. reward against traditional 12-month leases, and measure market demand across D.C.
-            </p>
-          </div>
-
-          <button
-            onClick={onNavigateToCalculator}
-            className="px-4 py-2 bg-[#E08E6D] hover:bg-[#C97251] text-white text-xs font-semibold rounded-xl shadow-xs transition-colors cursor-pointer"
-          >
-            Calculate Your Revenue →
-          </button>
-        </div>
-      </div>
-
-      {/* 1. Interactive Legal Eligibility Quiz */}
-      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-6 shadow-xs space-y-6">
-        <div className="border-b border-[#E6DFD5] pb-4">
-          <div className="flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#4A6B5D] mb-1">
-            <span>Question 1 of 5</span>
-            <span>·</span>
-            <span>Compliance Checker</span>
-          </div>
-          <h2 className="text-xl font-semibold text-[#2A2320]">
-            Do regulations and restrictions allow me to list my AirBNB?
-          </h2>
+      {/* Condensed Header & Active Property Lens */}
+      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-xl sm:text-2xl font-bold text-[#2A2320] tracking-tight">
+            D.C. Short-Term Rental Regulations & Eligibility
+          </h1>
           <p className="text-xs text-[#746B63] mt-0.5">
-            Answer the 4 prerequisite questions below to assess your legal standing with the D.C. Department of Licensing and Consumer Protection (DLCP).
+            📍 Filtered for <strong className="text-[#2A2320]">{propertyInput.neighbourhood} ({propertyInput.ward})</strong> · {propertyInput.bedrooms === 0 ? 'Studio' : `${propertyInput.bedrooms} BR`} {propertyInput.room_type} · {propertyInput.isPrimaryResidence ? 'Primary Residence' : 'Second Home'} · {propertyInput.isHosted ? 'Hosted' : 'Unhosted'}
           </p>
         </div>
+
+        <button
+          onClick={onNavigateToCalculator}
+          className="px-3.5 py-2 bg-[#E08E6D] hover:bg-[#C97251] text-white text-xs font-semibold rounded-xl shadow-xs transition-colors cursor-pointer shrink-0"
+        >
+          Compare Profits →
+        </button>
+      </div>
+
+      {/* 1. Legal Eligibility Checklist */}
+      <div className="bg-[#FAF7F2] border border-[#E6DFD5] rounded-2xl p-5 shadow-xs space-y-4">
+        <div className="border-b border-[#E6DFD5]/80 pb-3 flex items-center justify-between">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-[#2A2320]">
+            Do regulations and restrictions allow me to list my AirBNB?
+          </h2>
+        </div>
+        <p className="text-xs text-[#746B63]">
+          Answer the 4 prerequisite questions below to assess your legal standing with the D.C. Department of Licensing and Consumer Protection (DLCP).
+        </p>
 
         {/* 4 Interactive Questions */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
